@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>The Content Depot</title>
+  <meta name="title" content="The Content Depot">
+  <meta name="description" content="A curated collection of ideas for your next post.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://godepot.co/">
+  <meta property="og:title" content="The Content Depot">
+  <meta property="og:description" content="A curated collection of ideas for your next post.">
+  <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700;800&family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Content Depot" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/assets/js/interaction.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.copy-hashtag').click(function(){
+        var hashtag = $(this).data('hashtag');
+        copyToClipboard(hashtag);
+        var chloe = this;
+        $(chloe).addClass('copy-copied').text("Copied!");
+        setTimeout(function(){
+          $(chloe).removeClass('copy-copied').text("Copy");
+        }, 2000);
+
+        return false;
+      });
+
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(element).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+
+      $(document).ready(function() {
+          $(".sidebar ul a").each(function() {
+            // console.log( $(this).attr("href") + " ==== " + window.location.href);
+              if ($(this).attr("href") == window.location.href) {
+                  $(this).addClass("active");
+              }
+          });
+      });
+
+
+    });
+  </script>
+
+</head>
+<body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="sidebar">
+  <h2>Overview</h2>
+  <ul>
+    <li><a class="" href="/">Home</a></li>
+    <li><a class="" href="/posts">Post Gallery</a></li>
+  </ul>
+
+  <h2>Browse by vertical</h2>
+  <ul>
+    <li><a class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a class="" href="/verticals/home-services">Home Services</a>
+      <ul>
+        <li><a class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a class="" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a class="" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a class="active" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- <ul class="nav">
+    <li class="nav_title">Home</li>
+    <li><a href="/#hashtags">Hashtags</a></li>
+    <li><a href="/#topics">Upcoming Topics</a></li>
+    <li><a href="/#holidays">Holidays</a></li>
+    <li><a href="/#posts">Post Gallery</a></li>
+    <li class="nav_title">Verticals</li>
+    <li><a href="/verticals/professional-services">Professional Services</a></li>
+  </ul> -->
+</div>
+
+<div class="container">
+
+  <div class="container-inner clearfix">
+    <p class="breadcrumb"><a href="/verticals/home-services">&larr; Home Services</a></p>
+
+<h1>Pest Control</h1>
+
+<div class="section">
+  <h3>Upcoming Topics</h3>
+
+  
+
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🐝</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary"></span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Pests That Thrive in the Summer</h3>
+      <p>Mosquitoes, Ants, Fleas, Ticks, Termites, Grasshoppers, Flies, and Stinging Insects&nbsp;</p>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🐜</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary"></span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Pest Control in the Kitchen</h3>
+      <p>Spring pests, like ants, love kitchen spaces because of the availability of potential water and food sources. Crumbs, spill residue, and food left out are some of their favorite snacks. Here are a few things to tackle at the beginning of each season to help prevent pests in the kitchen: -Clean out all of your cabinets and pantry. Discard stale or outdated foods and spices. -Thoroughly clean the inside of your cabinets and replace old shelf paper. -Vacuum behind your appliances—there’s probably a good bit of dust back there! -Clear off your counters and give them a good scrub, looking out for any sticky spots or residue in hard-to-reach areas.&nbsp;<a href="https://www.vulcantermite.com/home-pest-control/spring-cleaning-tips-avoid-spring-pests/">Learn more »</a></p>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="section">
+  <h3>Common Terms & Phrases</h3>
+  
+  
+  <div class="tile">
+    <div class="tile_body">
+      <h3>June bugs</h3>
+      <p>The term "June bug" can refer to a number of different species of beetles. The name is derived from the fact that they typically emerge towards the beginning of summer. They are harmless to people and animals but because they are attracted to light, they can be a big nuisance at night. Many pest control companies offer services related to June bug control.&nbsp;</p>
+    </div>
+  </div>
+  
+  <div class="tile">
+    <div class="tile_body">
+      <h3>Common Pests in Spring</h3>
+      <p>Termites, Rats, Mossquitos, Ants, and Spiders&nbsp;</p>
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="section">
+  <h3>Featured Posts</h3>
+  
+  
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/36cd9ecf-85d0-4cbc-955e-d45d5bdfbf18?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Did you know that there are over 45,000 known species of spiders!? If your home or property is experiencing spider issues, we can handle them. Just one call, that's all!</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Pest Control • Product/Service</li>
+        <li class="tile_meta__author">Jose Rodriguez</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">An interesting educational fact serves as a nice hook to promote this customer's pest control services.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/77fd1cac-43b3-42cc-b245-f2ee1a5be217?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Termites, roaches, and many more: When it comes to your home, we'll make sure your home is free of all pests!</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Pest Control • Product/Service</li>
+        <li class="tile_meta__author">Omar Guzman</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Getting into specific pest control scenarios can be a good way to add variety to these customers' content. In this case, the caption works because it references the type of damage shown in the image: termites.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/dadf00e4-5e38-4851-9c90-d3d7523b5d82?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">What's made us the Phoenix area's most trusted name in pest control for more than 20 years? Every member of our expert team is highly vetted and required to pass a background check, ensuring your safety and peace of mind. #atomicpestcontrol</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Pest Control • About the Business</li>
+        <li class="tile_meta__author">Annie Cranford</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Pest control is a unique service. Sometimes, they have to enter your home when no one is around. Referencing the team in the context of how they're vetted and given background checks is a great way to build confidence in this business!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/b4dd967c-8c2b-4412-b685-39509a80adc9?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">If citronella candles aren't working for your mosquito problem, we have the solution for you.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Pest Control • Product/Service</li>
+        <li class="tile_meta__author">Emily Rutan</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Seasonally relevant way to promote pest control. Could also work with a CTA directing people to a phone number or website!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/5d111962-cf8c-4255-818c-4f59ce72e6d1?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Is your property ready for the warmer weather? The Red Maple Termite & Pest Control team is here to get your yard all ready for spring. Give us a call to get started: (631) 730-6208.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Pest Control • Product/Service</li>
+        <li class="tile_meta__author">Allison Randel</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Seasonally relevant and customer specific.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+  </div>
+
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

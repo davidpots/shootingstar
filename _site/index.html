@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>The Content Depot</title>
+  <meta name="title" content="The Content Depot">
+  <meta name="description" content="A curated collection of ideas for your next post.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://godepot.co/">
+  <meta property="og:title" content="The Content Depot">
+  <meta property="og:description" content="A curated collection of ideas for your next post.">
+  <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700;800&family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Content Depot" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/assets/js/interaction.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.copy-hashtag').click(function(){
+        var hashtag = $(this).data('hashtag');
+        copyToClipboard(hashtag);
+        var chloe = this;
+        $(chloe).addClass('copy-copied').text("Copied!");
+        setTimeout(function(){
+          $(chloe).removeClass('copy-copied').text("Copy");
+        }, 2000);
+
+        return false;
+      });
+
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(element).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+
+      $(document).ready(function() {
+          $(".sidebar ul a").each(function() {
+            // console.log( $(this).attr("href") + " ==== " + window.location.href);
+              if ($(this).attr("href") == window.location.href) {
+                  $(this).addClass("active");
+              }
+          });
+      });
+
+
+    });
+  </script>
+
+</head>
+<body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="sidebar">
+  <h2>Overview</h2>
+  <ul>
+    <li><a class="active" href="/">Home</a></li>
+    <li><a class="" href="/posts">Post Gallery</a></li>
+  </ul>
+
+  <h2>Browse by vertical</h2>
+  <ul>
+    <li><a class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a class="" href="/verticals/home-services">Home Services</a>
+      <ul>
+        <li><a class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a class="" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a class="" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- <ul class="nav">
+    <li class="nav_title">Home</li>
+    <li><a href="/#hashtags">Hashtags</a></li>
+    <li><a href="/#topics">Upcoming Topics</a></li>
+    <li><a href="/#holidays">Holidays</a></li>
+    <li><a href="/#posts">Post Gallery</a></li>
+    <li class="nav_title">Verticals</li>
+    <li><a href="/verticals/professional-services">Professional Services</a></li>
+  </ul> -->
+</div>
+
+<div class="container">
+
+  <div class="container-inner clearfix">
+    <p class="breadcrumb"><a href="">&nbsp;</a></p>
+<h1>Home <span class="last_updated">Updated Friday, May 7</span></h1>
+
+<div class="content-area">
+
+<div id="hashtags" class="section">
+  <h3>Hashtags</h3>
+  
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <span class="tile_hashtag"><svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.89122 0C8.49253 0 7.32622 1.06986 7.2058 2.46336L6.75576 7.67092L2.68493 7.67092C1.20208 7.67092 0 8.873 0 10.3559C0 11.8387 1.20208 13.0408 2.68493 13.0408H6.2917L5.82756 18.4115H2.68493C1.20208 18.4115 0 19.6136 0 21.0965C0 22.5793 1.20208 23.7814 2.68493 23.7814H5.3635L4.98674 28.141C4.85069 29.7153 6.09195 31.0685 7.67217 31.0685C9.07086 31.0685 10.2372 29.9986 10.3576 28.6051L10.7745 23.7814L15.9729 23.7814L15.5961 28.141C15.4601 29.7153 16.7013 31.0685 18.2815 31.0685C19.6802 31.0685 20.8465 29.9986 20.967 28.6051L21.3838 23.7814H25.3151C26.7979 23.7814 28 22.5793 28 21.0965C28 19.6136 26.7979 18.4115 25.3151 18.4115H21.8479L22.312 13.0408H25.3151C26.7979 13.0408 28 11.8387 28 10.3558C28 8.873 26.7979 7.67092 25.3151 7.67092H22.7761L23.186 2.92751C23.3221 1.35315 22.0808 0 20.5006 0C19.1019 0 17.9356 1.06986 17.8152 2.46336L17.3651 7.67092L12.1667 7.67092L12.5766 2.92751C12.7127 1.35315 11.4714 0 9.89122 0ZM11.7027 13.0408L11.2385 18.4115L16.4369 18.4115L16.9011 13.0408L11.7027 13.0408Z" fill="#3C3C3C"/>
+</svg>
+</span>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_socialLinks">
+        <a href="https://www.instagram.com/explore/tags/NationalBarbecueMonth/" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.3341 20.2001C29.3794 21.6204 29.1948 23.0387 28.7874 24.4001C28.0071 26.8133 25.9533 28.595 23.4541 29.0268C21.8742 29.3012 20.2694 29.4041 18.6674 29.3334C16.3608 29.3334 14.0674 29.3334 11.7741 29.3334C10.3537 29.3796 8.93529 29.195 7.57408 28.7868C5.15741 28.008 3.37098 25.9546 2.93408 23.4534C2.72212 22.2388 2.63278 21.0059 2.66742 19.7734C2.66742 17.1068 2.66742 14.4401 2.66742 11.7734C2.62624 10.3602 2.81999 8.94988 3.24075 7.60009C4.01322 5.18171 6.07087 3.3967 8.57408 2.97342C10.1468 2.71444 11.7412 2.61171 13.3341 2.66675C14.2274 2.66675 15.1208 2.66675 16.0008 2.66675C17.8141 2.66675 19.6408 2.66675 21.4541 2.66675C23.1452 2.68427 24.7945 3.19391 26.2008 4.13342C27.7841 5.25568 28.8316 6.98385 29.0941 8.90675C29.2901 10.3737 29.3704 11.8539 29.3341 13.3334C29.3341 15.5868 29.3341 17.8934 29.3341 20.2001ZM26.6674 9.22675C26.4195 7.2851 24.96 5.71829 23.0407 5.33342C21.8314 5.11394 20.6027 5.0201 19.3741 5.05342C17.1341 5.05342 14.8808 5.05342 12.6274 5.05342C11.488 5.04645 10.3503 5.14015 9.22742 5.33342C7.43568 5.55701 5.9533 6.83438 5.46742 8.57342C5.18321 9.69238 5.06196 10.8465 5.10742 12.0001C5.10742 13.8134 5.10742 15.6268 5.10742 17.4401C5.06946 19.0912 5.1318 20.7432 5.29408 22.3868C5.38616 24.4824 6.89217 26.2468 8.94742 26.6668C10.1653 26.889 11.4036 26.9784 12.6408 26.9334C14.8807 26.9334 17.103 26.9334 19.3074 26.9334C20.4642 26.9476 21.6199 26.8584 22.7607 26.6668C24.2439 26.4729 25.536 25.56 26.2141 24.2268C26.6148 23.3469 26.8282 22.3934 26.8408 21.4268C26.9474 19.6134 26.9341 17.7868 26.9207 15.9734C26.9207 14.8534 26.9207 13.7334 26.9207 12.6134C26.9153 11.48 26.8306 10.3484 26.6674 9.22675ZM16.0008 22.8401C13.2216 22.8399 10.7177 21.1613 9.6618 18.5906C8.6059 16.0198 9.20705 13.0659 11.1837 11.1123C13.1604 9.15876 16.1211 8.59233 18.6793 9.67835C21.2375 10.7644 22.8865 13.2878 22.8541 16.0668C22.8247 19.8266 19.7607 22.8549 16.0008 22.8401ZM23.1208 10.4934C22.2328 10.4862 21.5147 9.76809 21.5074 8.88009C21.5147 7.99428 22.2349 7.28006 23.1208 7.28009C23.5485 7.27252 23.9606 7.44096 24.2606 7.74599C24.5606 8.05101 24.7221 8.46585 24.7074 8.89342C24.7074 9.77189 23.9992 10.4861 23.1208 10.4934V10.4934ZM16.0008 11.5601C13.5486 11.5601 11.5608 13.5479 11.5608 16.0001C11.5608 18.4522 13.5486 20.4401 16.0008 20.4401C18.4529 20.4401 20.4408 18.4522 20.4408 16.0001C20.4334 13.551 18.4499 11.5674 16.0008 11.5601V11.5601Z" fill="black"/>
+</svg>
+</a>
+        <a href="https://twitter.com/search?q=%23NationalBarbecueMonth" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.0665 26.8001C21.0665 26.8001 26.6665 18.4001 26.6665 11.2001C26.6665 10.9334 26.6665 10.6667 26.6665 10.5334C27.7332 9.7334 28.6665 8.80006 29.3332 7.7334C28.3999 8.1334 27.3332 8.40006 26.1332 8.5334C27.3332 7.86673 28.1332 6.80006 28.5332 5.46673C27.4665 6.1334 26.2665 6.5334 25.0665 6.80006C23.0665 4.66673 19.5999 4.5334 17.3332 6.66673C15.8665 8.00006 15.3332 10.0001 15.7332 11.8667C11.3332 11.6001 7.3332 9.60006 4.5332 6.1334C3.06654 8.66673 3.86654 11.8667 6.26654 13.4667C5.3332 13.4667 4.5332 13.2001 3.7332 12.8001C3.7332 12.8001 3.7332 12.8001 3.7332 12.9334C3.7332 15.6001 5.59987 17.7334 8.1332 18.2667C7.3332 18.5334 6.5332 18.5334 5.59987 18.4001C6.26654 20.6667 8.39987 22.1334 10.6665 22.1334C8.66654 23.6001 6.39987 24.5334 3.86654 24.5334C3.46654 24.5334 2.9332 24.5334 2.5332 24.4001C5.19987 26.0001 8.1332 26.8001 11.0665 26.8001" fill="black"/>
+</svg>
+</a>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>NationalBarbecueMonth <a data-hashtag="#NationalBarbecueMonth" class="copy-button copy-hashtag" href="#">copy</a></h3>
+      <p>May is the month of backyard barbecues and many folks fire up their grills in celebration. Businesses to consider: BBQ Joints, Outdoor retailers who sell grills or patio furniture, or even shops that sell sauces or tools for grilling.</p>
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <span class="tile_hashtag"><svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.89122 0C8.49253 0 7.32622 1.06986 7.2058 2.46336L6.75576 7.67092L2.68493 7.67092C1.20208 7.67092 0 8.873 0 10.3559C0 11.8387 1.20208 13.0408 2.68493 13.0408H6.2917L5.82756 18.4115H2.68493C1.20208 18.4115 0 19.6136 0 21.0965C0 22.5793 1.20208 23.7814 2.68493 23.7814H5.3635L4.98674 28.141C4.85069 29.7153 6.09195 31.0685 7.67217 31.0685C9.07086 31.0685 10.2372 29.9986 10.3576 28.6051L10.7745 23.7814L15.9729 23.7814L15.5961 28.141C15.4601 29.7153 16.7013 31.0685 18.2815 31.0685C19.6802 31.0685 20.8465 29.9986 20.967 28.6051L21.3838 23.7814H25.3151C26.7979 23.7814 28 22.5793 28 21.0965C28 19.6136 26.7979 18.4115 25.3151 18.4115H21.8479L22.312 13.0408H25.3151C26.7979 13.0408 28 11.8387 28 10.3558C28 8.873 26.7979 7.67092 25.3151 7.67092H22.7761L23.186 2.92751C23.3221 1.35315 22.0808 0 20.5006 0C19.1019 0 17.9356 1.06986 17.8152 2.46336L17.3651 7.67092L12.1667 7.67092L12.5766 2.92751C12.7127 1.35315 11.4714 0 9.89122 0ZM11.7027 13.0408L11.2385 18.4115L16.4369 18.4115L16.9011 13.0408L11.7027 13.0408Z" fill="#3C3C3C"/>
+</svg>
+</span>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_socialLinks">
+        <a href="https://www.instagram.com/explore/tags/GardenPlanning/" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.3341 20.2001C29.3794 21.6204 29.1948 23.0387 28.7874 24.4001C28.0071 26.8133 25.9533 28.595 23.4541 29.0268C21.8742 29.3012 20.2694 29.4041 18.6674 29.3334C16.3608 29.3334 14.0674 29.3334 11.7741 29.3334C10.3537 29.3796 8.93529 29.195 7.57408 28.7868C5.15741 28.008 3.37098 25.9546 2.93408 23.4534C2.72212 22.2388 2.63278 21.0059 2.66742 19.7734C2.66742 17.1068 2.66742 14.4401 2.66742 11.7734C2.62624 10.3602 2.81999 8.94988 3.24075 7.60009C4.01322 5.18171 6.07087 3.3967 8.57408 2.97342C10.1468 2.71444 11.7412 2.61171 13.3341 2.66675C14.2274 2.66675 15.1208 2.66675 16.0008 2.66675C17.8141 2.66675 19.6408 2.66675 21.4541 2.66675C23.1452 2.68427 24.7945 3.19391 26.2008 4.13342C27.7841 5.25568 28.8316 6.98385 29.0941 8.90675C29.2901 10.3737 29.3704 11.8539 29.3341 13.3334C29.3341 15.5868 29.3341 17.8934 29.3341 20.2001ZM26.6674 9.22675C26.4195 7.2851 24.96 5.71829 23.0407 5.33342C21.8314 5.11394 20.6027 5.0201 19.3741 5.05342C17.1341 5.05342 14.8808 5.05342 12.6274 5.05342C11.488 5.04645 10.3503 5.14015 9.22742 5.33342C7.43568 5.55701 5.9533 6.83438 5.46742 8.57342C5.18321 9.69238 5.06196 10.8465 5.10742 12.0001C5.10742 13.8134 5.10742 15.6268 5.10742 17.4401C5.06946 19.0912 5.1318 20.7432 5.29408 22.3868C5.38616 24.4824 6.89217 26.2468 8.94742 26.6668C10.1653 26.889 11.4036 26.9784 12.6408 26.9334C14.8807 26.9334 17.103 26.9334 19.3074 26.9334C20.4642 26.9476 21.6199 26.8584 22.7607 26.6668C24.2439 26.4729 25.536 25.56 26.2141 24.2268C26.6148 23.3469 26.8282 22.3934 26.8408 21.4268C26.9474 19.6134 26.9341 17.7868 26.9207 15.9734C26.9207 14.8534 26.9207 13.7334 26.9207 12.6134C26.9153 11.48 26.8306 10.3484 26.6674 9.22675ZM16.0008 22.8401C13.2216 22.8399 10.7177 21.1613 9.6618 18.5906C8.6059 16.0198 9.20705 13.0659 11.1837 11.1123C13.1604 9.15876 16.1211 8.59233 18.6793 9.67835C21.2375 10.7644 22.8865 13.2878 22.8541 16.0668C22.8247 19.8266 19.7607 22.8549 16.0008 22.8401ZM23.1208 10.4934C22.2328 10.4862 21.5147 9.76809 21.5074 8.88009C21.5147 7.99428 22.2349 7.28006 23.1208 7.28009C23.5485 7.27252 23.9606 7.44096 24.2606 7.74599C24.5606 8.05101 24.7221 8.46585 24.7074 8.89342C24.7074 9.77189 23.9992 10.4861 23.1208 10.4934V10.4934ZM16.0008 11.5601C13.5486 11.5601 11.5608 13.5479 11.5608 16.0001C11.5608 18.4522 13.5486 20.4401 16.0008 20.4401C18.4529 20.4401 20.4408 18.4522 20.4408 16.0001C20.4334 13.551 18.4499 11.5674 16.0008 11.5601V11.5601Z" fill="black"/>
+</svg>
+</a>
+        <a href="https://twitter.com/search?q=%23GardenPlanning" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.0665 26.8001C21.0665 26.8001 26.6665 18.4001 26.6665 11.2001C26.6665 10.9334 26.6665 10.6667 26.6665 10.5334C27.7332 9.7334 28.6665 8.80006 29.3332 7.7334C28.3999 8.1334 27.3332 8.40006 26.1332 8.5334C27.3332 7.86673 28.1332 6.80006 28.5332 5.46673C27.4665 6.1334 26.2665 6.5334 25.0665 6.80006C23.0665 4.66673 19.5999 4.5334 17.3332 6.66673C15.8665 8.00006 15.3332 10.0001 15.7332 11.8667C11.3332 11.6001 7.3332 9.60006 4.5332 6.1334C3.06654 8.66673 3.86654 11.8667 6.26654 13.4667C5.3332 13.4667 4.5332 13.2001 3.7332 12.8001C3.7332 12.8001 3.7332 12.8001 3.7332 12.9334C3.7332 15.6001 5.59987 17.7334 8.1332 18.2667C7.3332 18.5334 6.5332 18.5334 5.59987 18.4001C6.26654 20.6667 8.39987 22.1334 10.6665 22.1334C8.66654 23.6001 6.39987 24.5334 3.86654 24.5334C3.46654 24.5334 2.9332 24.5334 2.5332 24.4001C5.19987 26.0001 8.1332 26.8001 11.0665 26.8001" fill="black"/>
+</svg>
+</a>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>GardenPlanning <a data-hashtag="#GardenPlanning" class="copy-button copy-hashtag" href="#">copy</a></h3>
+      <p>This hashtag works great in conjunction with content about Lawn and Garden Month or spring gardening.</p>
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <span class="tile_hashtag"><svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.89122 0C8.49253 0 7.32622 1.06986 7.2058 2.46336L6.75576 7.67092L2.68493 7.67092C1.20208 7.67092 0 8.873 0 10.3559C0 11.8387 1.20208 13.0408 2.68493 13.0408H6.2917L5.82756 18.4115H2.68493C1.20208 18.4115 0 19.6136 0 21.0965C0 22.5793 1.20208 23.7814 2.68493 23.7814H5.3635L4.98674 28.141C4.85069 29.7153 6.09195 31.0685 7.67217 31.0685C9.07086 31.0685 10.2372 29.9986 10.3576 28.6051L10.7745 23.7814L15.9729 23.7814L15.5961 28.141C15.4601 29.7153 16.7013 31.0685 18.2815 31.0685C19.6802 31.0685 20.8465 29.9986 20.967 28.6051L21.3838 23.7814H25.3151C26.7979 23.7814 28 22.5793 28 21.0965C28 19.6136 26.7979 18.4115 25.3151 18.4115H21.8479L22.312 13.0408H25.3151C26.7979 13.0408 28 11.8387 28 10.3558C28 8.873 26.7979 7.67092 25.3151 7.67092H22.7761L23.186 2.92751C23.3221 1.35315 22.0808 0 20.5006 0C19.1019 0 17.9356 1.06986 17.8152 2.46336L17.3651 7.67092L12.1667 7.67092L12.5766 2.92751C12.7127 1.35315 11.4714 0 9.89122 0ZM11.7027 13.0408L11.2385 18.4115L16.4369 18.4115L16.9011 13.0408L11.7027 13.0408Z" fill="#3C3C3C"/>
+</svg>
+</span>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_socialLinks">
+        <a href="https://www.instagram.com/explore/tags/NationalSalsaMonth/" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.3341 20.2001C29.3794 21.6204 29.1948 23.0387 28.7874 24.4001C28.0071 26.8133 25.9533 28.595 23.4541 29.0268C21.8742 29.3012 20.2694 29.4041 18.6674 29.3334C16.3608 29.3334 14.0674 29.3334 11.7741 29.3334C10.3537 29.3796 8.93529 29.195 7.57408 28.7868C5.15741 28.008 3.37098 25.9546 2.93408 23.4534C2.72212 22.2388 2.63278 21.0059 2.66742 19.7734C2.66742 17.1068 2.66742 14.4401 2.66742 11.7734C2.62624 10.3602 2.81999 8.94988 3.24075 7.60009C4.01322 5.18171 6.07087 3.3967 8.57408 2.97342C10.1468 2.71444 11.7412 2.61171 13.3341 2.66675C14.2274 2.66675 15.1208 2.66675 16.0008 2.66675C17.8141 2.66675 19.6408 2.66675 21.4541 2.66675C23.1452 2.68427 24.7945 3.19391 26.2008 4.13342C27.7841 5.25568 28.8316 6.98385 29.0941 8.90675C29.2901 10.3737 29.3704 11.8539 29.3341 13.3334C29.3341 15.5868 29.3341 17.8934 29.3341 20.2001ZM26.6674 9.22675C26.4195 7.2851 24.96 5.71829 23.0407 5.33342C21.8314 5.11394 20.6027 5.0201 19.3741 5.05342C17.1341 5.05342 14.8808 5.05342 12.6274 5.05342C11.488 5.04645 10.3503 5.14015 9.22742 5.33342C7.43568 5.55701 5.9533 6.83438 5.46742 8.57342C5.18321 9.69238 5.06196 10.8465 5.10742 12.0001C5.10742 13.8134 5.10742 15.6268 5.10742 17.4401C5.06946 19.0912 5.1318 20.7432 5.29408 22.3868C5.38616 24.4824 6.89217 26.2468 8.94742 26.6668C10.1653 26.889 11.4036 26.9784 12.6408 26.9334C14.8807 26.9334 17.103 26.9334 19.3074 26.9334C20.4642 26.9476 21.6199 26.8584 22.7607 26.6668C24.2439 26.4729 25.536 25.56 26.2141 24.2268C26.6148 23.3469 26.8282 22.3934 26.8408 21.4268C26.9474 19.6134 26.9341 17.7868 26.9207 15.9734C26.9207 14.8534 26.9207 13.7334 26.9207 12.6134C26.9153 11.48 26.8306 10.3484 26.6674 9.22675ZM16.0008 22.8401C13.2216 22.8399 10.7177 21.1613 9.6618 18.5906C8.6059 16.0198 9.20705 13.0659 11.1837 11.1123C13.1604 9.15876 16.1211 8.59233 18.6793 9.67835C21.2375 10.7644 22.8865 13.2878 22.8541 16.0668C22.8247 19.8266 19.7607 22.8549 16.0008 22.8401ZM23.1208 10.4934C22.2328 10.4862 21.5147 9.76809 21.5074 8.88009C21.5147 7.99428 22.2349 7.28006 23.1208 7.28009C23.5485 7.27252 23.9606 7.44096 24.2606 7.74599C24.5606 8.05101 24.7221 8.46585 24.7074 8.89342C24.7074 9.77189 23.9992 10.4861 23.1208 10.4934V10.4934ZM16.0008 11.5601C13.5486 11.5601 11.5608 13.5479 11.5608 16.0001C11.5608 18.4522 13.5486 20.4401 16.0008 20.4401C18.4529 20.4401 20.4408 18.4522 20.4408 16.0001C20.4334 13.551 18.4499 11.5674 16.0008 11.5601V11.5601Z" fill="black"/>
+</svg>
+</a>
+        <a href="https://twitter.com/search?q=%23NationalSalsaMonth" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.0665 26.8001C21.0665 26.8001 26.6665 18.4001 26.6665 11.2001C26.6665 10.9334 26.6665 10.6667 26.6665 10.5334C27.7332 9.7334 28.6665 8.80006 29.3332 7.7334C28.3999 8.1334 27.3332 8.40006 26.1332 8.5334C27.3332 7.86673 28.1332 6.80006 28.5332 5.46673C27.4665 6.1334 26.2665 6.5334 25.0665 6.80006C23.0665 4.66673 19.5999 4.5334 17.3332 6.66673C15.8665 8.00006 15.3332 10.0001 15.7332 11.8667C11.3332 11.6001 7.3332 9.60006 4.5332 6.1334C3.06654 8.66673 3.86654 11.8667 6.26654 13.4667C5.3332 13.4667 4.5332 13.2001 3.7332 12.8001C3.7332 12.8001 3.7332 12.8001 3.7332 12.9334C3.7332 15.6001 5.59987 17.7334 8.1332 18.2667C7.3332 18.5334 6.5332 18.5334 5.59987 18.4001C6.26654 20.6667 8.39987 22.1334 10.6665 22.1334C8.66654 23.6001 6.39987 24.5334 3.86654 24.5334C3.46654 24.5334 2.9332 24.5334 2.5332 24.4001C5.19987 26.0001 8.1332 26.8001 11.0665 26.8001" fill="black"/>
+</svg>
+</a>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>NationalSalsaMonth <a data-hashtag="#NationalSalsaMonth" class="copy-button copy-hashtag" href="#">copy</a></h3>
+      <p>Grab your favorite chips, the month of May is National Salsa Month! Businesses to consider: Retailers who sell salsas, Mexican restaurants who offer salsa, plant shops or nurseries that sell tomato plants or other produce that can become salsa.</p>
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <span class="tile_hashtag"><svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.89122 0C8.49253 0 7.32622 1.06986 7.2058 2.46336L6.75576 7.67092L2.68493 7.67092C1.20208 7.67092 0 8.873 0 10.3559C0 11.8387 1.20208 13.0408 2.68493 13.0408H6.2917L5.82756 18.4115H2.68493C1.20208 18.4115 0 19.6136 0 21.0965C0 22.5793 1.20208 23.7814 2.68493 23.7814H5.3635L4.98674 28.141C4.85069 29.7153 6.09195 31.0685 7.67217 31.0685C9.07086 31.0685 10.2372 29.9986 10.3576 28.6051L10.7745 23.7814L15.9729 23.7814L15.5961 28.141C15.4601 29.7153 16.7013 31.0685 18.2815 31.0685C19.6802 31.0685 20.8465 29.9986 20.967 28.6051L21.3838 23.7814H25.3151C26.7979 23.7814 28 22.5793 28 21.0965C28 19.6136 26.7979 18.4115 25.3151 18.4115H21.8479L22.312 13.0408H25.3151C26.7979 13.0408 28 11.8387 28 10.3558C28 8.873 26.7979 7.67092 25.3151 7.67092H22.7761L23.186 2.92751C23.3221 1.35315 22.0808 0 20.5006 0C19.1019 0 17.9356 1.06986 17.8152 2.46336L17.3651 7.67092L12.1667 7.67092L12.5766 2.92751C12.7127 1.35315 11.4714 0 9.89122 0ZM11.7027 13.0408L11.2385 18.4115L16.4369 18.4115L16.9011 13.0408L11.7027 13.0408Z" fill="#3C3C3C"/>
+</svg>
+</span>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_socialLinks">
+        <a href="https://www.instagram.com/explore/tags/NationalSaladMonth/" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.3341 20.2001C29.3794 21.6204 29.1948 23.0387 28.7874 24.4001C28.0071 26.8133 25.9533 28.595 23.4541 29.0268C21.8742 29.3012 20.2694 29.4041 18.6674 29.3334C16.3608 29.3334 14.0674 29.3334 11.7741 29.3334C10.3537 29.3796 8.93529 29.195 7.57408 28.7868C5.15741 28.008 3.37098 25.9546 2.93408 23.4534C2.72212 22.2388 2.63278 21.0059 2.66742 19.7734C2.66742 17.1068 2.66742 14.4401 2.66742 11.7734C2.62624 10.3602 2.81999 8.94988 3.24075 7.60009C4.01322 5.18171 6.07087 3.3967 8.57408 2.97342C10.1468 2.71444 11.7412 2.61171 13.3341 2.66675C14.2274 2.66675 15.1208 2.66675 16.0008 2.66675C17.8141 2.66675 19.6408 2.66675 21.4541 2.66675C23.1452 2.68427 24.7945 3.19391 26.2008 4.13342C27.7841 5.25568 28.8316 6.98385 29.0941 8.90675C29.2901 10.3737 29.3704 11.8539 29.3341 13.3334C29.3341 15.5868 29.3341 17.8934 29.3341 20.2001ZM26.6674 9.22675C26.4195 7.2851 24.96 5.71829 23.0407 5.33342C21.8314 5.11394 20.6027 5.0201 19.3741 5.05342C17.1341 5.05342 14.8808 5.05342 12.6274 5.05342C11.488 5.04645 10.3503 5.14015 9.22742 5.33342C7.43568 5.55701 5.9533 6.83438 5.46742 8.57342C5.18321 9.69238 5.06196 10.8465 5.10742 12.0001C5.10742 13.8134 5.10742 15.6268 5.10742 17.4401C5.06946 19.0912 5.1318 20.7432 5.29408 22.3868C5.38616 24.4824 6.89217 26.2468 8.94742 26.6668C10.1653 26.889 11.4036 26.9784 12.6408 26.9334C14.8807 26.9334 17.103 26.9334 19.3074 26.9334C20.4642 26.9476 21.6199 26.8584 22.7607 26.6668C24.2439 26.4729 25.536 25.56 26.2141 24.2268C26.6148 23.3469 26.8282 22.3934 26.8408 21.4268C26.9474 19.6134 26.9341 17.7868 26.9207 15.9734C26.9207 14.8534 26.9207 13.7334 26.9207 12.6134C26.9153 11.48 26.8306 10.3484 26.6674 9.22675ZM16.0008 22.8401C13.2216 22.8399 10.7177 21.1613 9.6618 18.5906C8.6059 16.0198 9.20705 13.0659 11.1837 11.1123C13.1604 9.15876 16.1211 8.59233 18.6793 9.67835C21.2375 10.7644 22.8865 13.2878 22.8541 16.0668C22.8247 19.8266 19.7607 22.8549 16.0008 22.8401ZM23.1208 10.4934C22.2328 10.4862 21.5147 9.76809 21.5074 8.88009C21.5147 7.99428 22.2349 7.28006 23.1208 7.28009C23.5485 7.27252 23.9606 7.44096 24.2606 7.74599C24.5606 8.05101 24.7221 8.46585 24.7074 8.89342C24.7074 9.77189 23.9992 10.4861 23.1208 10.4934V10.4934ZM16.0008 11.5601C13.5486 11.5601 11.5608 13.5479 11.5608 16.0001C11.5608 18.4522 13.5486 20.4401 16.0008 20.4401C18.4529 20.4401 20.4408 18.4522 20.4408 16.0001C20.4334 13.551 18.4499 11.5674 16.0008 11.5601V11.5601Z" fill="black"/>
+</svg>
+</a>
+        <a href="https://twitter.com/search?q=%23NationalSaladMonth" target="_blank"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.0665 26.8001C21.0665 26.8001 26.6665 18.4001 26.6665 11.2001C26.6665 10.9334 26.6665 10.6667 26.6665 10.5334C27.7332 9.7334 28.6665 8.80006 29.3332 7.7334C28.3999 8.1334 27.3332 8.40006 26.1332 8.5334C27.3332 7.86673 28.1332 6.80006 28.5332 5.46673C27.4665 6.1334 26.2665 6.5334 25.0665 6.80006C23.0665 4.66673 19.5999 4.5334 17.3332 6.66673C15.8665 8.00006 15.3332 10.0001 15.7332 11.8667C11.3332 11.6001 7.3332 9.60006 4.5332 6.1334C3.06654 8.66673 3.86654 11.8667 6.26654 13.4667C5.3332 13.4667 4.5332 13.2001 3.7332 12.8001C3.7332 12.8001 3.7332 12.8001 3.7332 12.9334C3.7332 15.6001 5.59987 17.7334 8.1332 18.2667C7.3332 18.5334 6.5332 18.5334 5.59987 18.4001C6.26654 20.6667 8.39987 22.1334 10.6665 22.1334C8.66654 23.6001 6.39987 24.5334 3.86654 24.5334C3.46654 24.5334 2.9332 24.5334 2.5332 24.4001C5.19987 26.0001 8.1332 26.8001 11.0665 26.8001" fill="black"/>
+</svg>
+</a>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>NationalSaladMonth <a data-hashtag="#NationalSaladMonth" class="copy-button copy-hashtag" href="#">copy</a></h3>
+      <p>Crisp and refreshing salads are perfect as the weather heats up this summer. Grab your favorite dressing because May is National Salad Month.</p>
+    </div>
+  </div>
+  
+</div>
+
+<div id="topics" class="section">
+  <h3>Upcoming Topics</h3>
+
+  
+
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🛣</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">May–June</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Roadtrip Season</h3>
+      <p>End of May through June marks the beginning of roadtrip season. Auto businesses lean into vacation specials, oil changes, tire specials, rental vehicles, and more. RV and Camper sales were up a drastic amount in 2020 — while we may not see new purchases as high as last year, we're bound to see camper makeovers and a need to make traveling and working on the road easier for the whole family. #CamperRenovation #CamperLife #RoadTrippin&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Lean into prepping the family vehicle for long car rides. Ideas for entertaining littles in the car, car-approved snacks, and tips for roadside emergencies work great during this season. When posting for RV or Camper customers, consider small space hacks or tips for bringing work on the road. Showcasing local spots to visit for a long weekends help followers plan obtainable vacations without any huge commitments.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">💸</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">May 17</span>
+        <span class="tile_aside_secondary">Monday</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Tax Day</h3>
+      <p>Tax Day is traditionally known as the day on which individual income tax returns are due to be submitted to the federal government. Similar to last year, there has been an extension on Tax Day. It now falls on May 17.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">This content is useful for: Businesses that deal in financials, real estate agencies/brokers, retail spaces that capitalize on customers receiving tax returns.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">⛳️</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">May 20–23</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>PGA Championship</h3>
+      <p>The PGA Championship is an annual golf tournament conducted by the Professional Golfers' Association of America. It is one of the four major championships in professional golf.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/1269825655/PGA+Championship+2020">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Please view KB guidelines for trademark phrases to avoid.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🦷</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Entire Month</span>
+        <span class="tile_aside_secondary">May</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>National Dental Care Awareness Month</h3>
+      <p>During the month of May, National Dental Care Month takes time to remind us of the importance of caring for our pearly whites.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">The start of the summer is a great time for a cleaning or preventative dental work. With events like graduations, family reunions. and vacations coming up, making sure your smile is in top shape is crucial.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🏡</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Entire Month</span>
+        <span class="tile_aside_secondary">May</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Spring Housing Market</h3>
+      <p>Spring is typically the best time to prep for the busy real estate marekt ahead (March - June). A few things folks do to prepare: renovate the backyard, tackle spring cleaning and decluttering (the first step to staging a home), explore areas for potential rental properties.&nbsp;</p>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌷</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Entire Month</span>
+        <span class="tile_aside_secondary">May</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Backyard Projects</h3>
+      <p>Spring is the best time to start backyard projects like pool installations or new landscaping before summer. #backyardreno&nbsp;</p>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🤧</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Entire Month</span>
+        <span class="tile_aside_secondary">May</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Allergy Season</h3>
+      <p>Seasonal allergies can occur year-round for some, but many experience symptoms in the spring when allergens like mold spores and pollen from trees, grasses, or weeds are released into the air. Trees begin producing pollen early in spring, followed by grass later on in the season. A particularly rainy spring season can also result in more rapid plant growth, leading to a spike in mold spores around this time.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Pets who spend time outside can experience seasonal allergy symptoms. Do your health and wellness customers specialize in allergens or have an allergist on staff? Keep in mind not to promote "cures or remedies" to avoid breaking FB's content guidelines.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🎓</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Entire Month</span>
+        <span class="tile_aside_secondary">May</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Graduation Season</h3>
+      <p>Starting in May many HS and college seniors are likely to celebrate their graduation with backyard parties, zoom/virtual celebrations, and planning senior trips after graduation.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">This content is especially relevant for Restaurant, Florists, Beauty (Salon and Spa), and Retail customers.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🏡</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Hosting From Home</h3>
+      <p>While virtual meetups aren't going anywhere, folks are looking forward to hosting close family and friends in the somewhat near future. Think spruced up social spaces, fresh furniture ideas, and tips to get all that clutter under control.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">People are planning—and purchasing—for their post-quarantine lives. Consider how your customers can help. Think furniture DIY and inspo, potential first meals they'll serve, and outdoor living spaces.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🥰</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Values Matter Most</h3>
+      <p>The pandemic has put everyone in touch with what matters. People are more grounded in their values than ever—and they want the world to see it.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Does your customer mention any particular values in their welcome call or in their brand kit? Are they passionate about the planet and making eco-conscious decisions? Do they work with the local community in any way to give back?</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🎀</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Best Dressed</h3>
+      <p>Loungewear may still reign supreme, but people are planning for future events. Weddings, vacations, casual get-togethers are top-of-mind for many.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">How can your customer help those planning for their first events post-quarantine? Think eretail or businesses in the wedding industry.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">👰</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Wedding Season</h3>
+      <p>June is typically considered peak wedding season. Couples will be finalizing details and arranging the final touches of their big day. Many potential wedding guests are already thinking about what they'll wear and how they'll travel to venues. The industry is seeing many rescheduled wedding due to Covid-19 and leading to some being downsized or changed before the event.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">A few things to consider this season: The rise in micro weddings (under 50 people), wedding gifts, dress cleaning/tailoring, video venue tours, photography sessions, and catering events/tastings.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🏋️‍♂️</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Everyday Wellness</h3>
+      <p>A shift to natural, shorter movement being incorporated thorughout the day rather than spending hours in the gym is on the rise. Activiites like biking, cleaning, and gardening set a new exercise model for many. Look to promote movement as accessible activities that can be attainably woven through the week.&nbsp;</p>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌅</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Morning Rituals</h3>
+      <p>The time spent at home in the past year has allowed folks to fine-tune their morning routines. With many gaining minutes to hours back in their day from the time not spent commuting, there's been a shift in focus on how to spend the first hours of the day. Breakfast is making a big comeback for many. Morning workouts, mediations, and yoga flows allow folks to start their day with less stress and more focus. Specialty coffee drinks made from an at-home coffee bar have found their place too.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Do your health and wellness customers offer online meditations or yoga flows to tune into? Or maybe coffee shops offer a barista class or want to hear about the kinds of drinks folks have been trying to master at home. Think about how your customers can make morning routines that much more enjoyable for consumers.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">👩‍🍳</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Anyone Can Cook</h3>
+      <p>Limited dining options and quarantine in 2020 taught many folks how to take the fate of weeknight dinners into their own hands. In 2021, we're seeing the result of millions of home chefs flexing their skills and wanting to push their kitchen-prowess further. From new cookbooks to viral Tik Tok recipes, we'll see the cooking community come together more and more this year.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">How can you engage with at-home chefs or those looking to expand their palate.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🍲</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Meal Prep Comeback</h3>
+      <p>During quarantine, many loosened up their strict meal prep routines. However, we're seeing more and more folks ease back into meal prep.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">At the core of meal prep is the sentiment of being prepped and prepared for the week. How can your customers help consumers achieve this?</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌱</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Gardeners Rejoice</h3>
+      <p>This horticultural hobby shows no signs of slowing down this year. While May is peak gardening season, now is the time to plan and plant early crops. Things like herb gardens, home-grown produce, and perfecting lawn care will all be top of mind.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Do your customers offer any gardening services, weed/pest control services, or tips for yard maintenance? Maybe they can offer ways to use home-grown veggies in healthy recipes or guidance around the stress relieving properties of gardening.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">✈️</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Travel Planning</h3>
+      <p>70% of consumers are planning vacations this year. That means a larger audience for our consumers to connect with. Weekend trips or staycations are trending this year likely in more rural or secluded destinations.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Now's the time to showcase the value our travel customers have to offer. Why choose their services? Why choose to stay with them rather than a brand they've stayed with before? Look to specific services or details about your travel customers that help them stand out. Also don't be afraid to think outside the box when it comes to travel planning (think boarding pets, vehicle storage, packing tips, or guides to local areas).</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🏫</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>End of the School Year</h3>
+      <p>The end of the school year symbolically kicks off the summer season for many families in the US. Timing varies across country.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Prep for summer vacations, summer camps, swimming lessons, and outdoor activities kicks off early-mid may. Businesses tend to lean into start of summer specials and promotions to capitalize on the need for new summer clothing, activities, and travel.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🖥</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Trending</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Home offices</h3>
+      <p>Looks like remote work is a permanent, accessible solution for many! Home offices are going to be a priority for home buyers.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Think of the educational content your customer could offer about home office design trends -- soothing colors, natural decor, access to sunlight/fresh air,  or even smart tech solutions. Engage with followers by asking your audience to share details about their home office spaces.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+
+
+</div>
+<div id="holidays" class="section">
+  <h3>Holidays</h3>
+
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🇺🇸‍</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Monday</span>
+        <span class="tile_aside_secondary">May 31</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Memorial Day</h3>
+      <p>Memorial Day is a federal holiday commemorating the people who died while serving in the country's armed forces. It also marks the unofficial start of the summer vacation season. Since this day has two (tonally very different) meanings in American culture, it’s customary to honor this day in a multitude of ways. Some participate in community parades, which are tributes to those who have died while serving (like ceremonies at memorials and cemeteries or tribute concerts). Some celebrate the kick-off to summer with outdoor BBQs, spending time in the sunshine, or vacations.&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Avoid scheduling content on Memorial Day unless requested by the customer.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+
+</div>
+<div id="posts" class="section">
+  <h3>Featured Posts</h3>
+  
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="https://passport.mainstreethub.com/location/72963/content/97503754-eab8-4ad5-a76e-e029a6db64b5"><img src="https://media.mainstreethub.com/media/a5a16144-423f-444b-8d99-f48bfee611f2?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Itching to take a road trip? Let us make sure your car's interior is spotless first. That way, hours in the car will feel like you're lounging at home! #CarWash</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Auto • Product/Service</li>
+        <li class="tile_meta__author">Kaitlin Morley</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Addressing a specific consumer need in a creative way that drives people to stop by for a car wash!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="https://passport.mainstreethub.com/location/45654/content/79669b6d-39a1-45b8-ba8a-5fd589d535ed"><img src="https://media.mainstreethub.com/media/02bdc96f-8372-41c2-9807-1804358538b1?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">With 30 acres of property and a state-of-the-art parts locating system, you're sure to find exactly what you need.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Auto • Product/Service</li>
+        <li class="tile_meta__author">Alaina Johnson</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Creative use of key details about the business to really demonstrate the scope of their inventory. Leaves room for future posts to get into more info about the location and the tool that's mentioned.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="https://passport.mainstreethub.com/location/36470/content/b5e3b9ea-2f0e-4b14-a3dd-c19c9a88bd36"><img src="https://media.mainstreethub.com/media/e158f717-f42d-4760-bb3f-5fa8ab919ac2?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Here at Automotive Workbench, we love a good challenge! No job is too big or too small for our ASE-certified technicians.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Auto • About the Business</li>
+        <li class="tile_meta__author">Madison Holloway</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Going beyond a straightforward concept by tying in specific certifications the customer has. Awesome!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="https://passport.mainstreethub.com/location/56865/content/63f15134-ec37-4129-8c07-4a3f8716502f"><img src="https://media.mainstreethub.com/media/d9815acf-e589-4bca-9312-94b085ba56c9?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">With our unique approach to holistic healing and acupuncture, we’re able to help our guests restore their quality of life to its maximum potential.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Health and Wellness • About the Business</li>
+        <li class="tile_meta__author">Amanda Aguirre</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Addressing the specific holistic health services this customer provides as well as their general benefits -- but not making concrete health claims.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="https://passport.mainstreethub.com/location/80554/content/ac1a0c1c-1231-4f86-8317-e382d03567b0"><img src="https://media.mainstreethub.com/media/0bd2c239-e9e0-47db-bc7e-7d0b2668cd1f?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Does your pet need medication administered? No problem -- we can make sure they stay happy and healthy while you're gone. #WalnutCreekDogWalking #WalnutCreekPetCare #Catsitter #VetTechPetCare #PetCare #ProfessionalPetCare #Bayareapetsitters</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Pets • Product/Service</li>
+        <li class="tile_meta__author">Deidre Rodriguez</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Addressing a unique consumer need this customer can meet: Caring for pets with medical needs while owners are out of town.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="https://passport.mainstreethub.com/location/79445/content/d0885f6a-7787-4c7d-a28e-2e5b1cd95d81"><img src="https://media.mainstreethub.com/media/a396b68f-2da1-4aca-9fc2-e9aa02c47f12?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Our medication reminders are always here to help keep you on track.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Health and Wellness • Product/Service</li>
+        <li class="tile_meta__author">Emily Rutan</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Nice way to promote an aspect of this home healthcare customer's services: Helping people manage their medication.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="https://passport.mainstreethub.com/location/59993/content/0f64f2f4-538f-4620-9984-20c443743100"><img src="https://media.mainstreethub.com/media/8a3c4fc6-f002-4016-bb9f-5bea895a3ff4?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">We know what women want: A supportive, accountable fitness community to help them reach their goals! That's why we offer a women's-only boot camp program. Learn more and join at http://fit4lifefarm.com. #f4lforcetraining #fit4lifefarm</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Health and Wellness • Product/Service</li>
+        <li class="tile_meta__author">Lacey Morris</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Creative way to promote this customer's training programs!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="https://passport.mainstreethub.com/location/61691/content/c4bba4e6-4801-48e3-8c33-42bd2dda884f"><img src="https://media.mainstreethub.com/media/cf3413b3-8fc5-4a3e-823b-c22833400410?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Would you like a spot of Columbian coffee in a heated mug to jump-start an amazing morning in Churchtown?</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Hotel • About the Business</li>
+        <li class="tile_meta__author">Jose Rodriguez</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Super creative use of info about this hotel and a picture from their photo shoot. I'm booking my stay!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- <p>View more posts by selecting a vertical or subvertical in the left sidebar.</p> -->
+  <p><a href="/posts">View Post Gallery to see all posts »</a></p>
+
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+</div>
+<div class="content-aside" id="right-side-nav">
+  <h4>Jump to a section:</h4>
+  <ul>
+    <li><a href="#hashtags">Hashtags</a></li>
+    <li><a href="#topics">Upcoming Topics</a></li>
+    <li><a href="#holidays">Holidays</a></li>
+    <li><a href="#posts">Posts</a></li>
+  </ul>
+</div>
+
+  </div>
+
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

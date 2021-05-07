@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>The Content Depot</title>
+  <meta name="title" content="The Content Depot">
+  <meta name="description" content="A curated collection of ideas for your next post.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://godepot.co/">
+  <meta property="og:title" content="The Content Depot">
+  <meta property="og:description" content="A curated collection of ideas for your next post.">
+  <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700;800&family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Content Depot" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/assets/js/interaction.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.copy-hashtag').click(function(){
+        var hashtag = $(this).data('hashtag');
+        copyToClipboard(hashtag);
+        var chloe = this;
+        $(chloe).addClass('copy-copied').text("Copied!");
+        setTimeout(function(){
+          $(chloe).removeClass('copy-copied').text("Copy");
+        }, 2000);
+
+        return false;
+      });
+
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(element).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+
+      $(document).ready(function() {
+          $(".sidebar ul a").each(function() {
+            // console.log( $(this).attr("href") + " ==== " + window.location.href);
+              if ($(this).attr("href") == window.location.href) {
+                  $(this).addClass("active");
+              }
+          });
+      });
+
+
+    });
+  </script>
+
+</head>
+<body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="sidebar">
+  <h2>Overview</h2>
+  <ul>
+    <li><a class="" href="/">Home</a></li>
+    <li><a class="" href="/posts">Post Gallery</a></li>
+  </ul>
+
+  <h2>Browse by vertical</h2>
+  <ul>
+    <li><a class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a class="" href="/verticals/home-services">Home Services</a>
+      <ul>
+        <li><a class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a class="" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a class="" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a class="active" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- <ul class="nav">
+    <li class="nav_title">Home</li>
+    <li><a href="/#hashtags">Hashtags</a></li>
+    <li><a href="/#topics">Upcoming Topics</a></li>
+    <li><a href="/#holidays">Holidays</a></li>
+    <li><a href="/#posts">Post Gallery</a></li>
+    <li class="nav_title">Verticals</li>
+    <li><a href="/verticals/professional-services">Professional Services</a></li>
+  </ul> -->
+</div>
+
+<div class="container">
+
+  <div class="container-inner clearfix">
+    <p class="breadcrumb"><a href="/verticals/home-services">&larr; Home Services</a></p>
+
+<h1>Plumbing</h1>
+
+<div class="section">
+  <h3>Upcoming Topics</h3>
+
+  
+
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">💦</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Leak Repair</h3>
+      <p>Springtime has the habit of bringing turbulent weather. Many homeowners struggle with leaky pipes and drains. A few signs of leaky pipes: low water pressure, damaged walls or ceilings, a big water bill increase, mold or mildew, or an unexplained odor.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499057101/Plumbers">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Educating followers on the signs of leaky pipes and what to do if they encounter them is a great start for posting.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🚰</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>New construction plumbing</h3>
+      <p>The spring housing market means an influx of new homes needing plumbing installation or updates/repairs to older plumbing in a newly-purchased home.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499057101/Plumbers">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Does your customer offer new installation warranties or discounts?</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌧</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Spring Floods</h3>
+      <p>Springtime showers can mean trouble for those located in flood zones. Flooded homes, basements, garages, etc. can mean a quick call for emergency plumbing services.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499057101/Plumbers">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Look to see if your customer offers emergency plumbing services or if they have a special phone number for 24/7 service.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="section">
+  <h3>Featured Posts</h3>
+  
+  
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/886899db-0cbe-48a9-a21b-308b85441590?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Since our business has been HomeAdvisor Screened & Approved for over 5 years, our customers know they can count on us to have transparent business practices, years of experience, and the proper licensing for the work we do.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Plumbing • About the Business</li>
+        <li class="tile_meta__author">Gabrielle Medina</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">This is an awesome certification to promote. This kind of post also works well with a customer image, especially if any of them are related to the certification (but a service image will also work).</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/75046751-9a94-4792-9bf9-805a1f3303b9?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Through multiple family generations and over 65 years, we have proudly helped commercial and residential customers throughout Missoula and Ravalli County with their septic needs.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Plumbing • About the Business</li>
+        <li class="tile_meta__author">Allison Randel</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Going beyond a general statement about this team by including unique business info that really makes them stand out (plus a local connection to make the caption even more specific).</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/36119b02-9641-4173-a0ac-2e900441d4ad?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Low water pressure and slow drainage can be indicators of bigger plumbing problems. Let me take a look at your home to ensure that everything is flowing smoothly.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Plumbing • Product/Service</li>
+        <li class="tile_meta__author">Megan Martinez</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Framing plumbing service with industry expertise. This could also be a way to showcase customer-specific info about setting up a service call!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/3debecb8-9233-4321-8465-d1bb7de22a27?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">The biggest thing you can do to protect yourself from carbon monoxide (CO) poisoning is to install a CO detector in your home. For more info on how you can prevent carbon monoxide poisoning in your home, visit https://www.waldmanplumbing.com/.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Plumbing • Educational</li>
+        <li class="tile_meta__author">Rowan Miller</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">This content request has tons of helpful expertise related to choosing a carbon monoxide detector. The info could inform one or more educational posts from a variety of home services customers. Home safety tips in general are a great way to add variety while keeping up a customer's brand and voice!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+  </div>
+
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

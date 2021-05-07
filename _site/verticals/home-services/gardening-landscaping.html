@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>The Content Depot</title>
+  <meta name="title" content="The Content Depot">
+  <meta name="description" content="A curated collection of ideas for your next post.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://godepot.co/">
+  <meta property="og:title" content="The Content Depot">
+  <meta property="og:description" content="A curated collection of ideas for your next post.">
+  <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700;800&family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Content Depot" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/assets/js/interaction.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.copy-hashtag').click(function(){
+        var hashtag = $(this).data('hashtag');
+        copyToClipboard(hashtag);
+        var chloe = this;
+        $(chloe).addClass('copy-copied').text("Copied!");
+        setTimeout(function(){
+          $(chloe).removeClass('copy-copied').text("Copy");
+        }, 2000);
+
+        return false;
+      });
+
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(element).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+
+      $(document).ready(function() {
+          $(".sidebar ul a").each(function() {
+            // console.log( $(this).attr("href") + " ==== " + window.location.href);
+              if ($(this).attr("href") == window.location.href) {
+                  $(this).addClass("active");
+              }
+          });
+      });
+
+
+    });
+  </script>
+
+</head>
+<body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="sidebar">
+  <h2>Overview</h2>
+  <ul>
+    <li><a class="" href="/">Home</a></li>
+    <li><a class="" href="/posts">Post Gallery</a></li>
+  </ul>
+
+  <h2>Browse by vertical</h2>
+  <ul>
+    <li><a class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a class="" href="/verticals/home-services">Home Services</a>
+      <ul>
+        <li><a class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a class="active" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a class="" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a class="" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- <ul class="nav">
+    <li class="nav_title">Home</li>
+    <li><a href="/#hashtags">Hashtags</a></li>
+    <li><a href="/#topics">Upcoming Topics</a></li>
+    <li><a href="/#holidays">Holidays</a></li>
+    <li><a href="/#posts">Post Gallery</a></li>
+    <li class="nav_title">Verticals</li>
+    <li><a href="/verticals/professional-services">Professional Services</a></li>
+  </ul> -->
+</div>
+
+<div class="container">
+
+  <div class="container-inner clearfix">
+    <p class="breadcrumb"><a href="/verticals/home-services">&larr; Home Services</a></p>
+
+<h1>Gardening &amp; Landscaping</h1>
+
+<div class="section">
+  <h3>Upcoming Topics</h3>
+
+  
+
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌹</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Entire Month</span>
+        <span class="tile_aside_secondary">June</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>National Rose Month</h3>
+      <p>June is National Rose Month. With over 150 different species throughout North America, roses are in peak bloom in June. They are a hardy plant that can be added to any landscape. #NationalRoseMonth&nbsp;</p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Landscaping really kicks it up a notch as gardens come in full bloom. Consider educating followers on the care and keeping of different varieties of roses.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">💐</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">June 1-7</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>National Garden Week</h3>
+      <p>National Garden Week takes place the first full week in June every year. Gardens provide fresh fruits and vegetables, beautify neighborhoods and communities and provide social and physical activities throughout the year. #NationalGardenWeek&nbsp;<a href="https://www.gardenclub.org/national-garden-week#:~:text=National%20Garden%20Week%3A%20June%206%2D12%2C%202021">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">When posting about National Garden Week, consider the hard work many people put into their gardens last year and how they can continue the upkeep this season. Consumers may celebrate with an update to their home's landscaping or much-needed maintenance.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌱</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary"></span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>The gift of lawn care</h3>
+      <p>As we move towards Mother and Father's Day season, here are seven types of people who would love lawn care as a gift: ▸ Someone in Need (Someone who is a busy person or isn’t physically able); ▸ The Amateur Landscaper (The person who wants a beautiful yard and enjoys working in it but struggles to bring it all together); ▸ Hard-Working (Give the gift of more time to relax and let the professionals handle the work); ▸ A Newbie Homeowner (Lawn care services make a great housewarming gift); ▸ New Parents (With a new schedule full of new responsibilities, hiring a lawn care service will go a long way to helping them settle in to parenthood. ▸ Providing a lawn care service would take a major task off their plate to focus on the new addition); ▸ Someone Selling Their Home (Help sell their home with a beautiful lawn while it’s on the market. Great landscaping and turf go a long way to create curb appeal); ▸ The Person Who Has Everything (Most of us have that person in our life who has everything. Give them the gift of a beautiful, stress-free lawn.)&nbsp;</p>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌳</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Backyard Projects</h3>
+      <p>Spring is the best time to start backyard projects like pool installations or new landscaping before summer. #backyardreno&nbsp;</p>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌾</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Warm Weather Weeds</h3>
+      <p>As weather gets warmer this spring, weeds of all shapes and sizes begin to bloom.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499024735/Landscaping">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Some customers may offer reocurring yard maintenance to keep yards looking great all spring and summer.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🏖</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Outdoor Living Upgrade</h3>
+      <p>Getting ready for poolside dinners and days spent outside is the perfect opportunity to refresh outdoor living spaces — that's where our outdoor lighting customers come in. Pool lighting, advanced lighting system in gardens and yards, and professionally lit gazebos are all on the top of mind over the next few months.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499287083/Outdoor+Lighting">Learn more »</a></p>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌴</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Tricky Trees</h3>
+      <p>After a season of winter weather and storms, folks begin to realize problem areas in their own backyard. Trees leaning dangerously close to the house, trees that have fallen over the last few months, or tree that need to be trimmed to keep residents safe are all top mind for new and tenured home owners.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499188478/Tree+Care">Learn more »</a></p>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="section">
+  <h3>Common Terms & Phrases</h3>
+  
+  
+  <div class="tile">
+    <div class="tile_body">
+      <h3>Common Early Spring Weeds</h3>
+      <p>Dandelions, White or Dutch Clover, Hairy Bittercress&nbsp;</p>
+    </div>
+  </div>
+  
+  <div class="tile">
+    <div class="tile_body">
+      <h3>Hardscape Elements</h3>
+      <p>Walkways, Driveways, Patios, Swimming pools, Sprinkler systems, Fountains, Stone benches, Gates, Flagstone and other rocks, Arbors&nbsp;</p>
+    </div>
+  </div>
+  
+  <div class="tile">
+    <div class="tile_body">
+      <h3>Softscape Elements</h3>
+      <p>Grass, Trees, Shrubs, Flowers, Soil, Vegetable gardens&nbsp;</p>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+<div class="section">
+  <h3>Featured Posts</h3>
+  
+  
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/eed0bd49-55e1-4a70-a342-b1d2bced257a?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Not sure if we can help you out? We specialize in full-service, white glove, landscaping, sprinkler design, and lawn maintenance.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Gardening Landscaping • Product/Service</li>
+        <li class="tile_meta__author">Kaitlin Morley</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Highlighting this landscaping customer's services in a specific way to target their various intended audiences.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/1d775ba3-30d8-45e9-9652-0560cec8332d?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">What's your plan for managing your lawn this summer? If you see things like this, what will you do? Call us and let's make a plan to get your yard looking the best it can be for the Summer of '21!</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Gardening Landscaping • Product/Service</li>
+        <li class="tile_meta__author">Michael Greeson</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Taking a unique approach to encourage people to plan for summer lawncare.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/44e61853-cbcc-423c-b4b5-2c9b44ea0dac?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">No need to wait around for grass to grow before having the lush yard you've always wanted! We can help you establish a lawn from sod that will give you instant results.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Gardening Landscaping • Product/Service</li>
+        <li class="tile_meta__author">Madison Holloway</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Clearly presenting the benefit of this customer's product (sod) and why you'd choose it over other ways to care for your lawn.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/f058617b-c54a-4dcb-bfac-29eb548c7706?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Call a certified DEC/EPA-approved technician! We have been family owned and operated for many years, and we help others stay mosquito free.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Gardening Landscaping • Product/Service</li>
+        <li class="tile_meta__author">Omar Guzman</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Highlighting the customer's relevant certifications as well as the fact they're family-owned, plus a clear connection to the specific service they provide. This kind of post would also work well with a customer photo!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/85af26b1-f21a-4d02-a6ab-8a98c1b9bb89?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Have you tried our mushroom compost? It's the perfect foundation for your spring garden! To learn more, give us a call: (803) 691-9890.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Gardening Landscaping • Product/Service</li>
+        <li class="tile_meta__author">Logan Voss</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Clearly highlighting why you might need this type of compost the customer sells. A great way to go beyond referencing the photo and connect with a consumer need.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+  </div>
+
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

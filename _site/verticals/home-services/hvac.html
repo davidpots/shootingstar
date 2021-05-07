@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>The Content Depot</title>
+  <meta name="title" content="The Content Depot">
+  <meta name="description" content="A curated collection of ideas for your next post.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://godepot.co/">
+  <meta property="og:title" content="The Content Depot">
+  <meta property="og:description" content="A curated collection of ideas for your next post.">
+  <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700;800&family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Content Depot" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/assets/js/interaction.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.copy-hashtag').click(function(){
+        var hashtag = $(this).data('hashtag');
+        copyToClipboard(hashtag);
+        var chloe = this;
+        $(chloe).addClass('copy-copied').text("Copied!");
+        setTimeout(function(){
+          $(chloe).removeClass('copy-copied').text("Copy");
+        }, 2000);
+
+        return false;
+      });
+
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(element).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+
+      $(document).ready(function() {
+          $(".sidebar ul a").each(function() {
+            // console.log( $(this).attr("href") + " ==== " + window.location.href);
+              if ($(this).attr("href") == window.location.href) {
+                  $(this).addClass("active");
+              }
+          });
+      });
+
+
+    });
+  </script>
+
+</head>
+<body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="sidebar">
+  <h2>Overview</h2>
+  <ul>
+    <li><a class="" href="/">Home</a></li>
+    <li><a class="" href="/posts">Post Gallery</a></li>
+  </ul>
+
+  <h2>Browse by vertical</h2>
+  <ul>
+    <li><a class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a class="" href="/verticals/home-services">Home Services</a>
+      <ul>
+        <li><a class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a class="" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a class="active" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- <ul class="nav">
+    <li class="nav_title">Home</li>
+    <li><a href="/#hashtags">Hashtags</a></li>
+    <li><a href="/#topics">Upcoming Topics</a></li>
+    <li><a href="/#holidays">Holidays</a></li>
+    <li><a href="/#posts">Post Gallery</a></li>
+    <li class="nav_title">Verticals</li>
+    <li><a href="/verticals/professional-services">Professional Services</a></li>
+  </ul> -->
+</div>
+
+<div class="container">
+
+  <div class="container-inner clearfix">
+    <p class="breadcrumb"><a href="/verticals/home-services">&larr; Home Services</a></p>
+
+<h1>HVAC</h1>
+
+
+<div class="section">
+  <h3>Upcoming Topics</h3>
+
+  
+
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🥵</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Entire Month</span>
+        <span class="tile_aside_secondary">June</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Summer heat</h3>
+      <p>With summer ramping up, so do outside temperatures. Between May and June we see a sizeable increase in average temperature in areas that have typical summers. This means the need for potential emergency repairs, filter changes, and finding ways to keep homes cool without breaking the bank.&nbsp;</p>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🔧</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Spring Maintenance</h3>
+      <p>For many, A/C systems will click on for the first time since last summer. Scheduling routine maintenance can prevent pricey fixes down the road. Tasks often include: testing and cleaning the blower fan, checking the level of coolant in the cooling system, and testing the system’s thermostat and operation.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499351835/HVAC+Heating+Ventilation+and+Air+Conditioning#HVAC(Heating,Ventilation,andAirConditioning)-TypicalServicesProvided">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Try creating content about tips on signs of A/C trouble or promoting routine maintenance checks.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🆒</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>HVAC Installation</h3>
+      <p>The spring housing market means folks are getting units installed into new builds or upgrading systems in just-purchased older homes.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499351835/HVAC+Heating+Ventilation+and+Air+Conditioning#HVAC(Heating,Ventilation,andAirConditioning)-TypicalServicesProvided">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Installation warranties or maintenance deals are common this time of year with new systems being installed before summer. Check your customers website to see if they're running anything special.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🌞</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>Summer Prep</h3>
+      <p>Many home and business owners are looking for ways to make their HVAC systems more energy-efficient. Many HVAC customers provide energy-efficient alternatives.&nbsp;<a href="https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/499351835/HVAC+Heating+Ventilation+and+Air+Conditioning#HVAC(Heating,Ventilation,andAirConditioning)-TypicalServicesProvided">Learn more »</a></p>
+      
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">Check to see if your customer offers discounts on swapping to a more energy-efficient or newer model.</span></div></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="section">
+  <h3>Featured Posts</h3>
+  
+  
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/1220f897-0336-4fbe-ad19-ade16ed32021?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Spring is in the air, but what else is in your air? It's the perfect time to develop an understanding about your indoor air quality, and we're happy to test and suggest methods that can improve breathing in your home.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Product/Service</li>
+        <li class="tile_meta__author">Cecil Sparkman</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Using the seasonal connection and wordplay to highlight a specific service this customer offers.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/eec189dc-ec08-4a70-996e-3f881e08e9ac?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Now that it's peak allergy season, make sure your air vents are clean to keep those sneezes at bay! We can help improve the air quality in your home, so give us a ring at (585) 594-2328 if you need a hand.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Product/Service</li>
+        <li class="tile_meta__author">Gillian Golden</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Perfect stock photo and clear, helpful, seasonal CTA.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/c4a6a270-38ea-48a9-8f94-32494c2181b8?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">In Louisiana, spring brings the heat. 🔥 We'll help you make sure your AC is ready for the warm months ahead.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Product/Service</li>
+        <li class="tile_meta__author">Alaina Johnson</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">The customer's location adds a unique twist on this seasonal CTA that makes it especially relevant.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/f74bfb2e-95db-42c2-a75d-8d048c1000d8?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">We have several methods to improving your home's air quality, especially for those who have asthma or allergies! From UV lights, to humidifiers, to air purifiers, our team will be happy to help you find the right solution for your home!</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Product/Service</li>
+        <li class="tile_meta__author">Clara Pratt</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Highlighting this customer's range of services for air purification -- totally unique to this business, and addressing a fairly specific audience. This kind of content request can inspire a series of ongoing posts!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/5896362e-3705-41b5-888e-7e7b57ccafe8?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">This monitor picks up levels of mold and bacteria on surfaces. It helps us pinpoint the exact areas of your home that need sanitizing. Improve your home and the safety of your family and pets. Call (515) 218-0736 today!</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Product/Service</li>
+        <li class="tile_meta__author">Alyssa Bowholtz</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Content requests like this can be great context for future ongoing posts focused on the business's specific approach to home services.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/e54fc356-bc3b-4e5a-9d65-ad7971105b79?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Your HVAC system is made up of nine basic components: the furnace, the heat exchanger, the evaporator coil, the condensing unit, refrigerant tubes, the thermostat, ductwork, vents, and a heat pump. All of these parts work together to both cool and heat your home!</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Educational</li>
+        <li class="tile_meta__author">Kaitlin Morley</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">There's a lot of info here, but it definitely gives a sense of industry expertise. This could also help inspire a series of posts with fun facts about different parts of an HVAC system.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/d61d3bab-a7a6-4029-9ce3-85dc243d1f63?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Want to hear something awesome? We're doing 0% financing on AC installations for 60 months! #hvac #i45now #vanderfordair #galveston #buygalvestonfirst #galvestonisland #harriscounty #houston #htown</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Product/Service</li>
+        <li class="tile_meta__author">Ian Austin-Michaud</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Nice way to promote this customer's specific financing options. The attention-grabber is pretty simple, but it gets the job done!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/aa278d9f-0ab5-45e7-9cf6-3ca457197675?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Cigarette smoke, bacteria, and other viruses affecting your indoor air quality can easily be neutralized, trapped, and removed with an ozone-ionizer air cleaner. For further info, give our website a visit: http://totalcomfortmd.com/air-purifiers/.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Product/Service</li>
+        <li class="tile_meta__author">Olivia Rees</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">This content request has some great info about a specialty service other HVAC customers may offer: indoor air cleaning.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/288f6895-3f18-4179-9717-7c9669d453c3?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Aeroseal treatments reduce temperature differences between floors in your home and even make it easier to condition those hard-to-reach rooms. Call us to learn more about our Aeroseal duct treatments: (845) 628-2580.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">HVAC • Product/Service</li>
+        <li class="tile_meta__author">Madison Holloway</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Resourceful use of info from the customer notes to promote a unique aspect of their services!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+  </div>
+
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

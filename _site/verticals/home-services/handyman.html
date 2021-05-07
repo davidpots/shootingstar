@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>The Content Depot</title>
+  <meta name="title" content="The Content Depot">
+  <meta name="description" content="A curated collection of ideas for your next post.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://godepot.co/">
+  <meta property="og:title" content="The Content Depot">
+  <meta property="og:description" content="A curated collection of ideas for your next post.">
+  <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;700;800&family=Barlow:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="The Content Depot" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/assets/js/interaction.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.copy-hashtag').click(function(){
+        var hashtag = $(this).data('hashtag');
+        copyToClipboard(hashtag);
+        var chloe = this;
+        $(chloe).addClass('copy-copied').text("Copied!");
+        setTimeout(function(){
+          $(chloe).removeClass('copy-copied').text("Copy");
+        }, 2000);
+
+        return false;
+      });
+
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(element).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+
+      $(document).ready(function() {
+          $(".sidebar ul a").each(function() {
+            // console.log( $(this).attr("href") + " ==== " + window.location.href);
+              if ($(this).attr("href") == window.location.href) {
+                  $(this).addClass("active");
+              }
+          });
+      });
+
+
+    });
+  </script>
+
+</head>
+<body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="sidebar">
+  <h2>Overview</h2>
+  <ul>
+    <li><a class="" href="/">Home</a></li>
+    <li><a class="" href="/posts">Post Gallery</a></li>
+  </ul>
+
+  <h2>Browse by vertical</h2>
+  <ul>
+    <li><a class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a class="" href="/verticals/home-services">Home Services</a>
+      <ul>
+        <li><a class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a class="active" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a class="" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- <ul class="nav">
+    <li class="nav_title">Home</li>
+    <li><a href="/#hashtags">Hashtags</a></li>
+    <li><a href="/#topics">Upcoming Topics</a></li>
+    <li><a href="/#holidays">Holidays</a></li>
+    <li><a href="/#posts">Post Gallery</a></li>
+    <li class="nav_title">Verticals</li>
+    <li><a href="/verticals/professional-services">Professional Services</a></li>
+  </ul> -->
+</div>
+
+<div class="container">
+
+  <div class="container-inner clearfix">
+    <p class="breadcrumb"><a href="/verticals/home-services">&larr; Home Services</a></p>
+
+<h1>Handyman</h1>
+
+<div class="section">
+  <h3>Upcoming Topics</h3>
+
+  
+
+  
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">🤝</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">Seasonal</span>
+        <span class="tile_aside_secondary"></span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>A Helpful Hand</h3>
+      <p>Some small fixes are often needed before you close on a house. From switching light fixtures to fixing a leaky toilet, a handyman is perfect to call when there are multiple small fixes that need to get done quickly rather than calling multiple contractors.&nbsp;</p>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<div class="section">
+  <h3>Featured Posts</h3>
+  
+  
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/0185c366-7140-474d-9a6a-81046e10674c?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">I don't just work here. I live here, and I love helping my neighbors here in the Sacramento area create beautiful spaces and keep their households running smoothly. #916repairs #roseville #rocklin #lincoln #rosevillehandyman #citrusheights #canddhandyman #sacramentohandyman</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Handyman • About the Business</li>
+        <li class="tile_meta__author">Annie Cranford</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">Going beyond the idea of "I don't just work here, I live here" by connecting to the customer's specific services.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/87361a8b-53d6-4b69-bf63-a053ae773e8a?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Major appliances -- washers, dryers, refrigerators, stoves, etc. -- should always be plugged directly into the wall outlet. Avoid using surge protectors, plug strips, or extension cords. For other tips or help with your major appliances, call us at (203) 459-8855. #appliancerepair</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Handyman • Educational</li>
+        <li class="tile_meta__author">Robert Valenzuela</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">A basic but helpful tip that pairs nicely with a CTA based on the customer's services.</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="https://media.mainstreethub.com/media/0ae062ee-2204-408b-ad46-4605919e771d?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">Have you checked the seal on your oven? Without a proper seal, your oven can lose more than 20% of its heat while cooking. The result is food takes longer to cook and may cook unevenly.</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">Handyman • Educational</li>
+        <li class="tile_meta__author">Logan Voss</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">A unique tip that reflects the expertise of an appliance repair company. This could also inspire a CTA!</span></div></li>
+      </ul>
+    </div>
+  </div>
+  
+  
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+  </div>
+
+
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

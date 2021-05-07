@@ -1,0 +1,58 @@
+/* -- Reset -- */
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
+.clearfix::after { content: ""; clear: both; display: table; }
+
+html { scroll-behavior: smooth; }
+
+/*-- Type --*/
+body { font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 1.4; color: #333; background: #F5F7F8; }
+
+/* SHOOTING STAR */
+/* -- LAYOUT -- */
+/* A section is a horiztonal band/stripe/row on the page. Defaults to the <body> bg color but can have its own color. */
+/* If the page is at least 768px, center the content at that width. Otherwise it will be 100% wide. */
+/* If you want full width content no matter what, add class '.content-full' to any 'div.content' */
+/* new stuff from not 5 years ago */
+.feed-wrapper { position: relative; }
+
+@media (min-width: 1100px) { .feed-controls { width: 300px; float: right; } .feed-controls.fixed { position: fixed; top: 0; right: calc((100% - 1100px)/2); } .feed-main { width: 700px; float: left; } }
+
+@media (max-width: 1099px) { .feed-controls { display: none; } .feed-main { width: auto; float: none; } }
+
+.ss-container { width: 1100px; margin: 0 auto; position: relative; }
+
+@media (max-width: 1099px) { .ss-container { width: auto; } }
+
+/* -- */
+@media (min-width: 1100px) { article { position: relative; } article .primary { left: 150px; top: 0; width: 585px; } article .secondary { /* left: 0px; */ top: 0; width: 150px; height: 100px; } }
+
+/* Tiles */
+.tile { background: white; border-radius: 4px; height: 210px; margin: 0 0 16px 0; border: 1px solid #d4dbe0; }
+
+@media (max-width: 1099px) { .tile { margin-bottom: 8px; } }
+
+h3 { font-size: 21px; margin: 0 0 0 16px 0; color: #333; }
+
+h4 { font-size: 14px; margin: 0 0 16px 0; color: #aaa; text-transform: uppercase; font-weight: normal; }
+
+/* Planner UI - Date Area */
+.date_range h3 { padding-top: 32px; margin: 8px 0 4px 0; text-transform: uppercase; font-weight: 900; font-size: 18px; }
+
+.date_range h4 { margin: 0; }
+
+@media (max-width: 1099px) { .date_range { margin-bottom: 16px; } }
+
+/* Planner UI - Main Feed */
+.tile-wrapper { padding-top: 32px; }
+
+@media (max-width: 1099px) { .tile-wrapper { padding-top: 0; } }
+
+/* Planner UI - Calendar column */
+.feed-controls .tile-calendar { margin-top: 32px; }
+
+.tile-scheduled-posts--heading { margin-top: 32px; margin-bottom: 12px; }
+
+/*# sourceMappingURL=main2.css.map */
