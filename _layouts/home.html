@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="sidebar">
+  <h2>Overview</h2>
+  <ul>
+    <li><a class="{% if page.permalink == '/' %}active{% endif %}" href="/">Home</a></li>
+    <li><a class="{% if page.permalink == '/posts' %}active{% endif %}" href="/posts">Post Gallery</a></li>
+  </ul>
+
+  <h2>Browse by vertical</h2>
+  <ul>
+    <li><a class="{% if page.permalink == '/verticals/professional-services' %}active{% endif %}" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a class="{% if page.permalink == '/verticals/home-services' %}active{% endif %}" href="/verticals/home-services">Home Services</a>
+      <ul>
+        <li><a class="{% if page.permalink == '/verticals/home-services/carpentry' %}active{% endif %}" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/cleaning-services' %}active{% endif %}" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/construction-engineering' %}active{% endif %}" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/contractors' %}active{% endif %}" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/electrician' %}active{% endif %}" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/gardening-landscaping' %}active{% endif %}" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/handyman' %}active{% endif %}" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/hvac' %}active{% endif %}" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/moving' %}active{% endif %}" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/pest-control' %}active{% endif %}" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/plumbing' %}active{% endif %}" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a class="{% if page.permalink == '/verticals/home-services/tv-internet' %}active{% endif %}" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+      </ul>
+    </li>
+  </ul>
+  <!-- <ul class="nav">
+    <li class="nav_title">Home</li>
+    <li><a href="/#hashtags">Hashtags</a></li>
+    <li><a href="/#topics">Upcoming Topics</a></li>
+    <li><a href="/#holidays">Holidays</a></li>
+    <li><a href="/#posts">Post Gallery</a></li>
+    <li class="nav_title">Verticals</li>
+    <li><a href="/verticals/professional-services">Professional Services</a></li>
+  </ul> -->
+</div>
+
+<div class="container">
+
+  <div class="container-inner clearfix">
+    {{ content }}
+  </div>
+
+
+</div>

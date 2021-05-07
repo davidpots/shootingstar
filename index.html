@@ -1,0 +1,122 @@
+---
+layout: home
+permalink: "/"
+---
+<p class="breadcrumb"><a href="">&nbsp;</a></p>
+<h1>Home <span class="last_updated">Updated Friday, May 7</span></h1>
+
+<div class="content-area">
+
+<div id="hashtags" class="section">
+  <h3>Hashtags</h3>
+  {% assign hashtags_general = site.data.hashtags | where: "vertical", "General" %}
+  {% for hashtag in hashtags_general %}
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <span class="tile_hashtag">{% include icon-hashtag.svg %}</span>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_socialLinks">
+        <a href="https://www.instagram.com/explore/tags/{{hashtag.name}}/" target="_blank">{% include icon-instagram.svg %}</a>
+        <a href="https://twitter.com/search?q=%23{{hashtag.name}}" target="_blank">{% include icon-twitter.svg %}</a>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>{{hashtag.name}} <a data-hashtag="#{{hashtag.name}}" class="copy-button copy-hashtag" href="#">copy</a></h3>
+      <p>{{hashtag.description}}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<div id="topics" class="section">
+  <h3>Upcoming Topics</h3>
+
+  {% assign topics_general = site.data.topics | where: "vertical", "General" %}
+
+  {% for topic in topics_general %}
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">{{ topic.emoji }}</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">{{ topic.day }}</span>
+        <span class="tile_aside_secondary">{{ topic.date }}</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>{{ topic.name }}</h3>
+      <p>{{ topic.description }}&nbsp;{% if topic.url %}<a href="{{topic.url}}">Learn more »</a>{% endif %}</p>
+      {% if topic.posting_recommendation %}
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">{{ topic.posting_recommendation }}</span></div></li>
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+
+</div>
+<div id="holidays" class="section">
+  <h3>Holidays</h3>
+
+  {% for holiday in site.data.holidays %}
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">{{holiday.emoji}}‍</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">{{holiday.day}}</span>
+        <span class="tile_aside_secondary">{{holiday.date}}</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>{{holiday.name}}</h3>
+      <p>{{holiday.description}}&nbsp;{% if holiday.url %}<a href="{{holiday.url}}">Learn more »</a>{% endif %}</p>
+      {% if holiday.posting_recommendation %}
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">{{ holiday.posting_recommendation}}</span></div></li>
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+<div id="posts" class="section">
+  <h3>Featured Posts</h3>
+  {% assign filtered_posts = site.data.posts %}
+  {% for post in filtered_posts limit: 8 %}
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <a href="{{post.passport_link}}"><img src="{{post.media}}?width=150" /></a>
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">{{post.caption}}</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">{{post.vertical}} • {{post.category}}</li>
+        <li class="tile_meta__author">{{post.author}}</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">{{post.comment}}</span></div></li>
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
+  <!-- <p>View more posts by selecting a vertical or subvertical in the left sidebar.</p> -->
+  <p><a href="/posts">View Post Gallery to see all posts »</a></p>
+
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+
+</div>
+<div class="content-aside" id="right-side-nav">
+  <h4>Jump to a section:</h4>
+  <ul>
+    <li><a href="#hashtags">Hashtags</a></li>
+    <li><a href="#topics">Upcoming Topics</a></li>
+    <li><a href="#holidays">Holidays</a></li>
+    <li><a href="#posts">Posts</a></li>
+  </ul>
+</div>

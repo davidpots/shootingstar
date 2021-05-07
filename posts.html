@@ -1,0 +1,71 @@
+---
+layout: home
+permalink: /posts
+---
+
+<script src="/assets/js/jquery.js" type="text/javascript"></script>
+<script src="/assets/js/search-new.js" type="text/javascript"></script>
+
+<p class="breadcrumb"><a href="/">&larr; Home</a></p>
+
+<h1>Post Gallery <span class="last_updated">Updated Friday, May 7&nbsp;&nbsp;•&nbsp;&nbsp;<span class="numberTotalPosts"></span> total posts</span></h1>
+
+<p id="searchSummary"><span id="searchSummaryNumberFound"></span> results found for "<span id="searchSummaryTerm"></span>"&nbsp;&nbsp;<small>(<a id="searchSummaryClear" href="/posts">clear</a>)</small></p>
+
+<div class="content-area">
+
+    {% for post in site.data.posts %}
+    <div class="tile has_left_large clearfix" data-vertical="{{post.vertical}}" data-subvertical="{{post.subvertical}}" data-category="{{post.category}}" data-caption="{{post.caption}}" data-author="{{post.author}}">
+      <div class="tile_media_left">
+        <a href="{{post.passport_link}}"><img src="{{post.media}}?width=150" /></a>
+      </div>
+      <div class="tile_body">
+        <h4 class="caption">{{post.caption}}</h4>
+        <ul class="tile_meta">
+          {% if post.subvertical and post.subvertical != "General" %}
+            <li class="tile_meta__tag">{{post.vertical}} ({{post.subvertical}}) • {{post.category}}</li>
+          {% else %}
+            <li class="tile_meta__tag">{{post.vertical}} • {{post.category}}</li>
+          {% endif %}
+          <li class="tile_meta__author">{{post.author}}</li>
+          <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">{{post.comment}}</span></div></li>
+        </ul>
+      </div>
+    </div>
+    {% endfor %}
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+</div>
+<div class="content-aside post-gallery-aside">
+
+  <div>
+    <form action="/posts" method="get">
+      <input autofocus style="" type="text" id="search-box" name="query" placeholder="Search all posts...">
+      <input type="submit" value="Search" id="search-button" style="">
+    </form>
+  </div>
+
+  <h4>Filter by vertical:</h4>
+  <ul>
+    <li><a class="post-filter-link post-filter-link--vertical post-filter-link--all post-filter-link--active" href="#" data-vertical="All">All</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Automotive">Automotive</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Events and Activities">Events and Activities</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Health and Wellness">Health and Wellness</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Home Services">Home Services</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Pets">Pets</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Professional Services">Professional Services</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Restaurant">Restaurant</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Retail">Retail</a></li>
+    <li><a class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Spa and Salon">Spa and Salon</a></li>
+  </ul>
+  <h4>Filter by category:</h4>
+  <ul>
+    <li><a class="post-filter-link post-filter-link--category post-filter-link--all post-filter-link--active" href="#" data-category="All">All</a></li>
+    <li><a class="post-filter-link post-filter-link--category" href="#" data-category="About the Business">About the Business</a></li>
+    <li><a class="post-filter-link post-filter-link--category" href="#" data-category="Audience Participation">Audience Participation</a></li>
+    <li><a class="post-filter-link post-filter-link--category" href="#" data-category="Educational">Educational</a></li>
+    <li><a class="post-filter-link post-filter-link--category" href="#" data-category="Product/Service">Product/Service</a></li>
+    <li><a class="post-filter-link post-filter-link--category" href="#" data-category="Testimonial">Testimonial</a></li>
+  </ul>
+</div>

@@ -1,0 +1,78 @@
+---
+layout: home
+permalink: /verticals/home-services/contractors
+---
+
+<p class="breadcrumb"><a href="/verticals/home-services">&larr; Home Services</a></p>
+
+<h1>Contractors</h1>
+
+<div class="section">
+  <h3>Upcoming Topics</h3>
+
+  {% assign topics_contractors = site.data.topics | where: "subvertical", "Contractors" %}
+
+  {% for topic in topics_contractors %}
+  <div class="tile has_left has_right">
+    <div class="tile_media_left">
+      <div class="emoji_wrapper">{{ topic.emoji }}</div>
+    </div>
+    <div class="tile_media_right">
+      <span class="tile_aside_date">
+        <span class="tile_aside_primary">{{ topic.day }}</span>
+        <span class="tile_aside_secondary">{{ topic.date }}</span>
+      </span>
+    </div>
+    <div class="tile_body">
+      <h3>{{ topic.name }}</h3>
+      <p>{{ topic.description }}&nbsp;{% if topic.url %}<a href="{{topic.url}}">Learn more »</a>{% endif %}</p>
+      {% if topic.posting_recommendation %}
+      <ul class="tile_meta">
+        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">{{ topic.posting_recommendation }}</span></div></li>
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+
+<div class="section">
+  <h3>Common Terms & Phrases</h3>
+  {% assign phrases = site.data.phrases | where: "subvertical", "Contractors" %}
+  {% for phrase in phrases %}
+  <div class="tile">
+    <div class="tile_body">
+      <h3>{{ phrase.name }}</h3>
+      <p>{{ phrase.description }}&nbsp;{% if topic.url %}<a href="{{topic.url}}">Learn more »</a>{% endif %}</p>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<div class="section">
+  <h3>Featured Posts</h3>
+  {% assign filtered_posts = site.data.posts | where: "subvertical", "Contractors" %}
+  {% if filtered_posts.size == 0 %}
+    <p>There are no featured posts for this subvertical.</p>
+  {% else %}
+  {% for post in filtered_posts %}
+  <div class="tile has_left_large clearfix">
+    <div class="tile_media_left">
+      <img src="{{post.media}}?width=150" />
+    </div>
+    <div class="tile_body">
+      <h4 class="caption">{{post.caption}}</h4>
+      <ul class="tile_meta">
+        <li class="tile_meta__tag">{{post.subvertical}} • {{post.category}}</li>
+        <li class="tile_meta__author">{{post.author}}</li>
+        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">{{post.comment}}</span></div></li>
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>
