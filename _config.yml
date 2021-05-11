@@ -19,4 +19,4 @@ twitter_username: posty_sike
 github_username: posty_sike
 plugins:
 - jekyll-feed
-google_analytics: true
+google_analytics: false

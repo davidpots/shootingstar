@@ -25,12 +25,7 @@ permalink: /verticals/home-services
     </div>
     <div class="tile_body">
       <h3>{{ topic.name }}</h3>
-      <p>{{ topic.description }}&nbsp;{% if topic.url %}<a href="{{topic.url}}">Learn more »</a>{% endif %}</p>
-      {% if topic.posting_recommendation %}
-      <ul class="tile_meta">
-        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">{{ topic.posting_recommendation }}</span></div></li>
-      </ul>
-      {% endif %}
+      <p>{{ topic.description }}</p>
     </div>
   </div>
   {% endfor %}
@@ -42,12 +37,13 @@ permalink: /verticals/home-services
 
 <div class="section">
   <h3>Common Terms & Phrases</h3>
+  <p style="margin-top: -10px; opacity: 0.5">Consider educating your followers about these, as needed</p>
   {% assign phrases_homeServices = site.data.phrases | where: "vertical", "Home Services" %}
   {% for phrase in phrases_homeServices %}
   <div class="tile">
     <div class="tile_body">
       <h3>{{ phrase.name }}</h3>
-      <p>{{ phrase.description }}&nbsp;{% if topic.url %}<a href="{{topic.url}}">Learn more »</a>{% endif %}</p>
+      <p>{{ phrase.description }}</p>
     </div>
   </div>
   {% endfor %}
@@ -55,7 +51,7 @@ permalink: /verticals/home-services
 
 
 <div class="section">
-  <h3>Featured Posts</h3>
+  <h3>Example posts from small businesses</h3>
   {% assign filtered_posts = site.data.posts | where: "vertical", "Home Services" %}
   {% for post in filtered_posts %}
   <div class="tile has_left_large clearfix">
@@ -66,8 +62,6 @@ permalink: /verticals/home-services
       <h4 class="caption">{{post.caption}}</h4>
       <ul class="tile_meta">
         <li class="tile_meta__tag">{{post.subvertical}} • {{post.category}}</li>
-        <li class="tile_meta__author">{{post.author}}</li>
-        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">{{post.comment}}</span></div></li>
       </ul>
     </div>
   </div>

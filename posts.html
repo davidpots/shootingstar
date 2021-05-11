@@ -15,9 +15,9 @@ permalink: /posts
 <div class="content-area">
 
     {% for post in site.data.posts %}
-    <div class="tile has_left_large clearfix" data-vertical="{{post.vertical}}" data-subvertical="{{post.subvertical}}" data-category="{{post.category}}" data-caption="{{post.caption}}" data-author="{{post.author}}">
+    <div class="tile has_left_large clearfix" data-vertical="{{post.vertical}}" data-subvertical="{{post.subvertical}}" data-category="{{post.category}}" data-caption="{{post.caption}}">
       <div class="tile_media_left">
-        <a href="{{post.passport_link}}"><img src="{{post.media}}?width=150" /></a>
+        <img src="{{post.media}}?width=150" />
       </div>
       <div class="tile_body">
         <h4 class="caption">{{post.caption}}</h4>
@@ -27,8 +27,6 @@ permalink: /posts
           {% else %}
             <li class="tile_meta__tag">{{post.vertical}} • {{post.category}}</li>
           {% endif %}
-          <li class="tile_meta__author">{{post.author}}</li>
-          <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">{{post.comment}}</span></div></li>
         </ul>
       </div>
     </div>

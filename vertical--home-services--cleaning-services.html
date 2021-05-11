@@ -25,12 +25,7 @@ permalink: /verticals/home-services/cleaning-services
     </div>
     <div class="tile_body">
       <h3>{{ topic.name }}</h3>
-      <p>{{ topic.description }}&nbsp;{% if topic.url %}<a href="{{topic.url}}">Learn more »</a>{% endif %}</p>
-      {% if topic.posting_recommendation %}
-      <ul class="tile_meta">
-        <li class="tile_meta__recommendation has_hover">Posting Recommendation<div class="flyout_wrapper"><span class="flyout_content">{{ topic.posting_recommendation }}</span></div></li>
-      </ul>
-      {% endif %}
+      <p>{{ topic.description }}</p>
     </div>
   </div>
   {% endfor %}
@@ -39,7 +34,7 @@ permalink: /verticals/home-services/cleaning-services
 
 
 <div class="section">
-  <h3>Featured Posts</h3>
+  <h3>Example posts from small businesses</h3>
   {% assign filtered_posts = site.data.posts | where: "subvertical", "Cleaning Services" %}
   {% if filtered_posts.size == 0 %}
     <p>There are no featured posts for this subvertical.</p>
@@ -53,8 +48,6 @@ permalink: /verticals/home-services/cleaning-services
       <h4 class="caption">{{post.caption}}</h4>
       <ul class="tile_meta">
         <li class="tile_meta__tag">{{post.subvertical}} • {{post.category}}</li>
-        <li class="tile_meta__author">{{post.author}}</li>
-        <li class="tile_meta__notes has_hover">Editor’s Notes<div class="flyout_wrapper"><span class="flyout_content">{{post.comment}}</span></div></li>
       </ul>
     </div>
   </div>
