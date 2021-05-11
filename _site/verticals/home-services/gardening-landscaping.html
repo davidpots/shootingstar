@@ -33,7 +33,9 @@
 
   <link rel="stylesheet" href="/assets/main.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="/assets/js/interaction.js"></script>
 
   <script>
@@ -68,9 +70,25 @@
           });
       });
 
+      $(document).ready(() => {
+        $('a').click(e => {
+          const evt = $(e.target).attr('data-click-eid');
+          if (evt) mixpanel.track(evt);
+         });
+      });
 
     });
   </script>
+
+  <script type="text/javascript">
+    (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+      for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+      MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+      
+        mixpanel.init("ecba92171afd4d3630970a9aa8454ff2", {debug:true});
+      
+
+    </script>
 
 </head>
 <body>
@@ -80,27 +98,27 @@
         <div class="sidebar">
   <h2>Overview</h2>
   <ul>
-    <li><a class="" href="/">Home</a></li>
-    <li><a class="" href="/posts">Post Gallery</a></li>
+    <li><a data-click-eid="navigation--home" class="" href="/">Home</a></li>
+    <li><a data-click-eid="navigation--posts" class="" href="/posts">Post Gallery</a></li>
   </ul>
 
   <h2>Browse by vertical</h2>
   <ul>
-    <li><a class="" href="/verticals/professional-services">Professional Services</a></li>
-    <li><a class="" href="/verticals/home-services">Home Services</a>
+    <li><a data-click-eid="navigation--professionalservices" class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a data-click-eid="navigation--homeservices" class="" href="/verticals/home-services">Home Services</a>
       <ul>
-        <li><a class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
-        <li><a class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
-        <li><a class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
-        <li><a class="" href="/verticals/home-services/contractors">Contractors</a></li>
-        <li><a class="" href="/verticals/home-services/electrician">Electrician</a></li>
-        <li><a class="active" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
-        <li><a class="" href="/verticals/home-services/handyman">Handyman</a></li>
-        <li><a class="" href="/verticals/home-services/hvac">HVAC</a></li>
-        <li><a class="" href="/verticals/home-services/moving">Moving</a></li>
-        <li><a class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
-        <li><a class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
-        <li><a class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+        <li><a data-click-eid="navigation--homeservices-carpentry" class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a data-click-eid="navigation--homeservices-cleaning" class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a data-click-eid="navigation--homeservices-construction" class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a data-click-eid="navigation--homeservices-contractors" class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a data-click-eid="navigation--homeservices-electrician" class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a data-click-eid="navigation--homeservices-gardening" class="active" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a data-click-eid="navigation--homeservices-handyman" class="" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a data-click-eid="navigation--homeservices-hvac" class="" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a data-click-eid="navigation--homeservices-moving" class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a data-click-eid="navigation--homeservices-pest" class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a data-click-eid="navigation--homeservices-plumbing" class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a data-click-eid="navigation--homeservices-tvinternet" class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
       </ul>
     </li>
   </ul>
