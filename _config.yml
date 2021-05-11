@@ -13,7 +13,7 @@ collections:
     output: true
 email: your-email@example.com
 description: A curated collection of ideas for your next post.
-baseurl: '/'
+baseurl: 'https://davidpots.com/diy-content-assist/'
 url: ''
 twitter_username: posty_sike
 github_username: posty_sike
