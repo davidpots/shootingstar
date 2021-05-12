@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <title>GoDaddy Marketing Planner</title>
+  <meta name="title" content="GoDaddy Marketing Planner">
+  <meta name="description" content="A curated collection of ideas for your next post.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://godepot.co/">
+  <meta property="og:title" content="GoDaddy Marketing Planner">
+  <meta property="og:description" content="A curated collection of ideas for your next post.">
+  <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
+
+<!-- favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/mvp.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/assets/js/interaction.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $('.copy-hashtag').click(function(){
+        var hashtag = $(this).data('hashtag');
+        copyToClipboard(hashtag);
+        var chloe = this;
+        $(chloe).addClass('copy-copied').text("Copied!");
+        setTimeout(function(){
+          $(chloe).removeClass('copy-copied').text("Copy");
+        }, 2000);
+
+        return false;
+      });
+
+      function copyToClipboard(element) {
+        var $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val(element).select();
+        document.execCommand("copy");
+        $temp.remove();
+      }
+
+      $(document).ready(function() {
+          $(".sidebar ul a").each(function() {
+            // console.log( $(this).attr("href") + " ==== " + window.location.href);
+              if ($(this).attr("href") == window.location.href) {
+                  $(this).addClass("active");
+              }
+          });
+      });
+
+
+    });
+  </script>
+
+</head>
+<body>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="">
+  <div class="ss-container">
+    
+
+
+
+
+
+
+
+
+<h1>Marketing Planner</h1>
+<p>A list of upcoming holidays, topics, and prompts to help inspire your social posts and related marketing campaigns.</p>
+
+<div class="feed-wrapper clearfix">
+  <div class="feed-controls">
+    <div class="tile tile-calendar" style="height: 240px;"></div>
+    <!-- <h4 class="tile-scheduled-posts--heading">My Scheduled Posts:</h4>
+    <div class="tile tile-scheduled-posts" style="height: 200px;"></div> -->
+  </div>
+
+
+
+  <div class="feed-main">
+
+    <article>
+      <div class="secondary date_range">
+        <h3>This Week</h3>
+        <h4>May 9 – May 15</h4>
+      </div>
+      <div class="primary tile-wrapper">
+        
+          <div class="tile">
+            <h3 class="name">International Nurses Day</h3>
+            <p class="description">This day celebrates the immense gratitude we have to the contributions that nurses make to the world. Thank you! <span class="hashtags">#NursesDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">National Receptionist Day</h3>
+            <p class="description">National Receptionist Day takes place to celebrate the receptionists across our workplaces – the people who we all know actually make our offices run. <span class="hashtags">#NationalLimerickDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">National Limerick Day</h3>
+            <p class="description">National Limerick Day celebrates the artist, illustrator, author, and poet Edward Lear (May 12, 1812 – Jan. 29, 1888) who was known for short, five line poems that often used made up words or limericks. <span class="hashtags">#NationalReceptionistDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">International Day of Families</h3>
+            <p class="description">Founded by the United Nations (UN) in 1994, the International Day of Families is observed every May 15 to honor the importance of families. <span class="hashtags">#FamilyDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Love a Tree Day</h3>
+            <p class="description">This day encourages us to care for and plant trees in order to protect our environment from carbon emissions. Go plant one! <span class="hashtags">#LoveATreeDay</span></p>
+          </div>
+        
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>Next Week</h3>
+        <h4>May 16 – 22</h4>
+      </div>
+      <div class="primary tile-wrapper">
+        
+          <div class="tile">
+            <h3 class="name">International Day Against Homophobia and Transphobia</h3>
+            <p class="description">This important day turns our attention to LGBTQ+ rights violations and aims to raise awareness in LGBTQ+ works worldwide. <span class="hashtags">#IDAHOT</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Endangered Species Day</h3>
+            <p class="description">This day marks the world’s conservation efforts to protect our most endangered species and overall raise our appreciation and responsibility for our wildlife. <span class="hashtags">#EndangeredSpeciesDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">National Bike to Work Day</h3>
+            <p class="description">The day when everyone internationally is encouraged to bike to work. It was established to promote the bicycle as an alternative way to communicate to work and that way reduce both city congestion and pollution. <span class="hashtags">#BTWD</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">National Memo Day</h3>
+            <p class="description">Set up a memo to recall this day when it comes around. How did it come about? In 1989, KMJI Majic Radio 100 FM, Denver, Colorado, coined this day to reflect on the massive amount of memos pilling up in our offices. Luckily, that’s now all digital. <span class="hashtags">#NationalMemoDay</span></p>
+          </div>
+        
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>May 23 – 30</h3>
+      </div>
+      <div class="primary tile-wrapper">
+        
+          <div class="tile">
+            <h3 class="name">National Scavenger Hunt Day</h3>
+            <p class="description">Love scavenger hunts? This is the day when you get to go on one with the entire nation! The day marks our commitment to adventure, mystery, and most importantly fun. <span class="hashtags">#NationalScavengerHuntDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Vesak Day</h3>
+            <p class="description">Vesak Day is one of the most important, holiest days celebrated by Buddhists in Asia. It marks the birth, enlightenment (Nirvana), and death (Parinirvana) of the Gautama Buddha. <span class="hashtags">#VesakDay #VesakDay2021</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Hamburger Day</h3>
+            <p class="description">Feeling hungry? Well, you know what you’re eating today. This day celebrates our love for the burger – and it hints that it’s time for the outdoor grilling season. <span class="hashtags">#NationalHamburgerDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Heat Awareness Day</h3>
+            <p class="description">It’s important to note this day before the hot summer months set it. It’s a day for awareness and education on how heat can cause severe health issues. Stay cool, everyone! <span class="hashtags">#NoFryDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Paperclip Day</h3>
+            <p class="description">It’s a simple item, but it’s so unbelievably useful. How should you mark it? Perhaps this could just be the time to organize your paperwork.  <span class="hashtags">#PaperclipDay</span></p>
+          </div>
+        
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>May 31 – Jun 6</h3>
+      </div>
+      <div class="primary tile-wrapper">
+        
+          <div class="tile">
+            <h3 class="name">Memorial Day</h3>
+            <p class="description">Memorial Day is a federal US holiday commemorating those who died in the military service for their country. <span class="hashtags">#MemorialDay #MDW</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">World No-Tobacco Day</h3>
+            <p class="description">This day is led by the World Health Organization to bring attention to the health issues tobacco causes, exposing industry practices, and detailing what we can do to shift the needle towards progress. <span class="hashtags">#NoTobacco</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Global Day of Parents</h3>
+            <p class="description">Created by the United Nations, June 1 is a day to show appreciation for all parents across the world. <span class="hashtags">#GlobalDayOfParents</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Leave The Office Early Day</h3>
+            <p class="description">Loved among hard workers for obvious reasons, Leave the Office Early Day is an incentive to many people who work more than 40 hours per week. <span class="hashtags">#LeaveTheOfficeEarlyDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">National Doughnut Day</h3>
+            <p class="description">National Doughnut Day has a link going back to 1938, when it was created by the Salvation Army to honor those who served doughnuts to soldiers during World War I. You may even find free doughnuts – selected stores only! – across the US and other participating countries. <span class="hashtags">#NationalDonutDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">World Environment Day</h3>
+            <p class="description">Another day created by the United Nations, every June 5th celebrates World Environment Day. This day is about raising awareness and action for the global protection of the environment. <span class="hashtags">#WorldEnvironmentDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Higher Education Day</h3>
+            <p class="description">To spread awareness, this day aims to promote and educate people about the higher education path and the futures they can expect from successful study. <span class="hashtags">#HigherEducationDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">National Cancer Survivor’s Day</h3>
+            <p class="description">In celebration and support, National Cancer Survivors Day is a yearly event held by many communities. <span class="hashtags">#NCSD</span></p>
+          </div>
+        
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>Jun 7 – 13</h3>
+      </div>
+      <div class="primary tile-wrapper">
+        
+          <div class="tile">
+            <h3 class="name">Best Friends Day</h3>
+            <p class="description">True friends never need a particular reason to show their appreciation for each other, but Best Friends Day is a great opportunity to acknowledge genuine lifelong friendships. It was created in 1935 by the US congress to pay tribute to close friends and has been celebrated ever since. <span class="hashtags">#BestFriendsDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">World Oceans Day</h3>
+            <p class="description">This day is a chance to celebrate the beauty of our oceans and the ‘lungs of our planet’ – so called because they produce most of the planet’s oxygen. It was originally proposed in 1992 by Canada’s International Centre for Ocean Development, and is an excellent chance to focus on progressive environmental issues. <span class="hashtags">#WorldOceansDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">One Week Until Fathers Day</h3>
+            <p class="description">Father's Day is one week away! If there's anythiing you want to promote, this is a great chance to give your audience one more reminder to get them into gear. <span class="hashtags"></span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">International Children's Day</h3>
+            <p class="description">Children's Day is a commemorative date celebrated annually in honor of children, whose date of observance varies by country. In 1925, International Children's Day was first proclaimed in Geneva during the World Conference on Child Welfare. <span class="hashtags">#ChildrensDay</span></p>
+          </div>
+        
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>Jun 14 – 20</h3>
+      </div>
+      <div class="primary tile-wrapper">
+        
+          <div class="tile">
+            <h3 class="name">National Flag Day</h3>
+            <p class="description">This celebration dates back to 1777, when the US approved the design for its first national flag. Although it’s not a federal holiday, Pennsylvania celebrates it as a state holiday. <span class="hashtags">#FlagDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">World Blood Donor Day</h3>
+            <p class="description">This day helps to raise awareness for the two most important sides of the blood donor process: the need for safe blood, and a thank you to blood donors for their life-saving gifts. <span class="hashtags">#GiveBlood</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">Fathers Day</h3>
+            <p class="description">This day to celebrate the contribution of fathers across the world was first started in the US in the early 20th century. This complement to Mother’s Day became official in 1972, and has been celebrated every year since. <span class="hashtags">#FathersDay</span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">First Day of Summer</h3>
+            <p class="description">In 2021, the June solstice occurs on Sunday, June 20, marking the start of summer in the Northern Hemisphere. The exact date and time of the solstice is Sunday, June 20, at 11:32 P.M. EDT. <span class="hashtags"></span></p>
+          </div>
+        
+          <div class="tile">
+            <h3 class="name">World Refugee Day</h3>
+            <p class="description">This international day was designated by the United Nations to raise awareness about refugees from around the world. It celebrates not only the support they may require, but also the strength and rand courage by the communities affected by global issues.  <span class="hashtags">#WithRefugees</span></p>
+          </div>
+        
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<!-- Javascript -->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/shootingstar.js"></script>
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+  </body>
+
+</html>

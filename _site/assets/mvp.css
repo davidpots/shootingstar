@@ -30,9 +30,13 @@ body { font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 1.4; col
 @media (min-width: 1100px) { article { position: relative; } article .primary { left: 150px; top: 0; width: 585px; } article .secondary { /* left: 0px; */ top: 0; width: 150px; height: 100px; } }
 
 /* Tiles */
-.tile { background: white; border-radius: 4px; height: 210px; margin: 0 0 16px 0; border: 1px solid #d4dbe0; }
+.tile { background: white; border-radius: 4px; padding: 16px; margin: 0 0 16px 0; border: 1px solid #d4dbe0; }
 
 @media (max-width: 1099px) { .tile { margin-bottom: 8px; } }
+
+.tile .name { margin: 0 0 8px 0; font-weight: bold; font-size: 16px; }
+
+.tile .description { margin: 0; font-size: 12px; color: #888; }
 
 h3 { font-size: 21px; margin: 0 0 0 16px 0; color: #333; }
 
@@ -55,4 +59,4 @@ h4 { font-size: 14px; margin: 0 0 16px 0; color: #aaa; text-transform: uppercase
 
 .tile-scheduled-posts--heading { margin-top: 32px; margin-bottom: 12px; }
 
-/*# sourceMappingURL=main2.css.map */
+/*# sourceMappingURL=mvp.css.map */

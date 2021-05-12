@@ -1,0 +1,119 @@
+---
+layout: mvp
+permalink: "/mvp"
+---
+{% assign week19 = site.data.mvpv1 | where: "week","19" %}
+{% assign week20 = site.data.mvpv1 | where: "week","20" %}
+{% assign week21 = site.data.mvpv1 | where: "week","21" %}
+{% assign week22 = site.data.mvpv1 | where: "week","22" %}
+{% assign week23 = site.data.mvpv1 | where: "week","23" %}
+{% assign week24 = site.data.mvpv1 | where: "week","24" %}
+{% assign week25 = site.data.mvpv1 | where: "week","25" %}
+{% assign week26 = site.data.mvpv1 | where: "week","26" %}
+
+<h1>Marketing Planner</h1>
+<p>A list of upcoming holidays, topics, and prompts to help inspire your social posts and related marketing campaigns.</p>
+
+<div class="feed-wrapper clearfix">
+  <div class="feed-controls">
+    <div class="tile tile-calendar" style="height: 240px;"></div>
+    <!-- <h4 class="tile-scheduled-posts--heading">My Scheduled Posts:</h4>
+    <div class="tile tile-scheduled-posts" style="height: 200px;"></div> -->
+  </div>
+
+
+
+  <div class="feed-main">
+
+    <article>
+      <div class="secondary date_range">
+        <h3>This Week</h3>
+        <h4>May 9 – May 15</h4>
+      </div>
+      <div class="primary tile-wrapper">
+        {% for date in week19 %}
+          <div class="tile">
+            <h3 class="name">{{date.name}}</h3>
+            <p class="description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>Next Week</h3>
+        <h4>May 16 – 22</h4>
+      </div>
+      <div class="primary tile-wrapper">
+        {% for date in week20 %}
+          <div class="tile">
+            <h3 class="name">{{date.name}}</h3>
+            <p class="description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>May 23 – 30</h3>
+      </div>
+      <div class="primary tile-wrapper">
+        {% for date in week21 %}
+          <div class="tile">
+            <h3 class="name">{{date.name}}</h3>
+            <p class="description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>May 31 – Jun 6</h3>
+      </div>
+      <div class="primary tile-wrapper">
+        {% for date in week22 %}
+          <div class="tile">
+            <h3 class="name">{{date.name}}</h3>
+            <p class="description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>Jun 7 – 13</h3>
+      </div>
+      <div class="primary tile-wrapper">
+        {% for date in week23 %}
+          <div class="tile">
+            <h3 class="name">{{date.name}}</h3>
+            <p class="description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+    <article>
+      <div class="secondary date_range">
+        <h3>Jun 14 – 20</h3>
+      </div>
+      <div class="primary tile-wrapper">
+        {% for date in week24 %}
+          <div class="tile">
+            <h3 class="name">{{date.name}}</h3>
+            <p class="description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+          </div>
+        {% endfor %}
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<!-- Javascript -->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/shootingstar.js"></script>
