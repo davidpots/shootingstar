@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
-  <title>DIY Content Depot</title>
-  <meta name="title" content="DIY Content Depot">
+  <title>GoDaddy Marketing Planner</title>
+  <meta name="title" content="GoDaddy Marketing Planner">
   <meta name="description" content="A curated collection of ideas for your next post.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://godepot.co/">
-  <meta property="og:title" content="DIY Content Depot">
+  <meta property="og:title" content="GoDaddy Marketing Planner">
   <meta property="og:description" content="A curated collection of ideas for your next post.">
   <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
 
@@ -77,6 +77,15 @@
          });
       });
 
+      $(document).ready(() => {
+        $('#search-button').click(e => {
+          const qry = $('#search-box').val();
+          if (qry) mixpanel.track("Planner DIY Test - Search Term - ", { "term": qry });
+        });
+      });
+
+
+
     });
   </script>
 
@@ -98,27 +107,27 @@
         <div class="sidebar">
   <h2>Overview</h2>
   <ul>
-    <li><a data-click-eid="navigation--home" class="" href="/">Home</a></li>
-    <li><a data-click-eid="navigation--posts" class="active" href="/posts">Post Gallery</a></li>
+    <li><a data-click-eid="Planner DIY Test - Navigation - Home" class="" href="/">Home</a></li>
+    <li><a data-click-eid="Planner DIY Test - Navigation - Posts" class="active" href="/posts">Post Gallery</a></li>
   </ul>
 
   <h2>Browse by vertical</h2>
   <ul>
-    <li><a data-click-eid="navigation--professionalservices" class="" href="/verticals/professional-services">Professional Services</a></li>
-    <li><a data-click-eid="navigation--homeservices" class="" href="/verticals/home-services">Home Services</a>
+    <li><a data-click-eid="Planner DIY Test - Navigation - ProServices" class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices" class="" href="/verticals/home-services">Home Services</a>
       <ul>
-        <li><a data-click-eid="navigation--homeservices-carpentry" class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
-        <li><a data-click-eid="navigation--homeservices-cleaning" class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
-        <li><a data-click-eid="navigation--homeservices-construction" class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
-        <li><a data-click-eid="navigation--homeservices-contractors" class="" href="/verticals/home-services/contractors">Contractors</a></li>
-        <li><a data-click-eid="navigation--homeservices-electrician" class="" href="/verticals/home-services/electrician">Electrician</a></li>
-        <li><a data-click-eid="navigation--homeservices-gardening" class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
-        <li><a data-click-eid="navigation--homeservices-handyman" class="" href="/verticals/home-services/handyman">Handyman</a></li>
-        <li><a data-click-eid="navigation--homeservices-hvac" class="" href="/verticals/home-services/hvac">HVAC</a></li>
-        <li><a data-click-eid="navigation--homeservices-moving" class="" href="/verticals/home-services/moving">Moving</a></li>
-        <li><a data-click-eid="navigation--homeservices-pest" class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
-        <li><a data-click-eid="navigation--homeservices-plumbing" class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
-        <li><a data-click-eid="navigation--homeservices-tvinternet" class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Carpentry" class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Cleaning" class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Construction" class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Contractors" class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Electrician" class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Gardening" class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Handyman" class="" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - HVAC" class="" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Moving" class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Pest" class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Plumbing" class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - TV Internet" class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
       </ul>
     </li>
   </ul>
@@ -5717,31 +5726,31 @@
   <div>
     <form action="/posts" method="get">
       <input autofocus style="" type="text" id="search-box" name="query" placeholder="Search all posts...">
-      <input data-click-eid="postsSearchSubmit" type="submit" value="Search" id="search-button" style="">
+      <input type="submit" value="Search" id="search-button" style="">
     </form>
   </div>
 
   <h4>Filter by vertical:</h4>
   <ul>
     <li><a class="post-filter-link post-filter-link--vertical post-filter-link--all post-filter-link--active" href="#" data-vertical="All">All</a></li>
-    <li><a data-click-eid="postsFilterVertical--automotive" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Automotive">Automotive</a></li>
-    <li><a data-click-eid="postsFilterVertical--eventsactivities" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Events and Activities">Events and Activities</a></li>
-    <li><a data-click-eid="postsFilterVertical--healthwellness" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Health and Wellness">Health and Wellness</a></li>
-    <li><a data-click-eid="postsFilterVertical--homeservices" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Home Services">Home Services</a></li>
-    <li><a data-click-eid="postsFilterVertical--pets" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Pets">Pets</a></li>
-    <li><a data-click-eid="postsFilterVertical--professionalservices" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Professional Services">Professional Services</a></li>
-    <li><a data-click-eid="postsFilterVertical--restaurant" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Restaurant">Restaurant</a></li>
-    <li><a data-click-eid="postsFilterVertical--retail" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Retail">Retail</a></li>
-    <li><a data-click-eid="postsFilterVertical--spasalon" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Spa and Salon">Spa and Salon</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - automotive" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Automotive">Automotive</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - eventsactivities" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Events and Activities">Events and Activities</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - healthwellness" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Health and Wellness">Health and Wellness</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - homeservices" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Home Services">Home Services</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - pets" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Pets">Pets</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - professionalservices" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Professional Services">Professional Services</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - restaurant" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Restaurant">Restaurant</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - retail" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Retail">Retail</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Vertical - spasalon" class="post-filter-link post-filter-link--vertical" href="#" data-vertical="Spa and Salon">Spa and Salon</a></li>
   </ul>
   <h4>Filter by category:</h4>
   <ul>
     <li><a class="post-filter-link post-filter-link--category post-filter-link--all post-filter-link--active" href="#" data-category="All">All</a></li>
-    <li><a data-click-eid="postsFilterCategory--about" class="post-filter-link post-filter-link--category" href="#" data-category="About the Business">About the Business</a></li>
-    <li><a data-click-eid="postsFilterCategory--participation" class="post-filter-link post-filter-link--category" href="#" data-category="Audience Participation">Audience Participation</a></li>
-    <li><a data-click-eid="postsFilterCategory--educational" class="post-filter-link post-filter-link--category" href="#" data-category="Educational">Educational</a></li>
-    <li><a data-click-eid="postsFilterCategory--productservice" class="post-filter-link post-filter-link--category" href="#" data-category="Product/Service">Product/Service</a></li>
-    <li><a data-click-eid="postsFilterCategory--testimonial" class="post-filter-link post-filter-link--category" href="#" data-category="Testimonial">Testimonial</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Category - about" class="post-filter-link post-filter-link--category" href="#" data-category="About the Business">About the Business</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Category - participation" class="post-filter-link post-filter-link--category" href="#" data-category="Audience Participation">Audience Participation</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Category - educational" class="post-filter-link post-filter-link--category" href="#" data-category="Educational">Educational</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Category - productservice" class="post-filter-link post-filter-link--category" href="#" data-category="Product/Service">Product/Service</a></li>
+    <li><a data-click-eid="Planner DIY Test - Posts Filter - Category - testimonial" class="post-filter-link post-filter-link--category" href="#" data-category="Testimonial">Testimonial</a></li>
   </ul>
 </div>
 

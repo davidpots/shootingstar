@@ -8,13 +8,13 @@
 
   <!-- Primary Meta Tags -->
   <title>Welcome to Jekyll!</title>
-  <meta name="title" content="DIY Content Depot">
+  <meta name="title" content="GoDaddy Marketing Planner">
   <meta name="description" content="A curated collection of ideas for your next post.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://godepot.co/">
-  <meta property="og:title" content="DIY Content Depot">
+  <meta property="og:title" content="GoDaddy Marketing Planner">
   <meta property="og:description" content="A curated collection of ideas for your next post.">
   <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
 
@@ -76,6 +76,15 @@
           if (evt) mixpanel.track(evt);
          });
       });
+
+      $(document).ready(() => {
+        $('#search-button').click(e => {
+          const qry = $('#search-box').val();
+          if (qry) mixpanel.track("Planner DIY Test - Search Term - ", { "term": qry });
+        });
+      });
+
+
 
     });
   </script>

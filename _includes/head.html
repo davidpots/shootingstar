@@ -76,6 +76,15 @@
          });
       });
 
+      $(document).ready(() => {
+        $('#search-button').click(e => {
+          const qry = $('#search-box').val();
+          if (qry) mixpanel.track("Planner DIY Test - Search Term - ", { "term": qry });
+        });
+      });
+
+
+
     });
   </script>
 

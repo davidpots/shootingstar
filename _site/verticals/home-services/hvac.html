@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
-  <title>DIY Content Depot</title>
-  <meta name="title" content="DIY Content Depot">
+  <title>GoDaddy Marketing Planner</title>
+  <meta name="title" content="GoDaddy Marketing Planner">
   <meta name="description" content="A curated collection of ideas for your next post.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://godepot.co/">
-  <meta property="og:title" content="DIY Content Depot">
+  <meta property="og:title" content="GoDaddy Marketing Planner">
   <meta property="og:description" content="A curated collection of ideas for your next post.">
   <meta property="og:image" content="http://godepot.co/assets/images/site-preview.png">
 
@@ -77,6 +77,15 @@
          });
       });
 
+      $(document).ready(() => {
+        $('#search-button').click(e => {
+          const qry = $('#search-box').val();
+          if (qry) mixpanel.track("Planner DIY Test - Search Term - ", { "term": qry });
+        });
+      });
+
+
+
     });
   </script>
 
@@ -98,27 +107,27 @@
         <div class="sidebar">
   <h2>Overview</h2>
   <ul>
-    <li><a data-click-eid="navigation--home" class="" href="/">Home</a></li>
-    <li><a data-click-eid="navigation--posts" class="" href="/posts">Post Gallery</a></li>
+    <li><a data-click-eid="Planner DIY Test - Navigation - Home" class="" href="/">Home</a></li>
+    <li><a data-click-eid="Planner DIY Test - Navigation - Posts" class="" href="/posts">Post Gallery</a></li>
   </ul>
 
   <h2>Browse by vertical</h2>
   <ul>
-    <li><a data-click-eid="navigation--professionalservices" class="" href="/verticals/professional-services">Professional Services</a></li>
-    <li><a data-click-eid="navigation--homeservices" class="" href="/verticals/home-services">Home Services</a>
+    <li><a data-click-eid="Planner DIY Test - Navigation - ProServices" class="" href="/verticals/professional-services">Professional Services</a></li>
+    <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices" class="" href="/verticals/home-services">Home Services</a>
       <ul>
-        <li><a data-click-eid="navigation--homeservices-carpentry" class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
-        <li><a data-click-eid="navigation--homeservices-cleaning" class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
-        <li><a data-click-eid="navigation--homeservices-construction" class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
-        <li><a data-click-eid="navigation--homeservices-contractors" class="" href="/verticals/home-services/contractors">Contractors</a></li>
-        <li><a data-click-eid="navigation--homeservices-electrician" class="" href="/verticals/home-services/electrician">Electrician</a></li>
-        <li><a data-click-eid="navigation--homeservices-gardening" class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
-        <li><a data-click-eid="navigation--homeservices-handyman" class="" href="/verticals/home-services/handyman">Handyman</a></li>
-        <li><a data-click-eid="navigation--homeservices-hvac" class="active" href="/verticals/home-services/hvac">HVAC</a></li>
-        <li><a data-click-eid="navigation--homeservices-moving" class="" href="/verticals/home-services/moving">Moving</a></li>
-        <li><a data-click-eid="navigation--homeservices-pest" class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
-        <li><a data-click-eid="navigation--homeservices-plumbing" class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
-        <li><a data-click-eid="navigation--homeservices-tvinternet" class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Carpentry" class="" href="/verticals/home-services/carpentry">Carpentry</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Cleaning" class="" href="/verticals/home-services/cleaning-services">Cleaning Services</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Construction" class="" href="/verticals/home-services/construction-engineering">Construction Engineering</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Contractors" class="" href="/verticals/home-services/contractors">Contractors</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Electrician" class="" href="/verticals/home-services/electrician">Electrician</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Gardening" class="" href="/verticals/home-services/gardening-landscaping">Gardening &amp; Landscaping</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Handyman" class="" href="/verticals/home-services/handyman">Handyman</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - HVAC" class="active" href="/verticals/home-services/hvac">HVAC</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Moving" class="" href="/verticals/home-services/moving">Moving</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Pest" class="" href="/verticals/home-services/pest-control">Pest Control</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - Plumbing" class="" href="/verticals/home-services/plumbing">Plumbing</a></li>
+        <li><a data-click-eid="Planner DIY Test - Navigation - HomeServices - TV Internet" class="" href="/verticals/home-services/tv-internet">TV &amp; Internet</a></li>
       </ul>
     </li>
   </ul>
