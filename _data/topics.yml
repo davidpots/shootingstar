@@ -7,6 +7,69 @@
 #   vertical: _____
 #
 
+- name: Slim Pickings
+  description: "From late 2020 to mid 2021, real estate inventory has been incredibly low. As of November 2020, inventory has been down a whole 20%. In December, more that 70% of homes for sale were on the market for less than a month. Simply put, in some markets, there aren't enough houses to meet buyer demand. "
+  emoji: "👀"
+  posting_recommendation: "For buyers, low inventory means: moving faster, expanding the search geographically, and considering what things are \"must haves\" vs. \"nice to haves.\" It's a great idea to get pre-approved ASAP and find less expensive homes in great neighborhoods in they can afford to upgrade over time. For sellers, this is better news: Low inventory means less selling competition."
+  vertical: Professional Services
+  url: https://www.ramseysolutions.com/real-estate/real-estate-trends
+
+- name: Rising home prices
+  description: "As of the end of last year, existing home prices had grown by about 15% as compared to the same time the prior year. This marked more than 100 straight months of consistent price gains. "
+  emoji: "🤯"
+  posting_recommendation: "Encourage your audience to really know what they can afford. It could be time to post some budgeting tips for buyers, like: limiting their house payment to no more than a specified percentage of their take-home pay, saving up to make  a down payment, etc. Remember: Avoid specific numbers or percentages within content. We should never be giving specific financial advice on behalf of our customers."
+  vertical: Professional Services
+  url: https://www.ramseysolutions.com/real-estate/real-estate-trends
+
+- name: Low Mortgage Interest Rates
+  description: "Mortgage interest rates, the fees that lenders charge as a percentage of a loan amount, are the lowest they've been in decades (around 3%), and economists think that this trend should continue through 2021. "
+  emoji: "📉"
+  posting_recommendation: "For buyers, this can help with affordability, but they should be cautious as to not purchse a home they cannot afford. For sellers, this means that buyers might be motivated to purchase their properties sooner."
+  vertical: Professional Services
+
+- name: The Rise of Millennials
+  description: "No longer just in the \"entry-level\" market, millennials are moving into and taking over the \"move-up\" market, as they grow their families and need more space."
+  emoji: "📈"
+  posting_recommendation: "Consider the age of your audience when creating content. Older millennials in some places may be ready to move on from their starter homes into bigger properties with more space and resources."
+  vertical: Professional Services
+  url: https://www.realtor.com/research/2021-national-housing-forecast/
+
+- name: Suburban migration
+  description: "People are moving into the suburbs! With permanent remote work becoming more common, city-dwellers —freed from the daily tether of a commute to the office and looking for affordable space to shelter, work, learn, and live— are finding homing solutions outside of their typical urban communities. Even before the pandemic, homebuyers looking for affordability were drawn to these areas, too. "
+  emoji: "🏡"
+  posting_recommendation: "This is a great trend to capitalize on if you have any Realtor clients who work in areas or communities that are adjacent to large, bustling urban sprawls. Highlight the benefits of those communities!"
+  vertical: Professional Services
+  url: https://www.realtor.com/research/2021-national-housing-forecast/
+
+- name: National Posture Month
+  description: "May is National Posture Month. Good posture is more than standing up straight — to improve posture you have to strengthen how your body balances and how it moves. #NationalPostureMonth"
+  emoji: "🧍‍♀️"
+  posting_recommendation: "Work, exercise, and tech habits all shape your body and posture. Customers like yoga studios, chiropractors, and other health and wellness customers could benefit from educational posts on this topic."
+  vertical: General
+
+- name: National Motorcycle Awareness Month
+  description: "May is National Motorcycle Awareness Month. With warmer weather, it's time to remind everyone to be on the alert and to share the road with motorcyclists. "
+  emoji: "🏍"
+  vertical: General
+
+- name: Sleep is the New Self-Care
+  description: "From sleep yoga to essential oil blends made for sleep, folks are getting serious about getting some Zzz's. With more emphasis on mental health this year (and the last), sleep is becoming a comodity that cannot be sacrificed. Bed time routines are become a must-have along with anything that can get you a better night sleep. Think: silk sleep masks, noise machines. a rise in CBD products, and essential oils for bedtime. "
+  emoji: "💤"
+  vertical: General
+
+- name: Spicing Up the Pantry
+  description: "2021 is shaping up to be a flavorful year. Consumers are looking for quick and easy ways to spice up the meals they've been making at home, and stores are seeing a lot of interest in handcrafted shelf-stable sauces and spice blends."
+  emoji: "🧂"
+  posting_recommendation: "Do your restaurant customers offer any dishes that pack a flavorful punch? Or engage followers by asking if they've cooked with any signature spices in popular menu items."
+  vertical: General
+
+- name: Curbside Comfort
+  description: "Even as dining restrictions ease in many parts of the US, restaurant goers have learned to love the ease of curbside and to-go dining. While many will return to dining (especially in the summer months), the push for investing in digital experiences within the restuarant industry is here to stay."
+  emoji: "🛍"
+  posting_recommendation: "If curbside pick-up is offered by any of your customers, be sure to promote that aspect of the business as a CTA in your content."
+  vertical: General
+
+
 - name: National Rose Month
   description: "June is National Rose Month. With over 150 different species throughout North America, roses are in peak bloom in June. They are a hardy plant that can be added to any landscape. #NationalRoseMonth"
   emoji: 🌹

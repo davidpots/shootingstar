@@ -34,6 +34,7 @@ permalink: "/mvp"
         {% for date in week19 %}
           <div class="tile">
             <h3 class="name">{{date.name}}</h3>
+            <!-- <h4>{{date.date | date: "%A %b %d" }}</h4> -->
             <p class="description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
           </div>
         {% endfor %}

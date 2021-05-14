@@ -1,32 +1,26 @@
-# 
-# - name: Cinco de Mayo
-#   description: "Cinco de Mayo is an annual celebration commemorating the victory of the Mexican army against the French empire during the Franco-Mexican War. It is not Mexican Independence Day, but it does represent a significant moment in Mexican history. In the US, celebrations often include parades, parties, mariachi music, and traditional Mexican food and drinks. This year, due to the pandemic, people may be celebrating Cinco de Mayo differently."
-#   emoji: 🇲🇽
-#   posting_recommendation: "Posting for this day is optional. If you do create content for this holiday be sure to give the KB guidelines a read before you start."
-#   day: Wednesday
-#   date: May 5
-#   vertical: General
-#   subvertical: General
-#   url: https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/2037122092/Cinco+de+Mayo+2021
-#
-# - name: Mother’s Day
-#   description: "Mother’s Day is a holiday dedicated to the celebration of mothers and all motherly figures, like grandmothers, stepmothers, dog moms, etc. Typically, families honor moms by giving them gifts or organizing activities or getaways like brunches, spa days, etc. This year, with the pandemic, it’s possible that Mother’s Day will look different for many families – especially those who aren’t able to travel during this time."
-#   emoji: 👩‍👧‍👧
-#   posting_recommendation: "While we encourage a Mother's Day post for your customers, be sure to check out the KB guidelines for posting details."
-#   day: Sunday
-#   date: May 9
-#   vertical: General
-#   url: https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/2067826824/Mother+s+Day+2021
-#
-# - name: Ramadan
-#   description: "Ramadan represents a time of worship and self-reflection for Muslims. Throughout the entire month, observers participate by fasting (abstaining from all eating and drinking) from dawn to sunset, praying often, and reciting from the Quran. Members of the faith are also asked to abstain from 'sinful activities,' including smoking, sexual relations, and swearing. The day after Ramadan ends marks the beginning of Eid al-Fitr, which is the celebration of successfully completing a month of fasting."
-#   emoji: ☪️
-#   posting_recommendation: "Please see guidelines as you are required to follow certain posting guidelines for your halal customers/businesses with a strong Muslim identity."
-#   day: Ends on
-#   date: May 12
-#   vertical: General
-#   subvertical: General
-#   url: https://msh-success.atlassian.net/wiki/spaces/KnowledgeBase/pages/1992753467/Ramadan+2021
+- name: Memorial Day
+  description: "Memorial Day is a federal holiday commemorating the people who died while serving in the country's armed forces. It also marks the unofficial start of the summer vacation season. Since this day has two (tonally very different) meanings in American culture, it’s customary to honor this day in a multitude of ways. Some participate in community parades, which are tributes to those who have died while serving (like ceremonies at memorials and cemeteries or tribute concerts). Some celebrate the kick-off to summer with outdoor BBQs, spending time in the sunshine, or vacations."
+  emoji: 🇺🇸
+  posting_recommendation: "Avoid scheduling content on Memorial Day unless requested by the customer."
+  day: Monday
+  date: May 31
+  vertical: General
+
+- name: National Wine Day
+  description: "Whether it's paired with your favorite meal or shared among friends and family, today is the day to celebrarte your favorite vino."
+  emoji: 🍷
+  posting_recommendation: "Outside of wineries or places that serve wine, be sure to think about your customer's brand when cosidering a post about this day. For example: some Realtors give bottles as closing gifts while some prefer to not be associated with alcohol at all. Be sure to check your customer's notes before posting. #NationalWineDay"
+  day: Tuesday
+  date: May 25
+  vertical: General
+
+- name: National Hamburger Day
+  description: "May 28 is National Hamburger Day. It's the perfect opportunity to highlight backyards, summer weather, cook-outs, and other fun, family-oriented activities that people can enjoy in their backyards. #NationalHamburgerDay"
+  emoji: 🍔
+  posting_recommendation: "Does your restaurant customer have a famed burger on the menu? Or maybe this is the perfect opportunity to highlight the fresh burger buns your bakery customer makes every day."
+  day: Friday
+  date: May 28
+  vertical: General
 
 - name: Memorial Day
   description: "Memorial Day is a federal holiday commemorating the people who died while serving in the country's armed forces. It also marks the unofficial start of the summer vacation season. Since this day has two (tonally very different) meanings in American culture, it’s customary to honor this day in a multitude of ways. Some participate in community parades, which are tributes to those who have died while serving (like ceremonies at memorials and cemeteries or tribute concerts). Some celebrate the kick-off to summer with outdoor BBQs, spending time in the sunshine, or vacations."
@@ -34,6 +28,14 @@
   posting_recommendation: "Avoid scheduling content on Memorial Day unless requested by the customer."
   day: Monday
   date: May 31
+  vertical: General
+
+- name: Children's Day
+  description: "Similar to Mother's and Father's Day, Children's Day takes a moment to honor the children in your life. #ChildrensDay"
+  emoji: 🧒
+  posting_recommendation: "This kind of content works for businesses who offer kid-friendly products or services or customers wanting to appeal to families. Example: For realtors, you can use this day to appeal to families who are looking for the perfect homes for their families to learn, play, and grow in."
+  day: Sunday
+  date: June 13
   vertical: General
 
 # - name: _____

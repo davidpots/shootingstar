@@ -2,6 +2,26 @@
 #   description: "____"
 #   vertical: ____
 
+- name: As-is
+  description: "If a home is marked \"as-is,\" that indicates that the property owner or seller is unwilling to perform most or all repairs. It could also mean that it's priced typically lower than market pricing in the area. One thing to note -- \"as is\" refers to the time that the offer is written. If something happens to the property after the offer but before closing, then it ought to be brought back to the same condition as it was when the offer was composed."
+  vertical: Professional Services
+
+- name: Backup offer
+  description: "When a buyer is interested in purchasing a property that's already under contract with someone else, then the buyer can submit a \"backup offer\" in case the 3 original one falls through. Legally, there can only be one backup offer. This could be a good thing to mention to ease the mind of potential buyers who may feel they've missed out on a home they've fallen in love with."
+  vertical: Professional Services
+
+- name: Buyer’s agent/listing agent
+  description: "A buyer's agent represents the buyer -- it's their job to locate the buyer's next property and negotiate to represent their interests. Alternatively, a listing agent represents the seller -- it's their job to market their clients' properties and negotiate on behalf of their interests. It's helpful to understand which (or both) \"side\" your customer is on so that you can appeal to the correct audience(s)."
+  vertical: Professional Services
+
+- name: Closing costs
+  description: "\"Closing costs\" refer to an assortment of fees that are paid out at the end of a real estate transaction. They can include, but aren't limited to, fees charged by: the lender, the title company, real estate agents taxing authorities, insurance companies, HOAs, or attorneys. For transparency, it can be helpful to also mention or refer to closing costs when educating your clients' audiences about budgeting. A real estate transaction costs more than the price of the home."
+  vertical: Professional Services
+
+- name: Days on market (DOM)
+  description: "This phrase refers to the the number of days from the date when the property is listed on the MLS to to the date when the seller has signed a contract with the buyer for the sale of the property. Typically, this number is lower in the spring than the winter, since homes tend to sell faster in the warmer months."
+  vertical: Professional Services
+
 - name: June bugs
   description: "The term \"June bug\" can refer to a number of different species of beetles. The name is derived from the fact that they typically emerge towards the beginning of summer. They are harmless to people and animals but because they are attracted to light, they can be a big nuisance at night. Many pest control companies offer services related to June bug control."
   vertical: Home Services
