@@ -2,14 +2,14 @@
 layout: mvp
 permalink: "/"
 ---
-{% assign week19 = site.data.mvpv1 | where: "week","19" %}
-{% assign week20 = site.data.mvpv1 | where: "week","20" %}
-{% assign week21 = site.data.mvpv1 | where: "week","21" %}
-{% assign week22 = site.data.mvpv1 | where: "week","22" %}
-{% assign week23 = site.data.mvpv1 | where: "week","23" %}
-{% assign week24 = site.data.mvpv1 | where: "week","24" %}
-{% assign week25 = site.data.mvpv1 | where: "week","25" %}
-{% assign week26 = site.data.mvpv1 | where: "week","26" %}
+{% assign week19 = site.data.mvpv2 | where: "week","19" %}
+{% assign week20 = site.data.mvpv2 | where: "week","20" %}
+{% assign week21 = site.data.mvpv2 | where: "week","21" %}
+{% assign week22 = site.data.mvpv2 | where: "week","22" %}
+{% assign week23 = site.data.mvpv2 | where: "week","23" %}
+{% assign week24 = site.data.mvpv2 | where: "week","24" %}
+{% assign week25 = site.data.mvpv2 | where: "week","25" %}
+{% assign week26 = site.data.mvpv2 | where: "week","26" %}
 
 <h1>Marketing Planner</h1>
 <p>A list of upcoming holidays, topics, and prompts to help inspire your social posts and related marketing campaigns.</p>
@@ -33,9 +33,15 @@ permalink: "/"
       <div class="primary tile-wrapper">
         {% for date in week19 %}
           <div class="tile">
-            <h3 class="name">{{date.name}}</h3>
-            <!-- <h4>{{date.date | date: "%A %b %d" }}</h4> -->
-            <p class="description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+            <div class="tile--icon">{{date.icon}}</div>
+            <div class="tile--body">
+              <p class="tile--details"><a href="">Details</a></p>
+              <h3 class="tile--title">{{date.name}}</h3>
+              <p class="tile--date">{{date.date | date: "%A %b %d" }}</p>
+              <div class="tile--expandedContent">
+                <p class="tile--description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+              </div>
+            </div>
           </div>
         {% endfor %}
       </div>

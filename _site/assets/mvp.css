@@ -8,7 +8,7 @@ html { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
 /*-- Type --*/
-body { font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 1.4; color: #333; background: #F5F7F8; }
+body { font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.5; color: #333; background: #F5F7F8; }
 
 /* SHOOTING STAR */
 /* -- LAYOUT -- */
@@ -30,17 +30,25 @@ body { font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 1.4; col
 @media (min-width: 1100px) { article { position: relative; } article .primary { left: 150px; top: 0; width: 585px; } article .secondary { /* left: 0px; */ top: 0; width: 150px; height: 100px; } }
 
 /* Tiles */
-.tile { background: white; border-radius: 4px; padding: 16px; margin: 0 0 16px 0; border: 1px solid #d4dbe0; }
+.tile { background: white; border-radius: 4px; padding: 16px; margin: 0 0 8px 0; border: 1px solid #d4dbe0; position: relative; }
 
 @media (max-width: 1099px) { .tile { margin-bottom: 8px; } }
 
-.tile .name { margin: 0 0 8px 0; font-weight: bold; font-size: 16px; }
+.tile--icon { font-size: 30px; float: left; padding-top: 2px; padding-left: 5px; }
 
-.tile .description { margin: 0; font-size: 12px; color: #888; }
+.tile .tile--body { padding-left: 54px; }
 
-h3 { font-size: 21px; margin: 0 0 0 16px 0; color: #333; }
+.tile .tile--title { margin: 0; font-weight: 900; font-size: 19px; }
 
-h4 { font-size: 14px; margin: 0 0 16px 0; color: #aaa; text-transform: uppercase; font-weight: normal; }
+.tile .tile--date { margin: 0; }
+
+.tile .tile--description { margin: 16px 0 0 0; color: #777; }
+
+.tile--details { position: absolute; margin: 0; right: 20px; top: 20px; }
+
+.tile--details a { background: #F5f5f5; border-radius: 2px; color: #8c8c8c; display: inline-block; padding: 5px 10px; text-decoration: none; font-size: 14px; }
+
+.tile--expandedContent { display: none; }
 
 /* Planner UI - Date Area */
 .date_range h3 { padding-top: 32px; margin: 8px 0 4px 0; text-transform: uppercase; font-weight: 900; font-size: 18px; }

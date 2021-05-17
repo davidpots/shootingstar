@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Primary Meta Tags -->
-  <title>GoDaddy Marketing Planner</title>
-  <meta name="title" content="GoDaddy Marketing Planner">
-  <meta name="description" content="A curated collection of ideas for your next social post.">
+  <title>Social Media Planner</title>
+  <meta name="title" content="Social Media Planner">
+  <meta name="description" content="A curated collection of ideas for your next social media post.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://localhost:4000">
-  <meta property="og:title" content="GoDaddy Marketing Planner">
-  <meta property="og:description" content="A curated collection of ideas for your next social post.">
+  <meta property="og:title" content="Social Media Planner">
+  <meta property="og:description" content="A curated collection of ideas for your next social media post.">
   <meta property="og:image" content="http://localhost:4000/assets/images/site-preview.png">
 
 <!-- favicon -->
@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/mvp.css">
 
@@ -58,6 +58,12 @@
         document.execCommand("copy");
         $temp.remove();
       }
+
+      $('.tile--details').click(function(){
+        $(this).parent().find('.tile--expandedContent').toggle();
+        prepArticles();
+        return false;
+      });
 
     });
   </script>
@@ -100,33 +106,63 @@
       <div class="primary tile-wrapper">
         
           <div class="tile">
-            <h3 class="name">International Nurses Day</h3>
-            <!-- <h4>Wednesday May 12</h4> -->
-            <p class="description">This day celebrates the immense gratitude we have to the contributions that nurses make to the world. Thank you! <span class="hashtags">#NursesDay</span></p>
+            <div class="tile--icon">👩‍⚕️</div>
+            <div class="tile--body">
+              <p class="tile--details"><a href="">Details</a></p>
+              <h3 class="tile--title">International Nurses Day</h3>
+              <p class="tile--date">Wednesday May 12</p>
+              <div class="tile--expandedContent">
+                <p class="tile--description">This day celebrates the immense gratitude we have to the contributions that nurses make to the world. Thank you! <span class="hashtags">#NursesDay</span></p>
+              </div>
+            </div>
           </div>
         
           <div class="tile">
-            <h3 class="name">National Receptionist Day</h3>
-            <!-- <h4>Wednesday May 12</h4> -->
-            <p class="description">National Receptionist Day takes place to celebrate the receptionists across our workplaces – the people who we all know actually make our offices run. <span class="hashtags">#NationalLimerickDay</span></p>
+            <div class="tile--icon">👋</div>
+            <div class="tile--body">
+              <p class="tile--details"><a href="">Details</a></p>
+              <h3 class="tile--title">National Receptionist Day</h3>
+              <p class="tile--date">Wednesday May 12</p>
+              <div class="tile--expandedContent">
+                <p class="tile--description">National Receptionist Day takes place to celebrate the receptionists across our workplaces – the people who we all know actually make our offices run. <span class="hashtags">#NationalLimerickDay</span></p>
+              </div>
+            </div>
           </div>
         
           <div class="tile">
-            <h3 class="name">National Limerick Day</h3>
-            <!-- <h4>Wednesday May 12</h4> -->
-            <p class="description">National Limerick Day celebrates the artist, illustrator, author, and poet Edward Lear (May 12, 1812 – Jan. 29, 1888) who was known for short, five line poems that often used made up words or limericks. <span class="hashtags">#NationalReceptionistDay</span></p>
+            <div class="tile--icon">🖋</div>
+            <div class="tile--body">
+              <p class="tile--details"><a href="">Details</a></p>
+              <h3 class="tile--title">National Limerick Day</h3>
+              <p class="tile--date">Wednesday May 12</p>
+              <div class="tile--expandedContent">
+                <p class="tile--description">National Limerick Day celebrates the artist, illustrator, author, and poet Edward Lear (May 12, 1812 – Jan. 29, 1888) who was known for short, five line poems that often used made up words or limericks. <span class="hashtags">#NationalReceptionistDay</span></p>
+              </div>
+            </div>
           </div>
         
           <div class="tile">
-            <h3 class="name">International Day of Families</h3>
-            <!-- <h4>Saturday May 15</h4> -->
-            <p class="description">Founded by the United Nations (UN) in 1994, the International Day of Families is observed every May 15 to honor the importance of families. <span class="hashtags">#FamilyDay</span></p>
+            <div class="tile--icon">👨‍👩‍👧‍👦</div>
+            <div class="tile--body">
+              <p class="tile--details"><a href="">Details</a></p>
+              <h3 class="tile--title">International Day of Families</h3>
+              <p class="tile--date">Saturday May 15</p>
+              <div class="tile--expandedContent">
+                <p class="tile--description">Founded by the United Nations (UN) in 1994, the International Day of Families is observed every May 15 to honor the importance of families. <span class="hashtags">#FamilyDay</span></p>
+              </div>
+            </div>
           </div>
         
           <div class="tile">
-            <h3 class="name">Love a Tree Day</h3>
-            <!-- <h4>Sunday May 16</h4> -->
-            <p class="description">This day encourages us to care for and plant trees in order to protect our environment from carbon emissions. Go plant one! <span class="hashtags">#LoveATreeDay</span></p>
+            <div class="tile--icon">🌳</div>
+            <div class="tile--body">
+              <p class="tile--details"><a href="">Details</a></p>
+              <h3 class="tile--title">Love a Tree Day</h3>
+              <p class="tile--date">Sunday May 16</p>
+              <div class="tile--expandedContent">
+                <p class="tile--description">This day encourages us to care for and plant trees in order to protect our environment from carbon emissions. Go plant one! <span class="hashtags">#LoveATreeDay</span></p>
+              </div>
+            </div>
           </div>
         
       </div>

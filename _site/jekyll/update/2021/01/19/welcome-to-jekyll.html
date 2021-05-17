@@ -7,14 +7,14 @@
 
   <!-- Primary Meta Tags -->
   <title>Welcome to Jekyll!</title>
-  <meta name="title" content="GoDaddy Marketing Planner">
-  <meta name="description" content="A curated collection of ideas for your next social post.">
+  <meta name="title" content="Social Media Planner">
+  <meta name="description" content="A curated collection of ideas for your next social media post.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://localhost:4000">
-  <meta property="og:title" content="GoDaddy Marketing Planner">
-  <meta property="og:description" content="A curated collection of ideas for your next social post.">
+  <meta property="og:title" content="Social Media Planner">
+  <meta property="og:description" content="A curated collection of ideas for your next social media post.">
   <meta property="og:image" content="http://localhost:4000/assets/images/site-preview.png">
 
 <!-- favicon -->
@@ -29,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/assets/mvp.css">
 
@@ -58,6 +58,12 @@
         document.execCommand("copy");
         $temp.remove();
       }
+
+      $('.tile--details').click(function(){
+        $(this).parent().find('.tile--expandedContent').toggle();
+        prepArticles();
+        return false;
+      });
 
     });
   </script>

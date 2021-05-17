@@ -1,5 +1,4 @@
-$(window).scroll(function(){
-
+function feedFixedItemPrep() {
   // Calculate the distance of an element from the top of the browser window
   var scrollTop     = $(window).scrollTop();
   if ( $('.feed-controls').length ) {
@@ -13,11 +12,12 @@ $(window).scroll(function(){
       $('.feed-controls').removeClass('fixed');
     }
   }
+}
 
 
-
-
- });
+$(window).scroll(function(){
+  feedFixedItemPrep();
+});
 
 $(document).ready(function(){
 
