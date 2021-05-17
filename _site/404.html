@@ -62,6 +62,7 @@
       $('.tile--details').click(function(){
         $(this).toggleClass('tile--details--expanded').parent().find('.tile--expandedContent').toggle();
         prepArticles();
+        $(window).scroll();
         return false;
       });
 

@@ -59,7 +59,7 @@ html {
             @media (min-width: 1100px) {
               .feed-controls { width: 300px; float: right; }
               .feed-controls.fixed { position: fixed; top: 0; right: calc((100% - 1100px)/2); }
-              .feed-main { width: 700px; float: left; }
+              .feed-main { width: 720px; float: left; }
             }
 
             @media (max-width: 1099px) {
@@ -82,8 +82,8 @@ html {
 
       @media (min-width: 1100px) {
         article               { position: relative; }
-        article .primary      { left: 150px;     top: 0; width: 585px; }
-        article .secondary    { /* left: 0px; */ top: 0; width: 150px; height: 100px; }
+        article .primary      { left: 170px;     top: 0; width: 585px; }
+        article .secondary    { /* left: 0px; */ top: 0; width: 170px; height: 100px; }
       }
 
   /* Tiles */

@@ -18,7 +18,7 @@ body { font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.5; color
 /* new stuff from not 5 years ago */
 .feed-wrapper { position: relative; }
 
-@media (min-width: 1100px) { .feed-controls { width: 300px; float: right; } .feed-controls.fixed { position: fixed; top: 0; right: calc((100% - 1100px)/2); } .feed-main { width: 700px; float: left; } }
+@media (min-width: 1100px) { .feed-controls { width: 300px; float: right; } .feed-controls.fixed { position: fixed; top: 0; right: calc((100% - 1100px)/2); } .feed-main { width: 720px; float: left; } }
 
 @media (max-width: 1099px) { .feed-controls { display: none; } .feed-main { width: auto; float: none; } }
 
@@ -27,7 +27,7 @@ body { font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.5; color
 @media (max-width: 1099px) { .ss-container { width: auto; } }
 
 /* -- */
-@media (min-width: 1100px) { article { position: relative; } article .primary { left: 150px; top: 0; width: 585px; } article .secondary { /* left: 0px; */ top: 0; width: 150px; height: 100px; } }
+@media (min-width: 1100px) { article { position: relative; } article .primary { left: 170px; top: 0; width: 585px; } article .secondary { /* left: 0px; */ top: 0; width: 170px; height: 100px; } }
 
 /* Tiles */
 .tile { background: white; border-radius: 4px; padding: 16px; margin: 0 0 8px 0; border: 1px solid #d4dbe0; position: relative; }
