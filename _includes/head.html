@@ -38,13 +38,13 @@
   <script>
     $(document).ready(function(){
 
-      $('.copy-hashtag').click(function(){
+      $('.tile--hashtag-copy').click(function(){
         var hashtag = $(this).data('hashtag');
         copyToClipboard(hashtag);
         var chloe = this;
-        $(chloe).addClass('copy-copied').text("Copied!");
+        $(chloe).find('u').addClass('copy-copied').text("copied!");
         setTimeout(function(){
-          $(chloe).removeClass('copy-copied').text("Copy");
+          $(chloe).find('u').removeClass('copy-copied').text("copy");
         }, 2000);
 
         return false;
@@ -59,7 +59,7 @@
       }
 
       $('.tile--details').click(function(){
-        $(this).parent().find('.tile--expandedContent').toggle();
+        $(this).toggleClass('tile--details--expanded').parent().find('.tile--expandedContent').toggle();
         prepArticles();
         return false;
       });

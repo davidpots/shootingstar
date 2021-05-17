@@ -38,17 +38,35 @@ body { font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.5; color
 
 .tile .tile--body { padding-left: 54px; }
 
-.tile .tile--title { margin: 0; font-weight: 900; font-size: 19px; }
+.tile .tile--title { margin: 0; font-weight: 900; font-size: 18px; padding-right: 88px; }
 
 .tile .tile--date { margin: 0; }
 
-.tile .tile--description { margin: 16px 0 0 0; color: #777; }
+.tile .tile--description { margin: 12px 0 0 0; color: #777; }
 
 .tile--details { position: absolute; margin: 0; right: 20px; top: 20px; }
 
-.tile--details a { background: #F5f5f5; border-radius: 2px; color: #8c8c8c; display: inline-block; padding: 5px 10px; text-decoration: none; font-size: 14px; }
+.tile--details a { background-color: #F5f5f5; border-radius: 2px; color: #8c8c8c; display: inline-block; padding: 5px 24px 5px 10px; text-decoration: none; font-size: 14px; background-image: url(/assets/images/icon-expand.svg); background-repeat: no-repeat; background-position: 92% 8px; background-size: 16px 16px; }
 
-.tile--expandedContent { display: none; }
+.tile--details a:hover { background-color: #f0f0f0; }
+
+.tile--details--expanded a { background-image: url(/assets/images/icon-close.svg); background-size: 12px 12px; background-position: 88% 10px; }
+
+.tile--expandedContent { display: none; margin-bottom: 12px; margin-top: 12px; border-top: 1px solid #eee; }
+
+.tile--hashtags-wrapper { margin-top: 16px; }
+
+.tile--hashtag-pill { margin-top: 4px; margin-bottom: 4px; background: #e8f5f5; border-radius: 3px; padding: 10px 15px; font-size: 14px; }
+
+.tile--hashtag-pill p { margin: 0; overflow: hidden; width: auto; color: #777; }
+
+.tile--hashtag-pill .tile--hashtag-itself { float: left; font-weight: 900; color: #555; cursor: pointer; }
+
+.tile--hashtag-pill .tile--hashtag-outbound { float: right; }
+
+.tile--hashtag-pill .tile--hashtag-outbound a { color: inherit; }
+
+.tile--hashtag-copy { font-weight: 400; font-size: 13px; color: #777; }
 
 /* Planner UI - Date Area */
 .date_range h3 { padding-top: 32px; margin: 8px 0 4px 0; text-transform: uppercase; font-weight: 900; font-size: 18px; }

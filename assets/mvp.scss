@@ -115,13 +115,14 @@ html {
   .tile .tile--title {
     margin: 0;
     font-weight: 900;
-    font-size: 19px;
+    font-size: 18px;
+    padding-right: 88px;
   }
   .tile .tile--date {
     margin: 0;
   }
   .tile .tile--description {
-    margin: 16px 0 0 0;
+    margin: 12px 0 0 0;
     color: #777;
   }
   .tile--details {
@@ -130,22 +131,69 @@ html {
     right: 20px;
     top: 20px;
     a {
-      background: #F5f5f5;
+      background-color: #F5f5f5;
       border-radius: 2px;
       color: #8c8c8c;
       display: inline-block;
-      padding: 5px 10px;
+      padding: 5px 24px 5px 10px;
       text-decoration: none;
       font-size: 14px;
+      background-image: url(/assets/images/icon-expand.svg);
+      background-repeat: no-repeat;
+      background-position: 92% 8px;
+      background-size: 16px 16px;
     }
+    a:hover {
+      background-color: #f0f0f0;
+    }
+  }
+  .tile--details--expanded a {
+    background-image: url(/assets/images/icon-close.svg);
+    background-size: 12px 12px;
+    background-position: 88% 10px;
   }
   .tile--expandedContent {
     display: none;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border-top: 1px solid #eee;
+  }
+  .tile--hashtags-wrapper {
+    margin-top: 16px;
+  }
+  .tile--hashtag-pill {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background: #e8f5f5;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 14px;
+    p {
+      margin: 0;
+      overflow: hidden;
+      width: auto;
+      color: #777;
+    }
+    .tile--hashtag-itself {
+      float: left;
+      font-weight: 900;
+      color: #555;
+      cursor: pointer;
+    }
+    .tile--hashtag-outbound {
+      float: right;
+      a {
+        color: inherit;
+      }
+    }
+  }
+  .tile--hashtag-copy {
+    font-weight: 400;
+    font-size: 13px;
+    color: #777;
   }
 
-h3 {}
 
-h4 {}
 
 /* Planner UI - Date Area */
 
