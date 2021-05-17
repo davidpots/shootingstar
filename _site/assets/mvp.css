@@ -69,9 +69,17 @@ body { font-family: 'Lato', sans-serif; font-size: 16px; line-height: 1.5; color
 .tile--hashtag-copy { font-weight: 400; font-size: 13px; color: #777; }
 
 /* Planner UI - Date Area */
-.date_range h3 { padding-top: 32px; margin: 8px 0 4px 0; text-transform: uppercase; font-weight: 900; font-size: 18px; }
+.date-ribbon { height: 69px; background: url(/assets/images/date-ribbon.svg) no-repeat left top; text-align: right; margin-top: 32px; margin-right: 8px; border-radius: 4px; padding-right: 12px; }
 
-.date_range h4 { margin: 0; }
+.date-ribbon h3 { font-weight: 700; font-size: 19px; color: #AA6D00; }
+
+.date-ribbon h4 { color: #AA6D00; font-size: 14px; text-transform: uppercase; font-weight: 400; }
+
+.date-ribbon > h3, .date-ribbon > h4 { padding: 10px 0 0 0; margin: 0; }
+
+.date-ribbon > h3 + h4 { margin: 0; padding: 0; }
+
+.date-ribbon > h4 + h3 { padding: 0; }
 
 @media (max-width: 1099px) { .date_range { margin-bottom: 16px; } }
 

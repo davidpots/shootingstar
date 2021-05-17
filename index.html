@@ -27,8 +27,10 @@ permalink: "/"
 
     <article>
       <div class="secondary date_range">
-        <h3>This Week</h3>
-        <h4>May 16 – 22</h4>
+        <div class="date-ribbon">
+          <h3>This Week</h3>
+          <h4>May 16 – 22</h4>
+        </div>
       </div>
       <div class="primary tile-wrapper">
         {% for date in week20 %}
@@ -37,7 +39,7 @@ permalink: "/"
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
-            <p class="tile--date">{{date.date | date: "%A %b %d" }}</p>
+            <p class="tile--date">{{date.date | date: "%A, %b %d" }}</p>
             <div class="tile--expandedContent">
               <p class="tile--description">{{date.description}}</p>
 
@@ -61,8 +63,10 @@ permalink: "/"
 
     <article>
       <div class="secondary date_range">
-        <h3>Next Week</h3>
-        <h4>May 23 – 30</h4>
+        <div class="date-ribbon">
+          <h3>Next Week</h3>
+          <h4>May 23–30</h4>
+        </div>
       </div>
       <div class="primary tile-wrapper">
         {% for date in week21 %}
@@ -71,9 +75,21 @@ permalink: "/"
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
-            <p class="tile--date">{{date.date | date: "%A %b %d" }}</p>
+            <p class="tile--date">{{date.date | date: "%A, %b %d" }}</p>
             <div class="tile--expandedContent">
-              <p class="tile--description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+              <p class="tile--description">{{date.description}}</p>
+
+              {% assign hashtags = date.hashtags | split: " " %}
+              <div class="tile--hashtags-wrapper">
+              {% for hashtag in hashtags %}
+                <div class="tile--hashtag-pill">
+                  <p>
+                    <span class="tile--hashtag-itself">{{hashtag}} <span class="tile--hashtag-copy" data-hashtag="{{hashtag}}">(<u>copy</u>)</span></span>
+                    <span class="tile--hashtag-outbound">See examples on <a href="https://www.instagram.com/explore/tags/{{hashtag | slice: 1, hashtag.size}}/" target="_blank">Instagram</a></span>
+                  </p>
+                </div>
+              {% endfor %}
+              </div>
             </div>
           </div>
         </div>
@@ -83,7 +99,10 @@ permalink: "/"
 
     <article>
       <div class="secondary date_range">
-        <h3>May 31 – Jun 6</h3>
+        <div class="date-ribbon">
+          <h4>Week of</h4>
+          <h3>May 31</h3>
+        </div>
       </div>
       <div class="primary tile-wrapper">
         {% for date in week22 %}
@@ -92,9 +111,21 @@ permalink: "/"
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
-            <p class="tile--date">{{date.date | date: "%A %b %d" }}</p>
+            <p class="tile--date">{{date.date | date: "%A, %b %d" }}</p>
             <div class="tile--expandedContent">
-              <p class="tile--description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+              <p class="tile--description">{{date.description}}</p>
+
+              {% assign hashtags = date.hashtags | split: " " %}
+              <div class="tile--hashtags-wrapper">
+              {% for hashtag in hashtags %}
+                <div class="tile--hashtag-pill">
+                  <p>
+                    <span class="tile--hashtag-itself">{{hashtag}} <span class="tile--hashtag-copy" data-hashtag="{{hashtag}}">(<u>copy</u>)</span></span>
+                    <span class="tile--hashtag-outbound">See examples on <a href="https://www.instagram.com/explore/tags/{{hashtag | slice: 1, hashtag.size}}/" target="_blank">Instagram</a></span>
+                  </p>
+                </div>
+              {% endfor %}
+              </div>
             </div>
           </div>
         </div>
@@ -104,7 +135,10 @@ permalink: "/"
 
     <article>
       <div class="secondary date_range">
-        <h3>Jun 7 – 13</h3>
+        <div class="date-ribbon">
+          <h4>Week of</h4>
+          <h3>June 6</h3>
+        </div>
       </div>
       <div class="primary tile-wrapper">
         {% for date in week23 %}
@@ -113,9 +147,21 @@ permalink: "/"
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
-            <p class="tile--date">{{date.date | date: "%A %b %d" }}</p>
+            <p class="tile--date">{{date.date | date: "%A, %b %d" }}</p>
             <div class="tile--expandedContent">
-              <p class="tile--description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+              <p class="tile--description">{{date.description}}</p>
+
+              {% assign hashtags = date.hashtags | split: " " %}
+              <div class="tile--hashtags-wrapper">
+              {% for hashtag in hashtags %}
+                <div class="tile--hashtag-pill">
+                  <p>
+                    <span class="tile--hashtag-itself">{{hashtag}} <span class="tile--hashtag-copy" data-hashtag="{{hashtag}}">(<u>copy</u>)</span></span>
+                    <span class="tile--hashtag-outbound">See examples on <a href="https://www.instagram.com/explore/tags/{{hashtag | slice: 1, hashtag.size}}/" target="_blank">Instagram</a></span>
+                  </p>
+                </div>
+              {% endfor %}
+              </div>
             </div>
           </div>
         </div>
@@ -125,7 +171,10 @@ permalink: "/"
 
     <article>
       <div class="secondary date_range">
-        <h3>Jun 14 – 20</h3>
+        <div class="date-ribbon">
+          <h4>Week of</h4>
+          <h3>June 13</h3>
+        </div>
       </div>
       <div class="primary tile-wrapper">
         {% for date in week24 %}
@@ -134,9 +183,21 @@ permalink: "/"
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
-            <p class="tile--date">{{date.date | date: "%A %b %d" }}</p>
+            <p class="tile--date">{{date.date | date: "%A, %b %d" }}</p>
             <div class="tile--expandedContent">
-              <p class="tile--description">{{date.description}} <span class="hashtags">{{date.hashtags}}</span></p>
+              <p class="tile--description">{{date.description}}</p>
+
+              {% assign hashtags = date.hashtags | split: " " %}
+              <div class="tile--hashtags-wrapper">
+              {% for hashtag in hashtags %}
+                <div class="tile--hashtag-pill">
+                  <p>
+                    <span class="tile--hashtag-itself">{{hashtag}} <span class="tile--hashtag-copy" data-hashtag="{{hashtag}}">(<u>copy</u>)</span></span>
+                    <span class="tile--hashtag-outbound">See examples on <a href="https://www.instagram.com/explore/tags/{{hashtag | slice: 1, hashtag.size}}/" target="_blank">Instagram</a></span>
+                  </p>
+                </div>
+              {% endfor %}
+              </div>
             </div>
           </div>
         </div>
