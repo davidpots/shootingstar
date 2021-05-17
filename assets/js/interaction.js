@@ -6,7 +6,7 @@ function feedFixedItemPrep() {
     var distance      = (elementOffset - scrollTop);
     console.log(scrollTop);
 
-    if ( scrollTop > 125 ) {
+    if ( scrollTop > 164 ) {
       $('.feed-controls').addClass('fixed');
     } else {
       $('.feed-controls').removeClass('fixed');

@@ -66,6 +66,42 @@
         return false;
       });
 
+      $('.calendar-next').click(function(){
+        if ( $(this).parent().data('current-month') == "May" ) {
+          $(this).parent().data('current-month',"June");
+          $('.calendar-image').attr('src','/assets/images/cal-june.png');
+          return false;
+        }
+        if ( $(this).parent().data('current-month') == "June" ) {
+          $(this).parent().data('current-month',"July");
+          $('.calendar-image').attr('src','/assets/images/cal-july.png');
+          return false;
+        }
+        if ( $(this).parent().data('current-month') == "July" ) {
+          $(this).parent().data('current-month',"August");
+          $('.calendar-image').attr('src','/assets/images/cal-aug.png');
+          return false;
+        }
+      });
+
+      $('.calendar-prev').click(function(){
+        if ( $(this).parent().data('current-month') == "June" ) {
+          $(this).parent().data('current-month',"May");
+          $('.calendar-image').attr('src','/assets/images/cal-may.png');
+          return false;
+        }
+        if ( $(this).parent().data('current-month') == "July" ) {
+          $(this).parent().data('current-month',"June");
+          $('.calendar-image').attr('src','/assets/images/cal-june.png');
+          return false;
+        }
+        if ( $(this).parent().data('current-month') == "August" ) {
+          $(this).parent().data('current-month',"July");
+          $('.calendar-image').attr('src','/assets/images/cal-july.png');
+          return false;
+        }
+      });
+
     });
   </script>
 

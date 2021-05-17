@@ -265,7 +265,30 @@ html {
 
 .feed-controls .tile-calendar {
   margin-top: 32px;
+  padding: 8px 0 0 0;
+  text-align: center;
+  position: relative;
 }
+
+    .calendar-next {
+      width: 60px;
+      height: 60px;
+      // background: pink;
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+    }
+
+    .calendar-prev {
+      width: 60px;
+      height: 60px;
+      // background: pink;
+      position: absolute;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+    }
 
 .tile-scheduled-posts--heading {
   margin-top: 32px;
