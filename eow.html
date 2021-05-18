@@ -1,6 +1,6 @@
 ---
 layout: mvp
-permalink: "/"
+permalink: "/eow"
 ---
 {% assign week19 = site.data.mvpv2 | where: "week","19" %}
 {% assign week20 = site.data.mvpv2 | where: "week","20" %}
@@ -11,16 +11,16 @@ permalink: "/"
 {% assign week25 = site.data.mvpv2 | where: "week","25" %}
 {% assign week26 = site.data.mvpv2 | where: "week","26" %}
 
-<h1>Social Media Marketing Planner</h1>
-<p class="subhead">A list of upcoming holidays, topics, and prompts to help inspire your social posts and related marketing campaigns.</p>
+<h1>Admin View</h1>
+<p class="subhead"><a href="https://docs.google.com/spreadsheets/d/1F-zfXlRT6-4Xa2T-cckYQwzTp7SExaSBwfbX4YNBSZ0/edit#gid=2139753352">Google Sheet</a> | <a href="/">Design for user test</a> | <a href="/date-only">Date-only version</a> | <a href="/eow">End-of-week version</a></p>
 
 <div class="feed-wrapper clearfix">
   <div class="feed-controls">
-    <a class="new_post_button">Create Social Post</a>
+    <a class="new_post_button">+ Create Social Post</a>
     <div class="tile tile-calendar" data-current-month="May">
       <span class="calendar-next"></span>
       <span class="calendar-prev"></span>
-      <span class="calendar-today"></span>
+      <span class="calendar-today" style="background-image: url(/assets/images/cal-today/cal-may22.png);"></span>
       <img class="calendar-image" width="100%" src="/assets/images/cal-may.png" />
     </div>
 
@@ -67,34 +67,6 @@ permalink: "/"
               <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
             </div>
           </div>
-        </div>
-        <div class="tile-minivan">
-          <h3 class="tile-minivan--heading">Dates of Interest</h3>
-          {% for date in week20 %}
-          <div class="tile">
-            <div class="tile--icon">{{date.icon}}</div>
-            <div class="tile--body">
-              <p class="tile--details"><a href="">Details</a></p>
-              <h3 class="tile--title">{{date.name}}</h3>
-              <p class="tile--date">{{date.date | date: "%A, %b %d" }}</p>
-              <div class="tile--expandedContent">
-                <p class="tile--description">{{date.description}}</p>
-
-                {% assign hashtags = date.hashtags | split: " " %}
-                <div class="tile--hashtags-wrapper">
-                {% for hashtag in hashtags %}
-                  <div class="tile--hashtag-pill">
-                    <p>
-                      <span class="tile--hashtag-itself">{{hashtag}} <span class="tile--hashtag-copy" data-hashtag="{{hashtag}}">(<u>copy</u>)</span></span>
-                      <span class="tile--hashtag-outbound">View on <a href="https://www.instagram.com/explore/tags/{{hashtag | slice: 1, hashtag.size}}/" target="_blank">Instagram</a></span>
-                    </p>
-                  </div>
-                {% endfor %}
-                </div>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
         </div>
       </div>
     </article>
