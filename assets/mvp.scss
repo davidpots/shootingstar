@@ -262,7 +262,7 @@ html {
   color: white;
   text-decoration: none;
   padding: 8px 15px;
-
+  font-size: 14px;
 }
 
 
@@ -388,7 +388,7 @@ html {
       padding-bottom: 16px;
     }
     .tile-carousel-item {
-      width: 400px;
+      width: 490px;
       height: 180px;
       background: white;
       display: inline-block;
@@ -403,4 +403,39 @@ html {
       cursor: pointer;
       text-decoration: underline;
       margin-left: 8px;
+    }
+
+    // Post gallery within.
+
+    .tile-carousel-item--post {
+      white-space: normal;
+      padding: 8px;
+      border-radius: 4px;
+      &:hover {
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      }
+    }
+    .tile-carousel-item--post--image {
+      height: 100%;
+      width: auto;
+      float: left;
+      padding-right: 21px;
+    }
+    .tile-carousel-item--post--caption {
+      font-style: italic;
+      margin-bottom: 12px;
+      font-size: 14px;
+      font-weight: 300;
+      padding: 12px 0 0 0;
+      height: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .tile-carousel-item--post--cta a {
+      display: inline-block;
+      background: #09757A;
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      font-size: 14px;
     }
