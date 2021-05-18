@@ -38,31 +38,39 @@ permalink: "/"
         </div>
       </div>
       <div class="primary tile-wrapper">
-        {% for date in week20 %}
-        <div class="tile">
-          <div class="tile--icon">{{date.icon}}</div>
-          <div class="tile--body">
-            <p class="tile--details"><a href="">Details</a></p>
-            <h3 class="tile--title">{{date.name}}</h3>
-            <p class="tile--date">{{date.date | date: "%A, %b %d" }}</p>
-            <div class="tile--expandedContent">
-              <p class="tile--description">{{date.description}}</p>
+        <div class="tile tile--featured">
+          <img class="tile--image" src="/assets/images/stock-graduation.png" />
+          <h3 class="tile--title">Graduation season is here!</h3>
+          <p class="tile--description">Throughout May, many high school and college seniors are likely to celebrate their graduation with backyard parties, zoom/virtual celebrations, and planning senior trips after graduation.</p>
+        </div>
+        <div class="tile-minivan">
+          <h3 class="tile-minivan--heading">Dates of Interest</h3>
+          {% for date in week20 %}
+          <div class="tile">
+            <div class="tile--icon">{{date.icon}}</div>
+            <div class="tile--body">
+              <p class="tile--details"><a href="">Details</a></p>
+              <h3 class="tile--title">{{date.name}}</h3>
+              <p class="tile--date">{{date.date | date: "%A, %b %d" }}</p>
+              <div class="tile--expandedContent">
+                <p class="tile--description">{{date.description}}</p>
 
-              {% assign hashtags = date.hashtags | split: " " %}
-              <div class="tile--hashtags-wrapper">
-              {% for hashtag in hashtags %}
-                <div class="tile--hashtag-pill">
-                  <p>
-                    <span class="tile--hashtag-itself">{{hashtag}} <span class="tile--hashtag-copy" data-hashtag="{{hashtag}}">(<u>copy</u>)</span></span>
-                    <span class="tile--hashtag-outbound">View on <a href="https://www.instagram.com/explore/tags/{{hashtag | slice: 1, hashtag.size}}/" target="_blank">Instagram</a></span>
-                  </p>
+                {% assign hashtags = date.hashtags | split: " " %}
+                <div class="tile--hashtags-wrapper">
+                {% for hashtag in hashtags %}
+                  <div class="tile--hashtag-pill">
+                    <p>
+                      <span class="tile--hashtag-itself">{{hashtag}} <span class="tile--hashtag-copy" data-hashtag="{{hashtag}}">(<u>copy</u>)</span></span>
+                      <span class="tile--hashtag-outbound">View on <a href="https://www.instagram.com/explore/tags/{{hashtag | slice: 1, hashtag.size}}/" target="_blank">Instagram</a></span>
+                    </p>
+                  </div>
+                {% endfor %}
                 </div>
-              {% endfor %}
               </div>
             </div>
           </div>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </article>
 
@@ -74,6 +82,15 @@ permalink: "/"
         </div>
       </div>
       <div class="primary tile-wrapper">
+
+        <div class="tile tile--featured">
+          <img class="tile--image" src="/assets/images/stock-mdw.png" />
+          <h3 class="tile--title">Last full week of May</h3>
+          <p class="tile--description">If there’s anything you want to remind your audience about before spring ends, now is the time!</p>
+          <p class="tile--cta"><a href="">View Templates</a></p>
+        </div>
+        <div class="tile-minivan">
+          <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week21 %}
         <div class="tile">
           <div class="tile--icon">{{date.icon}}</div>
@@ -99,6 +116,7 @@ permalink: "/"
           </div>
         </div>
         {% endfor %}
+        </div>
       </div>
     </article>
 
@@ -110,6 +128,13 @@ permalink: "/"
         </div>
       </div>
       <div class="primary tile-wrapper">
+        <div class="tile tile--featured">
+          <img class="tile--image" src="/assets/images/stock-memorial.png" />
+          <h3 class="tile--title">Memorial Day Weekend</h3>
+          <p class="tile--description">Depending on your business and your audience, there are a few ways to post about this. For some, it marks commemeration of fallen soliders. For others, it’s symbolic of the official start of summer.</p>
+        </div>
+        <div class="tile-minivan">
+          <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week22 %}
         <div class="tile">
           <div class="tile--icon">{{date.icon}}</div>
@@ -135,6 +160,7 @@ permalink: "/"
           </div>
         </div>
         {% endfor %}
+        </div>
       </div>
     </article>
 
@@ -146,6 +172,8 @@ permalink: "/"
         </div>
       </div>
       <div class="primary tile-wrapper">
+        <div class="tile-minivan">
+          <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week23 %}
         <div class="tile">
           <div class="tile--icon">{{date.icon}}</div>
@@ -171,6 +199,7 @@ permalink: "/"
           </div>
         </div>
         {% endfor %}
+        </div>
       </div>
     </article>
 
@@ -182,6 +211,8 @@ permalink: "/"
         </div>
       </div>
       <div class="primary tile-wrapper">
+        <div class="tile-minivan">
+          <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week24 %}
         <div class="tile">
           <div class="tile--icon">{{date.icon}}</div>
@@ -207,6 +238,7 @@ permalink: "/"
           </div>
         </div>
         {% endfor %}
+        </div>
       </div>
     </article>
 

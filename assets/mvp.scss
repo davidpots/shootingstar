@@ -91,33 +91,48 @@ html {
 
     /* -- */
 
-      @media (min-width: 1100px) {
+      @media (min-width: 1200px) {
         article               { position: relative; }
-        article .primary      { left: 170px;     top: 0; width: 585px; }
+        article .primary      { left: 170px;     top: 0; width: 600px; }
         article .secondary    { /* left: 0px; */ top: 0; width: 170px; height: 100px; }
       }
 
   /* Tiles */
 
+  .tile-minivan {
+    background: #fff;
+    padding: 21px;
+    border: 1px solid #d4dbe0;
+  }
+  .tile-minivan--heading {
+    color: #F38F48;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+  }
+
   .tile {
     background: white;
     border-radius: 4px;
-    padding: 16px;
+    padding: 12px;
     margin: 0 0 8px 0;
-    border: 1px solid #d4dbe0;
+    border: 1px solid #e6e6e6;
     position: relative;
+  }
+  .tile:hover {
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   }
   @media (max-width: 1099px) {
     .tile { margin-bottom: 8px; }
   }
   .tile--icon {
-    font-size: 30px;
+    font-size: 24px;
     float: left;
     padding-top: 2px;
-    padding-left: 5px;
+    padding-left: 7px;
   }
   .tile .tile--body {
-    padding-left: 54px;
+    padding-left: 48px;
   }
 
 
@@ -126,7 +141,7 @@ html {
   .tile .tile--title {
     margin: 0;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 16px;
     padding-right: 88px;
   }
   .tile .tile--date {
@@ -205,6 +220,51 @@ html {
   }
 
 
+// Featured Tile Wrapper
+
+.tile.tile--featured {
+  background: #D8EFEF;
+  border: 1px solid #D8EFEF;
+  padding-left: 21px;
+  padding-bottom: 21px;
+  padding-top: 21px;
+  padding-right: 21px;
+  margin-bottom: 16px;
+  &:hover {
+    box-shadow: none;
+  }
+}
+.tile.tile--featured .tile--image {
+  float: right;
+  background: black;
+  // opacity: .1;
+  height: 145px;
+  border-radius: 12px;
+  margin-left: 24px;
+  position: relative;
+}
+.tile.tile--featured .tile--title {
+  color: #09757A;
+  font-size: 21px;
+  margin: 0 0 4px 0;
+
+}
+.tile.tile--featured .tile--description {
+  color: #222;
+  font-size: 16px;
+}
+.tile--cta {
+  margin: 16px 0 0 0;
+}
+.tile--cta a {
+  display: inline-block;
+  background: #09757A;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+
+}
+
 
 /* Planner UI - Date Area */
 
@@ -213,7 +273,7 @@ html {
   background: url(/assets/images/date-ribbon.svg) no-repeat left top;
   text-align: right;
   margin-top: 32px;
-  margin-right: 8px;
+  margin-right: 16px;
   border-radius: 4px;
   padding-right: 12px;
 }
