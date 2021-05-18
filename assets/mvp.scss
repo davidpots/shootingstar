@@ -391,7 +391,7 @@ html {
       height: 180px;
       background: white;
       display: inline-block;
-      margin-left: 16px;
+      margin-left: 21px;
     }
     .tile--carousel-controls {
       position: absolute;
@@ -456,4 +456,34 @@ html {
       &:hover {
         box-shadow: 0 4px 16px rgba(0,0,0,0.3);
       }
+    }
+
+    // Prompts
+
+    .tile.tile--with-prompts {
+      background: #fff;
+      padding: 21px 21px 4px;
+      border: 1px solid #d4dbe0;
+      .tile--title {
+        color: #F38F48;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: 0 0 4px 0;
+        font-weight: 700;
+      }
+    }
+    .tile-carousel-item--prompt {
+      width: 172px;
+      height: 210px;
+      vertical-align: top;
+      padding: 16px;
+      white-space: normal;
+      background: #D8EFEF;
+      color: #09757A;
+      font-weight: 700;
+      margin-left: 8px;
+      line-height: 1.4;
+    }
+    .tile-carousel-item--prompt:first-child {
+      margin-left: 21px;
     }

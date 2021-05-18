@@ -127,7 +127,7 @@ p.subhead { font-size: 21px; margin-top: 0; }
 
 .tile--carousel-wrapper { margin-top: 16px; margin-right: -21px; margin-left: -21px; overflow: auto; white-space: nowrap; padding-right: 21px; scroll-behavior: smooth; padding-bottom: 16px; }
 
-.tile-carousel-item { height: 180px; background: white; display: inline-block; margin-left: 16px; }
+.tile-carousel-item { height: 180px; background: white; display: inline-block; margin-left: 21px; }
 
 .tile--carousel-controls { position: absolute; right: 21px; top: 21px; }
 
@@ -150,5 +150,13 @@ p.subhead { font-size: 21px; margin-top: 0; }
 .tile-carousel-item--over-item--image { height: 200px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
 
 .tile-carousel-item--over-item--image:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); }
+
+.tile.tile--with-prompts { background: #fff; padding: 21px 21px 4px; border: 1px solid #d4dbe0; }
+
+.tile.tile--with-prompts .tile--title { color: #F38F48; font-size: 12px; text-transform: uppercase; margin: 0 0 4px 0; font-weight: 700; }
+
+.tile-carousel-item--prompt { width: 172px; height: 210px; vertical-align: top; padding: 16px; white-space: normal; background: #D8EFEF; color: #09757A; font-weight: 700; margin-left: 8px; line-height: 1.4; }
+
+.tile-carousel-item--prompt:first-child { margin-left: 21px; }
 
 /*# sourceMappingURL=mvp.css.map */
