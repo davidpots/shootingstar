@@ -367,3 +367,40 @@ html {
   margin-top: 32px;
   margin-bottom: 12px;
 }
+
+
+// Tile carousel
+
+    .tile.tile--with-carousel {
+      padding-bottom: 0;
+    }
+    .tile--carousel-wrapper {
+      margin-top: 16px;
+      margin-right: -21px;
+      margin-left: -21px;
+      // padding-bottom: 8px;
+      // overflow-y: hidden;
+      // height: 400px;
+      overflow: auto;
+      white-space: nowrap;
+      padding-right: 21px;
+      scroll-behavior: smooth;
+      padding-bottom: 16px;
+    }
+    .tile-carousel-item {
+      width: 400px;
+      height: 180px;
+      background: white;
+      display: inline-block;
+      margin-left: 16px;
+    }
+    .tile--carousel-controls {
+      position: absolute;
+      right: 21px;
+      top: 21px;
+    }
+    .tile--carousel-controls span {
+      cursor: pointer;
+      text-decoration: underline;
+      margin-left: 8px;
+    }

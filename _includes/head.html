@@ -101,6 +101,17 @@
         }
       });
 
+      $('.tile--carousel-next').click(function(){
+        scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
+        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount+400 );
+        return false;
+      });
+      $('.tile--carousel-prev').click(function(){
+        scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
+        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount-400 );
+        return false;
+      });
+
     });
   </script>
 
