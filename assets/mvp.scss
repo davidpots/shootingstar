@@ -323,8 +323,12 @@ html {
 
 /* Planner UI - Calendar column */
 
+.feed-controls .new_post_button {
+  text-decoration: none; text-align: center; font-size: 16px; font-weight: 700; background: #222; color: #fff; display: block; padding: 15px 0; margin-top: 32px; border-radius: 2px; cursor: pointer;
+}
+
 .feed-controls .tile-calendar {
-  margin-top: 32px;
+  margin-top: 16px;
   padding: 8px 0 0 0;
   text-align: center;
   position: relative;

@@ -102,27 +102,28 @@
         }
       });
 
+
+
+
+      // Normal carousel
       $('.tile--carousel-next').click(function(){
         scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
-        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount+490 );
+        if ( $(this).closest('.tile--with-carousel').hasClass('.tile--with-carousel--narrow') ) {
+          var distance = 160;
+        } else {
+          var distance = 490;
+        }
+        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount+distance );
         return false;
       });
       $('.tile--carousel-prev').click(function(){
         scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
-        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount-490 );
-        return false;
-      });
-
-
-      // Narrower caoursel
-      $('.tile--with-carousel--narrow .tile--carousel-next').click(function(){
-        scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
-        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount+210 );
-        return false;
-      });
-      $('.tile--with-carousel--narrow .tile--carousel-prev').click(function(){
-        scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
-        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount-210 );
+        if ( $(this).closest('.tile--with-carousel').hasClass('.tile--with-carousel--narrow') ) {
+          var distance = 210;
+        } else {
+          var distance = 490;
+        }
+        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount-distance );
         return false;
       });
 
@@ -151,6 +152,7 @@
 
 <div class="feed-wrapper clearfix">
   <div class="feed-controls">
+    <a class="new_post_button">+ Create Social Post</a>
     <div class="tile tile-calendar" data-current-month="May">
       <span class="calendar-next"></span>
       <span class="calendar-prev"></span>

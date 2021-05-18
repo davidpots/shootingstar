@@ -113,7 +113,9 @@ p.subhead { font-size: 21px; margin-top: 0; }
 @media (max-width: 1099px) { .tile-wrapper { padding-top: 0; } }
 
 /* Planner UI - Calendar column */
-.feed-controls .tile-calendar { margin-top: 32px; padding: 8px 0 0 0; text-align: center; position: relative; }
+.feed-controls .new_post_button { text-decoration: none; text-align: center; font-size: 16px; font-weight: 700; background: #222; color: #fff; display: block; padding: 15px 0; margin-top: 32px; border-radius: 2px; cursor: pointer; }
+
+.feed-controls .tile-calendar { margin-top: 16px; padding: 8px 0 0 0; text-align: center; position: relative; }
 
 .calendar-next { width: 60px; height: 60px; position: absolute; top: 0; right: 0; cursor: pointer; z-index: 2; }
 
