@@ -67,36 +67,36 @@
       });
 
       $('.calendar-next').click(function(){
-        if ( $(this).parent().data('current-month') == "May" ) {
-          $(this).parent().data('current-month',"June");
+        if ( $(this).parent().attr('data-current-month') == "May" ) {
+          $(this).parent().attr('data-current-month',"June");
           $('.calendar-image').attr('src','/assets/images/cal-june.png');
           return false;
         }
-        if ( $(this).parent().data('current-month') == "June" ) {
-          $(this).parent().data('current-month',"July");
+        if ( $(this).parent().attr('data-current-month') == "June" ) {
+          $(this).parent().attr('data-current-month',"July");
           $('.calendar-image').attr('src','/assets/images/cal-july.png');
           return false;
         }
-        if ( $(this).parent().data('current-month') == "July" ) {
-          $(this).parent().data('current-month',"August");
+        if ( $(this).parent().attr('data-current-month') == "July" ) {
+          $(this).parent().attr('data-current-month',"August");
           $('.calendar-image').attr('src','/assets/images/cal-aug.png');
           return false;
         }
       });
 
       $('.calendar-prev').click(function(){
-        if ( $(this).parent().data('current-month') == "June" ) {
-          $(this).parent().data('current-month',"May");
+        if ( $(this).parent().attr('data-current-month') == "June" ) {
+          $(this).parent().attr('data-current-month',"May");
           $('.calendar-image').attr('src','/assets/images/cal-may.png');
           return false;
         }
-        if ( $(this).parent().data('current-month') == "July" ) {
-          $(this).parent().data('current-month',"June");
+        if ( $(this).parent().attr('data-current-month') == "July" ) {
+          $(this).parent().attr('data-current-month',"June");
           $('.calendar-image').attr('src','/assets/images/cal-june.png');
           return false;
         }
-        if ( $(this).parent().data('current-month') == "August" ) {
-          $(this).parent().data('current-month',"July");
+        if ( $(this).parent().attr('data-current-month') == "August" ) {
+          $(this).parent().attr('data-current-month',"July");
           $('.calendar-image').attr('src','/assets/images/cal-july.png');
           return false;
         }
@@ -126,9 +126,10 @@
 
 <div class="feed-wrapper clearfix">
   <div class="feed-controls">
-    <div class="tile tile-calendar" data-current-month=["May"]>
+    <div class="tile tile-calendar" data-current-month="May">
       <span class="calendar-next"></span>
       <span class="calendar-prev"></span>
+      <span class="calendar-today"></span>
       <img class="calendar-image" width="100%" src="/assets/images/cal-may.png" />
     </div>
 
@@ -155,30 +156,6 @@
         </div>
         <div class="tile-minivan">
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
-          
-          <div class="tile">
-            <div class="tile--icon">🏳️‍🌈</div>
-            <div class="tile--body">
-              <p class="tile--details"><a href="">Details</a></p>
-              <h3 class="tile--title">International Day Against Homophobia and Transphobia</h3>
-              <p class="tile--date">Monday, May 17</p>
-              <div class="tile--expandedContent">
-                <p class="tile--description">This important day turns our attention to LGBTQ+ rights violations and aims to raise awareness in LGBTQ+ works worldwide.</p>
-
-                
-                <div class="tile--hashtags-wrapper">
-                
-                  <div class="tile--hashtag-pill">
-                    <p>
-                      <span class="tile--hashtag-itself">#IDAHOT <span class="tile--hashtag-copy" data-hashtag="#IDAHOT">(<u>copy</u>)</span></span>
-                      <span class="tile--hashtag-outbound">View on <a href="https://www.instagram.com/explore/tags/IDAHOT/" target="_blank">Instagram</a></span>
-                    </p>
-                  </div>
-                
-                </div>
-              </div>
-            </div>
-          </div>
           
           <div class="tile">
             <div class="tile--icon">🐼</div>
