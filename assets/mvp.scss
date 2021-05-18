@@ -400,9 +400,27 @@ html {
     }
     .tile--carousel-controls span {
       cursor: pointer;
-      text-decoration: underline;
-      margin-left: 8px;
+      margin-right: 2px;
+      // text-decoration: underline;
+      // margin-left: 8px;
     }
+
+        .tile--carousel-next,
+        .tile--carousel-prev {
+          width:  28px;
+          height: 28px;
+          border: 1px solid rgba(0,0,0,0.1);
+          display: inline-block;
+        }
+
+        .tile--carousel-next {
+          background: url(/assets/images/icon-arrow-right.svg) no-repeat center center;
+          border-left: 0;
+        }
+        .tile--carousel-prev {
+          background: url(/assets/images/icon-arrow-left.svg) no-repeat center center;
+        }
+
 
     // Post gallery within gallery
 
