@@ -388,7 +388,6 @@ html {
       padding-bottom: 16px;
     }
     .tile-carousel-item {
-      width: 490px;
       height: 180px;
       background: white;
       display: inline-block;
@@ -405,9 +404,10 @@ html {
       margin-left: 8px;
     }
 
-    // Post gallery within.
+    // Post gallery within gallery
 
     .tile-carousel-item--post {
+      width: 490px;
       white-space: normal;
       padding: 8px 16px 8px 8px;
       border-radius: 4px;
@@ -438,4 +438,22 @@ html {
       text-decoration: none;
       padding: 8px 15px;
       font-size: 14px;
+    }
+
+    // Over gallery within Gallery
+
+    .tile-carousel-item--over-item {
+      background: none;
+      margin-left: 8px;
+      cursor: pointer;
+    }
+    .tile-carousel-item--over-item:first-child {
+      margin-left: 21px;
+    }
+    .tile-carousel-item--over-item--image {
+      height: 200px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      &:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      }
     }

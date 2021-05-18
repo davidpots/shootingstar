@@ -127,13 +127,13 @@ p.subhead { font-size: 21px; margin-top: 0; }
 
 .tile--carousel-wrapper { margin-top: 16px; margin-right: -21px; margin-left: -21px; overflow: auto; white-space: nowrap; padding-right: 21px; scroll-behavior: smooth; padding-bottom: 16px; }
 
-.tile-carousel-item { width: 490px; height: 180px; background: white; display: inline-block; margin-left: 16px; }
+.tile-carousel-item { height: 180px; background: white; display: inline-block; margin-left: 16px; }
 
 .tile--carousel-controls { position: absolute; right: 21px; top: 21px; }
 
 .tile--carousel-controls span { cursor: pointer; text-decoration: underline; margin-left: 8px; }
 
-.tile-carousel-item--post { white-space: normal; padding: 8px 16px 8px 8px; border-radius: 4px; }
+.tile-carousel-item--post { width: 490px; white-space: normal; padding: 8px 16px 8px 8px; border-radius: 4px; }
 
 .tile-carousel-item--post:hover { box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08); }
 
@@ -142,5 +142,13 @@ p.subhead { font-size: 21px; margin-top: 0; }
 .tile-carousel-item--post--caption { font-style: italic; margin-bottom: 12px; font-size: 14px; font-weight: 300; padding: 12px 0 0 0; height: 100px; overflow: hidden; text-overflow: ellipsis; }
 
 .tile-carousel-item--post--cta a { display: inline-block; background: #09757A; color: white; text-decoration: none; padding: 8px 15px; font-size: 14px; }
+
+.tile-carousel-item--over-item { background: none; margin-left: 8px; cursor: pointer; }
+
+.tile-carousel-item--over-item:first-child { margin-left: 21px; }
+
+.tile-carousel-item--over-item--image { height: 200px; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
+
+.tile-carousel-item--over-item--image:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=mvp.css.map */
