@@ -133,7 +133,7 @@ p.subhead { font-size: 21px; margin-top: 0; }
 
 .tile--carousel-controls span { cursor: pointer; text-decoration: underline; margin-left: 8px; }
 
-.tile-carousel-item--post { white-space: normal; padding: 8px; border-radius: 4px; }
+.tile-carousel-item--post { white-space: normal; padding: 8px 16px 8px 8px; border-radius: 4px; }
 
 .tile-carousel-item--post:hover { box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08); }
 
