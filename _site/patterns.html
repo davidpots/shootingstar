@@ -113,6 +113,20 @@
         return false;
       });
 
+
+      // Narrower caoursel
+      $('.tile--with-carousel--narrow .tile--carousel-next').click(function(){
+        scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
+        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount+210 );
+        return false;
+      });
+      $('.tile--with-carousel--narrow .tile--carousel-prev').click(function(){
+        scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
+        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount-210 );
+        return false;
+      });
+
+
     });
   </script>
 

@@ -113,6 +113,20 @@
         return false;
       });
 
+
+      // Narrower caoursel
+      $('.tile--with-carousel--narrow .tile--carousel-next').click(function(){
+        scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
+        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount+210 );
+        return false;
+      });
+      $('.tile--with-carousel--narrow .tile--carousel-prev').click(function(){
+        scrollAmount = $(this).parent().next('.tile--carousel-wrapper').scrollLeft();
+        $(this).parent().next('.tile--carousel-wrapper').scrollLeft( scrollAmount-210 );
+        return false;
+      });
+
+
     });
   </script>
 
@@ -283,7 +297,7 @@
       </div>
       <div class="primary tile-wrapper">
 
-        <div class="tile tile--featured tile--with-carousel tile--with-prompts">
+        <div class="tile tile--featured tile--with-carousel tile--with-prompts tile--with-carousel--narrow">
           <h3 class="tile--title">Quick Inspiration</h3>
           <p class="tile--description">Share a fun fact about your business! Some ideas:</p>
           <div class="tile--carousel-controls">
@@ -659,7 +673,7 @@
         </div>
       </div>
       <div class="primary tile-wrapper">
-        <div class="tile tile--featured tile--with-carousel">
+        <div class="tile tile--featured tile--with-carousel tile--with-carousel--over tile--with-carousel--narrow">
           <h3 class="tile--title">Father's Day is Next Sunday!</h3>
           <p class="tile--description">Here's some suggested templates for your next post.</p>
           <div class="tile--carousel-controls">
