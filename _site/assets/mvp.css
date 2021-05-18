@@ -165,6 +165,8 @@ p.subhead { font-size: 21px; margin-top: 0; }
 
 .tile-carousel-item--prompt { width: 172px; height: 210px; vertical-align: top; padding: 16px; white-space: normal; background: #D8EFEF; color: #09757A; font-weight: 700; margin-left: 8px; line-height: 1.4; }
 
+.tile-carousel-item--prompt:hover { box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08); }
+
 .tile-carousel-item--prompt:first-child { margin-left: 21px; }
 
 /*# sourceMappingURL=mvp.css.map */

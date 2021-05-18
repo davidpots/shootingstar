@@ -505,6 +505,9 @@ html {
       font-weight: 700;
       margin-left: 8px;
       line-height: 1.4;
+      &:hover {
+        box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+      }
     }
     .tile-carousel-item--prompt:first-child {
       margin-left: 21px;
