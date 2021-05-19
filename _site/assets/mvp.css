@@ -84,7 +84,7 @@ p.subhead { font-size: 21px; margin-top: 0; }
 
 .tile.tile--featured:hover { box-shadow: none; }
 
-.tile.tile--featured .tile--image { float: right; background: black; height: 145px; border-radius: 12px; margin-left: 24px; position: relative; }
+.tile.tile--featured .tile--image { float: right; height: 240px; position: relative; }
 
 .tile.tile--featured .tile--title { color: #09757A; font-size: 21px; margin: 0 0 4px 0; }
 
