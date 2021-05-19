@@ -44,7 +44,9 @@ p.subhead { font-size: 21px; margin-top: 0; }
 
 @media (max-width: 1099px) { .tile { margin-bottom: 8px; } }
 
-.tile--icon { font-size: 24px; float: left; padding-top: 2px; padding-left: 7px; }
+.tile--icon { float: left; padding-top: 7px; padding-left: 5px; }
+
+.tile--icon img { width: 26px; height: 26px; }
 
 .tile .tile--body { padding-left: 48px; }
 

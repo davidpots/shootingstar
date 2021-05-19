@@ -2,14 +2,14 @@
 layout: mvp
 permalink: "/"
 ---
-{% assign week19 = site.data.mvpv2 | where: "week","19" %}
-{% assign week20 = site.data.mvpv2 | where: "week","20" %}
-{% assign week21 = site.data.mvpv2 | where: "week","21" %}
-{% assign week22 = site.data.mvpv2 | where: "week","22" %}
-{% assign week23 = site.data.mvpv2 | where: "week","23" %}
-{% assign week24 = site.data.mvpv2 | where: "week","24" %}
-{% assign week25 = site.data.mvpv2 | where: "week","25" %}
-{% assign week26 = site.data.mvpv2 | where: "week","26" %}
+{% assign week19 = site.data.mvpv3 | where: "week","19" %}
+{% assign week20 = site.data.mvpv3 | where: "week","20" %}
+{% assign week21 = site.data.mvpv3 | where: "week","21" %}
+{% assign week22 = site.data.mvpv3 | where: "week","22" %}
+{% assign week23 = site.data.mvpv3 | where: "week","23" %}
+{% assign week24 = site.data.mvpv3 | where: "week","24" %}
+{% assign week25 = site.data.mvpv3 | where: "week","25" %}
+{% assign week26 = site.data.mvpv3 | where: "week","26" %}
 
 <h1>Social Media Marketing Planner</h1>
 <p class="subhead">A list of upcoming holidays, topics, and prompts to help inspire your social posts and related marketing campaigns.</p>
@@ -72,7 +72,7 @@ permalink: "/"
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
           {% for date in week20 %}
           <div class="tile">
-            <div class="tile--icon">{{date.icon}}</div>
+            <div class="tile--icon"><img src="/assets/images/emojis/{{date.icon}}.png" /></div>
             <div class="tile--body">
               <p class="tile--details"><a href="">Details</a></p>
               <h3 class="tile--title">{{date.name}}</h3>
@@ -129,7 +129,7 @@ permalink: "/"
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week21 %}
         <div class="tile">
-          <div class="tile--icon">{{date.icon}}</div>
+          <div class="tile--icon"><img src="/assets/images/emojis/{{date.icon}}.png" /></div>
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
@@ -173,7 +173,7 @@ permalink: "/"
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week22 %}
         <div class="tile">
-          <div class="tile--icon">{{date.icon}}</div>
+          <div class="tile--icon"><img src="/assets/images/emojis/{{date.icon}}.png" /></div>
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
@@ -258,7 +258,7 @@ permalink: "/"
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week23 %}
         <div class="tile">
-          <div class="tile--icon">{{date.icon}}</div>
+          <div class="tile--icon"><img src="/assets/images/emojis/{{date.icon}}.png" /></div>
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
@@ -297,7 +297,7 @@ permalink: "/"
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week24 %}
         <div class="tile">
-          <div class="tile--icon">{{date.icon}}</div>
+          <div class="tile--icon"><img src="/assets/images/emojis/{{date.icon}}.png" /></div>
           <div class="tile--body">
             <p class="tile--details"><a href="">Details</a></p>
             <h3 class="tile--title">{{date.name}}</h3>
