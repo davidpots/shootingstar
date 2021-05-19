@@ -161,7 +161,7 @@ p.subhead { font-size: 21px; margin-top: 0; }
 
 .tile-carousel-item--over-item--image:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); }
 
-.tile.tile--with-prompts { background: #fff; padding: 21px 21px 4px; border: 1px solid #d4dbe0; }
+.tile.tile--with-prompts { background: #fff; padding: 21px 21px 0px; border: 1px solid #d4dbe0; }
 
 .tile.tile--with-prompts .tile--title { color: #F38F48; font-size: 12px; text-transform: uppercase; margin: 0 0 4px 0; font-weight: 700; }
 
