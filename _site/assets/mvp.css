@@ -123,7 +123,7 @@ p.subhead { font-size: 21px; margin-top: 0; }
 
 .calendar-prev { width: 60px; height: 60px; position: absolute; top: 0; left: 0; cursor: pointer; z-index: 2; }
 
-[data-current-month="May"] .calendar-today { width: 100%; display: block; height: 300px; z-index: 1; position: absolute; background-image: url(/assets/images/cal-today/cal-may18.png); background-repeat: no-repeat; background-size: cover; }
+[data-current-month="May"] .calendar-today { width: 100%; display: block; height: 300px; z-index: 1; position: absolute; background-image: url(/assets/images/cal-today/cal-may19.png); background-repeat: no-repeat; background-size: cover; }
 
 .tile-scheduled-posts--heading { margin-top: 32px; margin-bottom: 12px; }
 
