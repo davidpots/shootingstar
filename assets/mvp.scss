@@ -362,10 +362,9 @@ html {
     [data-current-month="May"] .calendar-today {
       width: 100%;
       display: block;
-      height: 300px;
+      height: 330px;
       z-index: 1;
       position: absolute;
-      background-image: url(/assets/images/cal-today/cal-may21.png);
       background-repeat: no-repeat;
       background-size: cover;
     }
