@@ -2,6 +2,7 @@
 layout: mvp
 permalink: "/1"
 ---
+
 {% assign week19 = site.data.mvpv3 | where: "week","19" %}
 {% assign week20 = site.data.mvpv3 | where: "week","20" %}
 {% assign week21 = site.data.mvpv3 | where: "week","21" %}
@@ -20,10 +21,10 @@ permalink: "/1"
     <div class="tile tile-calendar" data-current-month="May">
       <span class="calendar-next"></span>
       <span class="calendar-prev"></span>
-      <span class="calendar-today" style="background-image: url(/assets/images/cal-today/cal-may19.png);"></span>
+      <span class="calendar-today" style="background-image: url(/assets/images/cal-today/cal-may24.png);"></span>
       <img class="calendar-image" width="100%" src="/assets/images/cal-may.png" />
     </div>
-    <img width="100%" style="margin-top: 16px;" src="/assets/images/cal-today/scheduled-may19.png" />
+    <img width="100%" style="margin-top: 16px;" src="/assets/images/cal-today/scheduled.png" />
 
     <!-- <h4 class="tile-scheduled-posts--heading">My Scheduled Posts:</h4>
     <div class="tile tile-scheduled-posts" style="height: 200px;"></div> -->
@@ -33,78 +34,12 @@ permalink: "/1"
 
   <div class="feed-main">
 
+
+
     <article>
       <div class="secondary date_range">
         <div class="date-ribbon">
           <h3>This Week</h3>
-          <h4>May 16–22</h4>
-        </div>
-      </div>
-      <div class="primary tile-wrapper">
-        <div class="tile tile--featured tile--with-carousel">
-          <h3 class="tile--title">Graduation season is here!</h3>
-          <p class="tile--description">This is a great chance to post a reminder about any products/services that may be appropriate to the graduates in your community. Here are some example posts for inspiration:</p>
-          <div class="tile--carousel-controls">
-            <span class="tile--carousel-prev"></span><span class="tile--carousel-next"></span>
-          </div>
-          <div class="tile--carousel-wrapper">
-            <div class="tile-carousel-item tile-carousel-item--post">
-              <img class="tile-carousel-item--post--image" src="/assets/images/sample-posts/grad1.png" />
-              <div class="tile-carousel-item--post--caption">Congratulations to the class of 2021! 🎓🎉 Celebrate them with a gift that will last a lifetime.</div>
-              <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--post">
-              <img class="tile-carousel-item--post--image" src="/assets/images/sample-posts/grad2.png" />
-              <div class="tile-carousel-item--post--caption">Place your orders for graduation now 🎓 #graduationcakes #cakesofinstagram.</div>
-              <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--post">
-              <img class="tile-carousel-item--post--image" src="/assets/images/sample-posts/grad4.png" />
-              <div class="tile-carousel-item--post--caption">Lookin’ GOOD, grad! 🎓 Get your fresh cut for graduation at our salon. 💇 </div>
-              <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--post">
-              <img class="tile-carousel-item--post--image" src="/assets/images/sample-posts/grad3.png" />
-              <div class="tile-carousel-item--post--caption">A few more prints of out favorite makeup, carry all, anything, FUN bags have arrived just in time for Graduation 👩‍🎓</div>
-              <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="tile-minivan">
-          <h3 class="tile-minivan--heading">Dates of Interest</h3>
-          {% for date in week20 %}
-          <div class="tile">
-            <div class="tile--icon"><img src="/assets/images/emojis/{{date.icon}}.png" /></div>
-            <div class="tile--body">
-              <p class="tile--details"><a href="">Details</a></p>
-              <h3 class="tile--title">{{date.name}}</h3>
-              <p class="tile--date">{{date.date | date: "%A, %B %e" }}</p>
-              <div class="tile--expandedContent">
-                <p class="tile--description">{{date.description}}</p>
-
-                {% assign hashtags = date.hashtags | split: " " %}
-                <div class="tile--hashtags-wrapper">
-                {% for hashtag in hashtags %}
-                  <div class="tile--hashtag-pill">
-                    <p>
-                      <span class="tile--hashtag-itself">{{hashtag}} <span class="tile--hashtag-copy" data-hashtag="{{hashtag}}">(<u>copy</u>)</span></span>
-                      <span class="tile--hashtag-outbound">View on <a href="https://www.instagram.com/explore/tags/{{hashtag | slice: 1, hashtag.size}}/" target="_blank">Instagram</a></span>
-                    </p>
-                  </div>
-                {% endfor %}
-                </div>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-    </article>
-
-    <article>
-      <div class="secondary date_range">
-        <div class="date-ribbon">
-          <h3>Next Week</h3>
           <h4>May 23–29</h4>
         </div>
       </div>
@@ -156,31 +91,55 @@ permalink: "/1"
     <article>
       <div class="secondary date_range">
         <div class="date-ribbon">
-          <h4>Week of</h4>
-          <h3>May 30</h3>
+          <h3>Next Week</h3>
+          <h4>May 30–Jun 5</h4>
         </div>
       </div>
       <div class="primary tile-wrapper">
 
 
 
-        <div class="tile tile--featured tile--with-carousel tile--with-prompts tile--with-carousel--narrow">
-          <h3 class="tile--title">Quick Inspiration</h3>
-          <p class="tile--description">Share a fun fact about your business! Some ideas:</p>
+
+
+        <div class="tile tile--featured tile--with-carousel tile--with-carousel--over tile--with-carousel--narrow">
+          <h3 class="tile--title">Need to promote something for Father's Day?</h3>
+          <p class="tile--description">If you want to announce anything for Father's Day (June 20th), don't wait until the last minute. Gift ideas, reservations, or any other proactive announcements make for great posts. Click any template below to customize it:</p>
           <div class="tile--carousel-controls">
             <span class="tile--carousel-prev"></span><span class="tile--carousel-next"></span>
           </div>
           <div class="tile--carousel-wrapper">
-            <div class="tile-carousel-item tile-carousel-item--prompt">Describe what inspired you to start your business.</div>
-            <div class="tile-carousel-item tile-carousel-item--prompt">Post a picture of your office or working space.</div>
-            <div class="tile-carousel-item tile-carousel-item--prompt">Share the product or service you’re most proud of – and say why.</div>
-            <div class="tile-carousel-item tile-carousel-item--prompt">Let your followers know about parts of your daily work routine that may surprise them.</div>
-            <div class="tile-carousel-item tile-carousel-item--prompt">Have a co-founder or first employee? Introduce them to your followers.</div>
-            <div class="tile-carousel-item tile-carousel-item--prompt">Share an image of the first thing you ever sold. Tell the story!</div>
-            <div class="tile-carousel-item tile-carousel-item--prompt">Tell your followers about any entrepreneurial heroes you look up to.</div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad1.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad3.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad10.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad2.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad4.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad5.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad6.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad7.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad8.png" />
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--over-item">
+              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad9.png" />
+            </div>
           </div>
         </div>
-
 
         <div class="tile-minivan">
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
@@ -221,45 +180,25 @@ permalink: "/1"
         </div>
       </div>
       <div class="primary tile-wrapper">
-        <div class="tile tile--featured tile--with-carousel tile--with-carousel--over tile--with-carousel--narrow">
-          <h3 class="tile--title">Father's Day is Next Sunday!</h3>
-          <p class="tile--description">Sunday, June 20th is Fathers Day. If there's anything you want to promote or announce ahead of time, this is your final chance! Here's some suggested templates you can use:</p>
-          <div class="tile--carousel-controls">
-            <span class="tile--carousel-prev"></span><span class="tile--carousel-next"></span>
-          </div>
-          <div class="tile--carousel-wrapper">
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad1.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad3.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad10.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad2.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad4.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad5.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad6.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad7.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad8.png" />
-            </div>
-            <div class="tile-carousel-item tile-carousel-item--over-item">
-              <img class="tile-carousel-item--over-item--image" src="/assets/images/sample-posts/dad9.png" />
-            </div>
-          </div>
-        </div>
+
+
+                <div class="tile tile--featured tile--with-carousel tile--with-prompts tile--with-carousel--narrow">
+                  <h3 class="tile--title">Quick Inspiration</h3>
+                  <p class="tile--description">Share a fun fact about your business! Some ideas:</p>
+                  <div class="tile--carousel-controls">
+                    <span class="tile--carousel-prev"></span><span class="tile--carousel-next"></span>
+                  </div>
+                  <div class="tile--carousel-wrapper">
+                    <div class="tile-carousel-item tile-carousel-item--prompt">Describe what inspired you to start your business.</div>
+                    <div class="tile-carousel-item tile-carousel-item--prompt">Post a picture of your office or working space.</div>
+                    <div class="tile-carousel-item tile-carousel-item--prompt">Share the product or service you’re most proud of – and say why.</div>
+                    <div class="tile-carousel-item tile-carousel-item--prompt">Let your followers know about parts of your daily work routine that may surprise them.</div>
+                    <div class="tile-carousel-item tile-carousel-item--prompt">Have a co-founder or first employee? Introduce them to your followers.</div>
+                    <div class="tile-carousel-item tile-carousel-item--prompt">Share an image of the first thing you ever sold. Tell the story!</div>
+                    <div class="tile-carousel-item tile-carousel-item--prompt">Tell your followers about any entrepreneurial heroes you look up to.</div>
+                  </div>
+                </div>
+
         <div class="tile-minivan">
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week23 %}
@@ -299,6 +238,35 @@ permalink: "/1"
         </div>
       </div>
       <div class="primary tile-wrapper">
+        <div class="tile tile--featured tile--with-carousel">
+          <h3 class="tile--title">Schedule a Happy Father's Day post</h3>
+          <p class="tile--description">Father's Day is Sunday, June 20 -- this is the week to plan your "Happy Father's Day" post! Here's some sample posts you can use as inpisration:</p>
+          <div class="tile--carousel-controls">
+            <span class="tile--carousel-prev"></span><span class="tile--carousel-next"></span>
+          </div>
+          <div class="tile--carousel-wrapper">
+            <div class="tile-carousel-item tile-carousel-item--post">
+              <img class="tile-carousel-item--post--image" src="/assets/images/sample-posts/grad1.png" />
+              <div class="tile-carousel-item--post--caption">Congratulations to the class of 2021! 🎓🎉 Celebrate them with a gift that will last a lifetime.</div>
+              <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--post">
+              <img class="tile-carousel-item--post--image" src="/assets/images/sample-posts/grad2.png" />
+              <div class="tile-carousel-item--post--caption">Place your orders for graduation now 🎓 #graduationcakes #cakesofinstagram.</div>
+              <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--post">
+              <img class="tile-carousel-item--post--image" src="/assets/images/sample-posts/grad4.png" />
+              <div class="tile-carousel-item--post--caption">Lookin’ GOOD, grad! 🎓 Get your fresh cut for graduation at our salon. 💇 </div>
+              <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
+            </div>
+            <div class="tile-carousel-item tile-carousel-item--post">
+              <img class="tile-carousel-item--post--image" src="/assets/images/sample-posts/grad3.png" />
+              <div class="tile-carousel-item--post--caption">A few more prints of out favorite makeup, carry all, anything, FUN bags have arrived just in time for Graduation 👩‍🎓</div>
+              <div class="tile-carousel-item--post--cta"><a href="">Schedule This Post</a></div>
+            </div>
+          </div>
+        </div>
         <div class="tile-minivan">
           <h3 class="tile-minivan--heading">Dates of Interest</h3>
         {% for date in week24 %}
